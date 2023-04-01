@@ -1,4 +1,4 @@
-.education {
+.contact {
     width: 100vw;
     transform: translateZ(-100px);
     perspective: 500px;
@@ -8,16 +8,24 @@
     justify-content: column;
     flex-direction: column;
     overflow: "hidden";
-    height: 200vh;
-    background-color: rgb(102, 77, 56);
+    height: 330vh;
+    background-color: rgb(185, 149, 194);
     z-index: -100;
 
-    .small_container {
+
+    .icon {
+        width: 20vw;
+        height: 20vh;
+        cursor: pointer;
         z-index: 100;
+
+        &::after{
+            background-color: aqua;
+        }
     }
 
-    .small_container::hover {
-        background-color: red
+    .icon::hover {
+        background-color: aqua;
 
     }
 }

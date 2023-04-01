@@ -1,6 +1,5 @@
 
 .skills {
-    margin-top: 60px;
     width: 100vw;
     transform: translateZ(-100px);
     perspective: 500px;
@@ -10,15 +9,8 @@
     justify-content: column;
     flex-direction: column;
     overflow: "hidden";
-    height: 380vh;
     cursor: pointer;
   
-    .black_hole {
-      position: relative;
-      top: 1310px;
-      right: -380px;
-      z-index: 100;
-    }
   
     h2{
       font-size: 30px;

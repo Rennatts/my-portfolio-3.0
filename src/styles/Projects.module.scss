@@ -1,6 +1,5 @@
 
 .projects{
-    margin-top: 60px;
     width: 100vw;
     transform: translateZ(-100px);
     perspective: 500px;
@@ -13,6 +12,7 @@
     height: 330vh;
     background-color: rgb(102, 77, 56);
     z-index: -100;
+    margin-top: -90px;
 
     .drip {
         position: absolute;

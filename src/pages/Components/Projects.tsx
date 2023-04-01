@@ -11,9 +11,7 @@ export default function Projects({ }: IIntroProps) {
         <>
             <section id="projects" className={styles.projects}>
                 <div className={styles.drip}></div>
-                    <h2>Skills</h2>
-                    <p>Some text about yourself.</p>
-                    <p>Some text about yourself.</p>
+                    <h2>Side Projects</h2>
                 <div className={styles.coffee_box}>
                     <motion.div>
                         <motion.img
