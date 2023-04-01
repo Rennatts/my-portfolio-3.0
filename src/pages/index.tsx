@@ -63,7 +63,7 @@ export default function Home() {
     <div className={styles.background_image_container}>
       <Header></Header>
         <div className={styles.topics_container}>
-          <section id="home" className={styles.home}>
+          <section id="about" className={styles.about}>
             <div className={styles.intro}>
                 <motion.div
                     initial={{ opacity: 0 }}

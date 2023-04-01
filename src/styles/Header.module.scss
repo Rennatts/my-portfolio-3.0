@@ -11,7 +11,10 @@
   z-index: 100;
   background-color: transparent;
   color: white;
-  z-index: 100;
+  position: sticky;
+  box-sizing: border-box;
+  top: 0;
+
 
   .nav {
     display: flex;
@@ -20,16 +23,23 @@
 
     .nav_list {
       display: flex;
+      justify-content: space-evenly;
       list-style: none;
 
       .nav_item {
-        margin: 0 20px;
-        text-decoration: none;
-        cursor: pointer !important;
+        margin: 0 33px;
+        cursor: pointer !important;          
 
         a{
           color: white;
           text-decoration: none;
+          padding: 10px;
+          border-radius: 20px;
+
+          &:hover{
+            background-color: rgb(40, 126, 126);
+          }
+          
         }
       }
     }
