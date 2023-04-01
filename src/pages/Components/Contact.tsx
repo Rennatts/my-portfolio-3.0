@@ -9,10 +9,10 @@ export default function Contact({ }: IIntroProps) {
     return (
         <>
             <section id="contact" className={styles.contact}>
-                <div>
+                <div className={styles.header}>
                     <h1>Contact</h1>
                 </div>
-                <div>
+                <div className={styles.icons_container}>
                     <p className={styles.icon}><AiOutlineGithub size="1x"></AiOutlineGithub></p>
                     <p className={styles.icon}><AiFillLinkedin size="1x"></AiFillLinkedin></p>
                     <p className={styles.icon}><AiFillTwitterCircle size="1x"></AiFillTwitterCircle></p>
