@@ -27,23 +27,39 @@ export default function Home() {
   const [experienceRef2, inView2] = useInView({ threshold: 0.7 });
 
   const [isRocketVisible, setIsRocketVisible] = useState(false);
-  const [isAstronautInvisible, setIsAstronautInvisible] = useState(true);
+  const [hasPassedBlackHole, setHasPassedBlackHole] = useState(false);
+  const blackHoleRef = useRef<Element | null>(null);
+  const setBlackHoleRef = (node: Element | null) => {
+    blackHoleRef.current = node;
+  };
 
+  const [astronautOpacity, setAstronautOpacity] = useState(1);
 
 
   useEffect(() => {
     const handleScroll = () => {
-      if (imageRef.current) {
+      if (imageRef.current && blackHoleRef.current) {
         const scrollPosition = window.pageYOffset;
         setYPosition(scrollPosition);
+  
+        const blackHolePosition =
+          blackHoleRef.current.getBoundingClientRect().top + scrollPosition;
+        const astronautBottomPosition = imageRef.current.offsetTop + imageRef.current.offsetHeight;
+  
+        if (astronautBottomPosition > blackHolePosition) {
+          setAstronautOpacity(0);
+        } else {
+          setAstronautOpacity(1);
+        }
       }
     };
-
+  
     window.addEventListener("scroll", handleScroll);
-
+  
     return () => window.removeEventListener("scroll", handleScroll);
-
   }, []);
+  
+
 
   useEffect(() => {
     if (inView) {
@@ -57,6 +73,7 @@ export default function Home() {
       controls2.start({ x: 0, opacity: 1 });
     }
   }, [controls2, inView2]);
+
 
   
   return (
@@ -92,7 +109,7 @@ export default function Home() {
                       loop: Infinity,
                     }}
                     >
-                    I am RENATA MACHADO
+                    I'm RENATA MACHADO
                     </motion.p>
                         <motion.img
                           ref={imageRef}
@@ -105,7 +122,7 @@ export default function Home() {
                               position: "relative",
                               top: `${yPosition * 1}px`,
                               zIndex: -100,
-                              opacity: isAstronautInvisible ? 0 : 1,
+                              opacity: astronautOpacity,
                           }}
                           animate={{
                               x: ["0%", "100%"],
@@ -199,7 +216,7 @@ export default function Home() {
                     }}
                     transition={{
                       duration: 4,
-                      delay: 1.0,
+                      delay: 0.5,
                       times: [0, 0.5, 1],
                       ease: 'easeInOut',
                     }}
@@ -237,9 +254,10 @@ export default function Home() {
           <Skills></Skills>
           <InView
             as="div"
-            onChange={(inView) => setIsAstronautInvisible(inView)}
+            onChange={(inView) => !inView && setHasPassedBlackHole(true)} 
+            threshold={0.1}
           >
-            <div className={styles.black_hole}>
+            <div className={styles.black_hole} ref={setBlackHoleRef}>
               <Image  src="/black_hole.png" alt="black_hole" width={500} height={300}></Image>
             </div>
           </InView>

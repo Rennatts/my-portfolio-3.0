@@ -10,8 +10,8 @@ export default function Header() {
         <>
             <Head>
                 <header className={styles.header}>
-                    <div>
-                        <p>LOGO</p>
+                    <div className={styles.logo_box}>
+                        <p>Renata Machado</p>
                     </div>
                     <nav className={styles.nav}>
                         <ul className={styles.nav_list}>
