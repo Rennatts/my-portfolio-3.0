@@ -5,7 +5,6 @@ import Header from './Components/Header'
 import { useEffect, useRef, useState } from 'react'
 import { useAnimation } from 'framer-motion';
 import { useInView } from 'react-intersection-observer';
-import Intro from './Components/Intro';
 import Experience from './Components/Experience';
 import Skills from './Components/Skills';
 import Projects from './Components/Projects';
@@ -25,6 +24,8 @@ export default function Home() {
   const controls2 = useAnimation();
   const [experience01Ref, inView] = useInView({ threshold: 0.5 }); 
   const [experienceRef2, inView2] = useInView({ threshold: 0.7 });
+
+  const [projectRef1, inView3] = useInView({ threshold: 1 });
 
   const [isRocketVisible, setIsRocketVisible] = useState(false);
   const [hasPassedBlackHole, setHasPassedBlackHole] = useState(false);
@@ -234,7 +235,7 @@ export default function Home() {
                 }}
                 >
                 <p>
-                    Fueled by coffee and a fascination with the universe.
+                    Fueled by a fascination with the universe.
                 </p>
                 <p>
                     I find joy in building innovative tech solutions
