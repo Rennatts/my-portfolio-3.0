@@ -180,7 +180,7 @@ export default function Home() {
                 <motion.img
                 src="/comet-01.png"
                 alt="comet"
-                className={styles.coffee}
+                className={styles.comet}
                 initial={{ opacity: 0, x: -400, y: -400 }}
                 animate={{
                     opacity: [0, 1, 1, 0],
@@ -189,7 +189,7 @@ export default function Home() {
                 }}
                 transition={{
                     duration: 4,
-                    delay: 1.2,
+                    delay: 0.8,
                     times: [0, 0.5, 0.9, 1], 
                 }}
                 width={250}

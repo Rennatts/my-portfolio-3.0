@@ -18,7 +18,7 @@ export default function Projects({ }: IIntroProps) {
                         src="/planet_01.png" 
                         alt="planet_01"
                         className={styles.planet_or_satellite}
-                        initial={{ opacity: 0, y: -60 }}
+                        initial={{ opacity: 0, y: -100 }}
                         animate={{ opacity: 1, y: 0 }}
                         transition={{ duration: 1, delay: 3 }}
                         width={200}
@@ -53,6 +53,19 @@ export default function Projects({ }: IIntroProps) {
                         </div>
                     </div>
                 </motion.div>
+                <motion.div>
+                    <motion.img
+                        src="/planet_02.png" 
+                        alt="planet_02"
+                        className={styles.planet_or_satellite}
+                        initial={{ opacity: 0, x: -400 }}
+                        animate={{ opacity: 1, x: 0 }}
+                        transition={{ duration: 2, delay: 3 }}
+                        width={200}
+                        height={190}
+                        style={{marginTop: "50%"}}
+                    />
+                </motion.div>
 
                 <motion.div
                     className={styles.project_02}
@@ -71,6 +84,20 @@ export default function Projects({ }: IIntroProps) {
                             ></motion.img>
                         </div>
                     </div>
+                </motion.div>
+
+                <motion.div>
+                    <motion.img
+                        src="/planet_03.png" 
+                        alt="planet_03"
+                        className={styles.planet_or_satellite}
+                        initial={{ opacity: 0, y: 400 }}
+                        animate={{ opacity: 1, y: 0 }}
+                        transition={{ duration: 2, delay: 1 }}
+                        width={200}
+                        height={490}
+                        style={{marginTop: "10%", marginLeft:"800px"}}
+                    />
                 </motion.div>
 
                 <motion.div
@@ -94,32 +121,22 @@ export default function Projects({ }: IIntroProps) {
                     </div>
                 </motion.div>
 
+                <motion.div>
+                    <motion.img
+                        src="/planet_04.png" 
+                        alt="planet_04"
+                        className={styles.planet_or_satellite}
+                        initial={{ opacity: 0, y: -600 }}
+                        animate={{ opacity: 1, y: 0 }}
+                        transition={{ duration: 1 }}
+                        width={400}
+                        height={490}
+                        style={{marginTop: "10%", marginRight:"1400px"}}
+                    />
+                </motion.div>
+
                 <div>
-                    <motion.div>
-                        <motion.img
-                            src="/planet_02.png" 
-                            alt="planet_02"
-                            className={styles.planet_or_satellite}
-                            initial={{ opacity: 0, y: -60 }}
-                            animate={{ opacity: 1, y: 0 }}
-                            transition={{ duration: 1, delay: 3 }}
-                            width={200}
-                            height={190}
-                        />
-                    </motion.div>
-                    <motion.div>
-                            <motion.img
-                                src="/planet_03.png" 
-                                alt="planet_03"
-                                className={styles.planet_or_satellite}
-                                initial={{ opacity: 0, y: -60 }}
-                                animate={{ opacity: 1, y: 0 }}
-                                transition={{ duration: 1, delay: 3 }}
-                                width={200}
-                                height={190}
-                            />
-                    </motion.div>
-                    <motion.div>
+                    {/* <motion.div>
                             <motion.img
                                 src="/planet_04.png" 
                                 alt="planet_04"
@@ -130,7 +147,7 @@ export default function Projects({ }: IIntroProps) {
                                 width={200}
                                 height={190}
                             />
-                    </motion.div>
+                    </motion.div> */}
                 </div>
             </section>
         </>
