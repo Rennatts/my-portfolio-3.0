@@ -12,7 +12,7 @@ export default function Education({ }: IIntroProps) {
                 <div>
                     <h1>Education</h1>
                 </div>
-                <div>
+                <div className={styles.description}>
                     <div className={styles.small_container}>
                         <h2>Inha University</h2>
                         <h4>Incheon - South Korea</h4>

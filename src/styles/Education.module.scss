@@ -1,6 +1,5 @@
 .education {
     width: 100vw;
-    transform: translateZ(-100px);
     perspective: 500px;
     position: relative;
     display: flex;
@@ -8,13 +7,33 @@
     justify-content: column;
     flex-direction: column;
     overflow: "hidden";
-    height: 200vh;
-    background-color: rgb(102, 77, 56);
+    height: 150vh;
     z-index: -100;
 
-    .small_container {
-        z-index: 100;
+    background-image: url('./../images/universe_02.jpeg');
+    background-size: cover;
+    background-position: center center;
+    background-attachment: fixed;
+    position: relative;
+    z-index: -100;
+    transform-style: preserve-3d;
+    perspective: 1000px;
+
+    h1{
+        margin-top: 15%;
+        font-size: 30px;
+        color: white;
     }
+
+    .description{
+        flex-wrap: wrap;
+        color: white;
+
+        .small_container {
+            z-index: 100;
+        }
+    }
+
 
     .small_container::hover {
         background-color: red

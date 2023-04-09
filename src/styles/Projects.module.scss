@@ -8,7 +8,7 @@
     justify-content: column;
     flex-direction: column;
     overflow: "hidden";
-    height: 550vh;
+    height: 600vh;
     z-index: -100;
     margin-top: 500px;
 
@@ -39,11 +39,25 @@
         background-size: cover;
     }
 
+    
     .planet_01{
-        position: relative;
-        top: 0px;
-        left: -500px;
+        width: 260px;
+        height: 250px;
+        z-index: 1;
     }
+
+    .planet_02{
+        width: 320px;
+        height: 350px;
+        z-index: 1;
+    }
+
+    .planet_03{
+        width: 320px;
+        height: 350px;
+        z-index: 1;
+    }
+
     .planet_box {
         display: flex;
         align-items: center;
