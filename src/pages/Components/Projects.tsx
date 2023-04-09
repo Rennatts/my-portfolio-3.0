@@ -1,26 +1,61 @@
 import styles from '@/styles/Projects.module.scss'
-import { motion, useAnimation, useInView } from 'framer-motion';
+import { motion, useAnimation} from 'framer-motion';
+import { useEffect } from 'react';
 
 interface IIntroProps {
-    // projectRef1?: any
+    planet01Ref: any;
+    planet02Ref: any;
+    planet03Ref: any;
+    planet04Ref: any;
+    inView3: any;
+    inView4: any;
+    inView5: any;
+    inView6: any;
 }
 
-export default function Projects({ }: IIntroProps) {
-    const controls = useAnimation();
+export default function Projects({ 
+    planet01Ref, 
+    planet02Ref, 
+    planet03Ref, 
+    planet04Ref,
+    inView3,
+    inView4,
+    inView5,
+    inView6,
+}: IIntroProps) {
+    const controlPlanet01 = useAnimation();
+    const controlPlanet02 = useAnimation();
+    const controlPlanet03 = useAnimation();
+    const controlPlanet04 = useAnimation();
+
+    useEffect(() => {
+        if (inView3) {
+            controlPlanet01.start({ opacity: 1, y: 100 });
+        }
+        if (inView4) {
+            controlPlanet02.start({ opacity: 1, x: 400 });
+        }
+        if (inView5) {
+            controlPlanet03.start({ opacity: 1, y: 300 });
+        }
+        if (inView6) {
+            controlPlanet04.start({ opacity: 1, y: 120 });
+        }
+    }, [controlPlanet01, controlPlanet02, controlPlanet03, controlPlanet04, inView3, inView4, inView5, inView6]);
     
 
     return (
         <>
             <section id="projects" className={styles.projects}>
                 <h2>Side Projects</h2>
-                <motion.div className={styles.planet_01}>
+                <motion.div className={styles.planet_01} ref={planet01Ref}>
                     <motion.img
                         src="/planet_01.png" 
                         alt="planet_01"
                         className={styles.planet_or_satellite}
                         initial={{ opacity: 0, y: -100 }}
-                        animate={{ opacity: 1, y: 0 }}
-                        transition={{ duration: 1, delay: 3 }}
+                        animate={controlPlanet01}
+                        transition={{ duration: 1, delay: 2 }}
                         width={200}
                         height={190}
                     />
@@ -53,16 +88,14 @@ export default function Projects({ }: IIntroProps) {
                         </div>
                     </div>
                 </motion.div>
-                <motion.div>
+                <motion.div ref={planet02Ref}>
                     <motion.img
                         src="/planet_02.png" 
                         alt="planet_02"
                         className={styles.planet_or_satellite}
                         initial={{ opacity: 0, x: -400 }}
-                        animate={{ opacity: 1, x: 0 }}
-                        transition={{ duration: 2, delay: 3 }}
-                        width={200}
-                        height={190}
+                        animate={controlPlanet02}
+                        transition={{ duration: 3 }}
                         style={{marginTop: "50%"}}
                     />
                 </motion.div>
@@ -86,14 +119,14 @@ export default function Projects({ }: IIntroProps) {
                     </div>
                 </motion.div>
 
-                <motion.div>
+                <motion.div ref={planet03Ref}>
                     <motion.img
                         src="/planet_03.png" 
                         alt="planet_03"
                         className={styles.planet_or_satellite}
-                        initial={{ opacity: 0, y: 400 }}
-                        animate={{ opacity: 1, y: 0 }}
-                        transition={{ duration: 2, delay: 1 }}
+                        initial={{ opacity: 0, y: -300 }}
+                        animate={controlPlanet03}
+                        transition={{ duration: 2.2 }}
                         width={200}
                         height={490}
                         style={{marginTop: "10%", marginLeft:"800px"}}
@@ -121,34 +154,19 @@ export default function Projects({ }: IIntroProps) {
                     </div>
                 </motion.div>
 
-                <motion.div>
+                <motion.div ref={planet04Ref}>
                     <motion.img
                         src="/planet_04.png" 
                         alt="planet_04"
                         className={styles.planet_or_satellite}
-                        initial={{ opacity: 0, y: -600 }}
-                        animate={{ opacity: 1, y: 0 }}
-                        transition={{ duration: 1 }}
+                        initial={{ opacity: 0, y: -520 }}
+                        animate={controlPlanet04}
+                        transition={{ duration: 2 }}
                         width={400}
                         height={490}
                         style={{marginTop: "10%", marginRight:"1400px"}}
                     />
                 </motion.div>
-
-                <div>
-                    {/* <motion.div>
-                            <motion.img
-                                src="/planet_04.png" 
-                                alt="planet_04"
-                                className={styles.planet_or_satellite}
-                                initial={{ opacity: 0, y: -60 }}
-                                animate={{ opacity: 1, y: 0 }}
-                                transition={{ duration: 1, delay: 3 }}
-                                width={200}
-                                height={190}
-                            />
-                    </motion.div> */}
-                </div>
             </section>
         </>
     )

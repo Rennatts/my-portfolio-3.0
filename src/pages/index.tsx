@@ -25,7 +25,11 @@ export default function Home() {
   const [experience01Ref, inView] = useInView({ threshold: 0.5 }); 
   const [experienceRef2, inView2] = useInView({ threshold: 0.7 });
 
-  const [projectRef1, inView3] = useInView({ threshold: 1 });
+  const [planet01Ref, inView3] = useInView({ threshold: 0.2 }); 
+  const [planet02Ref, inView4] = useInView({ threshold: 0.4 }); 
+  const [planet03Ref, inView5] = useInView({ threshold: 0.6 }); 
+  const [planet04Ref, inView6] = useInView({ threshold: 0.8 }); 
+
 
   const [isRocketVisible, setIsRocketVisible] = useState(false);
   const [hasPassedBlackHole, setHasPassedBlackHole] = useState(false);
@@ -74,6 +78,7 @@ export default function Home() {
       controls2.start({ x: 0, opacity: 1 });
     }
   }, [controls2, inView2]);
+
 
 
   
@@ -262,7 +267,16 @@ export default function Home() {
               <Image  src="/black_hole.png" alt="black_hole" width={500} height={300}></Image>
             </div>
           </InView>
-          <Projects></Projects>
+          <Projects 
+          planet01Ref={planet01Ref} 
+          planet02Ref={planet02Ref} 
+          planet03Ref={planet03Ref} 
+          planet04Ref={planet04Ref}
+          inView3={inView3}
+          inView4={inView4}
+          inView5={inView5}
+          inView6={inView6}
+          ></Projects>
           <Education></Education>
           <Contact></Contact>
         </div>
