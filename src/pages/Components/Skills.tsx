@@ -64,7 +64,7 @@ export default function Skills({  }: IIntroProps) {
                     </div>
                     <div className={styles.icons}>
                     <div className={styles.glass_image}>
-                        <Image src="/styled_component.png" alt="styles components" width={100} height={100}></Image>
+                        <Image src="/styled_component.png" alt="styles components" width={130} height={100}></Image>
                     </div>
                     <div className={styles.glass_image}>
                         <Image src="/tailwind.png" alt="tailwind" width={150} height={100}></Image>
@@ -75,19 +75,13 @@ export default function Skills({  }: IIntroProps) {
                     </div>
                     <div className={styles.icons}>
                     <div className={styles.glass_image}>
-                        <Image src="/material_ui.png" alt="material ui" width={190} height={100}></Image>
+                        <Image src="/material_ui.png" alt="material ui" width={210} height={100}></Image>
                     </div>
                     <div className={styles.glass_image}>
-                        <Image src="/chakra_ui.png" alt="chakra ui" width={200} height={100}></Image>
+                        <Image src="/chakra_ui.png" alt="chakra ui" width={260} height={100}></Image>
                     </div>
                     </div>
                 </div>
-                {/* <InView
-                    as="div"
-                    onChange={(inView) => setIsAstronautInvisible(inView)}
-                >
-                    <Image className={styles.black_hole} src="/black_hole.png" alt="black_hole" width={500} height={300}></Image>
-                </InView> */}
             </section>
         </>
     )
