@@ -89,7 +89,7 @@ export default function Projects({
                 </motion.div>
                 <motion.div ref={planet02Ref}>
                     <motion.img
-                        src="/planet_02.png" 
+                        src="/planet_04.png" 
                         alt="planet_02"
                         className={styles.planet_02}
                         initial={{ opacity: 0, x: -400 }}
@@ -153,13 +153,13 @@ export default function Projects({
 
                 <motion.div ref={planet04Ref}>
                     <motion.img
-                        src="/planet_04.png" 
+                        src="/planet_02.png" 
                         alt="planet_04"
                         className={styles.planet_04}
                         initial={{ opacity: 0, y: -520 }}
                         animate={controlPlanet04}
                         transition={{ duration: 2 }}
-                        style={{marginTop: "10%", marginRight:"1000px"}}
+                        style={{marginTop: "10%", marginRight:"100px"}}
                     />
                 </motion.div>
             </section>
