@@ -4,7 +4,7 @@
     position: relative;
     display: flex;
     align-items: center;
-    justify-content: column;
+    justify-content: center;
     flex-direction: column;
     overflow: "hidden";
     height: 120vh;
@@ -19,24 +19,59 @@
     transform-style: preserve-3d;
     perspective: 1000px;
 
-    h1{
+    h1 {
         margin-top: 15%;
         font-size: 30px;
         color: white;
     }
 
-    .description{
-        flex-wrap: wrap;
+    .description {
+        display: flex;
+        align-content: center;
+        justify-content: space-evenly;
         color: white;
+        width: 70%;
 
-        .small_container {
-            z-index: 100;
+        .education_01,
+        .education_02 {
+            padding: 8%;
+            border-radius: 30px;
+            box-shadow: 15px 15px 40px rgba(0, 0, 0, 0.2);
+            background: linear-gradient(135deg, rgba(255, 255, 255, 0.1) 0%, rgba(255, 255, 255, 0.1) 100%);
+            overflow: hidden;
+            border: 1px solid rgba(255, 255, 255, 0.2);
+            z-index: 1;
+            position: relative;
+            backdrop-filter: blur(12px);
+            -webkit-backdrop-filter: blur(12px);
+            cursor: pointer;
+            display: flex;
+            align-content: space-between;
+            justify-content: space-around;
+            flex-direction: column;
+            color: white;
+            height:  60%;
+            margin-top: 10%;
+
+            transition: box-shadow 0.5s, border 0.5s;
+
+            .header {
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                flex-direction: column;
+                margin-bottom: 12%;
+                font-weight: 700;
+
+                p {
+                    font-size: 20px;
+                }
+            }
+
+            p {
+                font-size: 18px;
+            }
         }
     }
-
-
-    .small_container::hover {
-        background-color: red
-
-    }
 }
+

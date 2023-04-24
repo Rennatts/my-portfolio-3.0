@@ -115,7 +115,7 @@ export default function Home() {
                       loop: Infinity,
                     }}
                     >
-                    I'm RENATA MACHADO
+                    Im RENATA MACHADO
                     </motion.p>
                         <motion.img
                           ref={imageRef}
