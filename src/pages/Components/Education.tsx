@@ -24,7 +24,8 @@ export default function Education({ }: IIntroProps) {
                     <div className={styles.education_02}>
                         <div className={styles.header}>
                             <h1>Fatec</h1>
-                            <p>Maritime Transportation - Bachelor</p>
+                            <p>Maritime Transportation</p>
+                            <p>Bachelor</p>
                         </div>
                         <p>São Paulo - Brazil</p>
                         <p>01/2011 to 12/2014</p>

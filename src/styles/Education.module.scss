@@ -8,14 +8,12 @@
     flex-direction: column;
     overflow: "hidden";
     height: 120vh;
-    z-index: -100;
 
     background-image: url('./../images/universe_02.jpeg');
     background-size: cover;
     background-position: center center;
     background-attachment: fixed;
     position: relative;
-    z-index: -100;
     transform-style: preserve-3d;
     perspective: 1000px;
 
@@ -46,22 +44,25 @@
             -webkit-backdrop-filter: blur(12px);
             cursor: pointer;
             display: flex;
-            align-content: space-between;
-            justify-content: space-around;
+            align-items: center;
+            justify-content: center;
             flex-direction: column;
             color: white;
             height:  60%;
             margin-top: 10%;
 
-            transition: box-shadow 0.5s, border 0.5s;
 
             .header {
                 display: flex;
                 align-items: center;
                 justify-content: center;
                 flex-direction: column;
-                margin-bottom: 12%;
+                margin-bottom: 18%;
                 font-weight: 700;
+
+                h1{
+                    margin-bottom: 10px;
+                }
 
                 p {
                     font-size: 20px;
@@ -72,6 +73,14 @@
                 font-size: 18px;
             }
         }
+
+        // .education_01:hover,
+        // .education_02:hover {
+        //     color: #FFFFFF; 
+        //     background-color: #0f100f; 
+        //     transform: scale(1.1) translate3d(0px, 0px, -250px); 
+        //     box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2); 
+        // }
     }
 }
 

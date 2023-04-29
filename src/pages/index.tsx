@@ -267,6 +267,7 @@ export default function Home() {
               <Image  src="/black_hole.png" alt="black_hole" width={500} height={300}></Image>
             </div>
           </InView>
+        </div>
           <Projects 
           planet01Ref={planet01Ref} 
           planet02Ref={planet02Ref} 
@@ -278,8 +279,7 @@ export default function Home() {
           inView6={inView6}
           ></Projects>
           <Education></Education>
-          <Contact></Contact>
-        </div>
+        <Contact></Contact>
     </div>
   )
 }

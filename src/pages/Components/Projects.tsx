@@ -1,6 +1,8 @@
 import styles from '@/styles/Projects.module.scss'
 import { motion, useAnimation} from 'framer-motion';
 import { useEffect } from 'react';
+import { useState } from 'react';
+
 
 interface IIntroProps {
     planet01Ref: any;
@@ -27,6 +29,14 @@ export default function Projects({
     const controlPlanet02 = useAnimation();
     const controlPlanet03 = useAnimation();
     const controlPlanet04 = useAnimation();
+
+    const [imageSize, setImageSize] = useState({ width: 350, height: 200 });
+
+    const handleButtonClick = () => {
+        console.log("hereeee")
+        setImageSize({ width: 700, height: 400 }); 
+    };
+
 
     useEffect(() => {
         if (inView3) {
@@ -74,15 +84,30 @@ export default function Projects({
                 >
                     <div className={styles.header}>
                         <h3>Social Media</h3>
+                        <span>Technologies used: </span>
+                        <span>React, Redux, MongoDb, AWS, Node, Express, css</span>
                     </div>
                     <div className={styles.description}>
                         <div className={styles.tech}>
-                            <span>React, Mongodb, AWS, Node, Express, css</span>
+                            <ul>
+                                <li>Authentication to create profile, login, logout</li>
+                                <li>Create & Edit profile</li>
+                                <li>Create post with multiple images</li>
+                                <li>Follow and Unfollow users</li>
+                                <li>Like & Unlike posts</li>
+                                <li>Comment post & delete comment</li>
+                                <li>Ranking with most liked posts, most commented posts</li>
+                                <li>Feed with the post of following users</li>
+                                <li>Search posts</li>
+                            </ul>
                         </div>
-                        <div>
+                        <div className={styles.image_box}>
+                            <button className={styles.enlarge_button} style={{ cursor: "pointer" }} onClick={handleButtonClick}>Enlarge Image</button>
                             <motion.img
                                 src="/social_media.gif" 
                                 alt="social media"
+                                width={imageSize.width}
+                                height={imageSize.height}
                             ></motion.img>
                         </div>
                     </div>
@@ -104,10 +129,18 @@ export default function Projects({
                 >
                     <div className={styles.header}>
                         <h3>Freelancer Directory</h3>
+                        <span>Technologies used: </span>
+                        <span>React, Mongodb, NestJs, Tailwind</span>
                     </div>
                     <div className={styles.description}>
                         <div className={styles.tech}>
-                            <span>React, Mongodb, NestJs, Tailwind</span>
+                            <ul>
+                                <li>Browse and search freelancers by service type and location</li>
+                                <li>Give a review for freelancers with a comment and rating star</li>
+                                <li>View freelancers profiles with their bio, ratings, and reviews</li>
+                                <li>Register and login as a freelancer or regular user</li>
+                                <li>Edit profile and manage offered services</li>
+                            </ul>
                         </div>
                         <div>
                             <motion.img
@@ -135,10 +168,16 @@ export default function Projects({
                 >
                     <div className={styles.header}>
                         <h3>Kanban</h3>
+                        <span>Technologies used: </span>
+                        <span>React, Mongodb, NestJs, Tailwind</span>
                     </div>
                     <div className={styles.description}>
                         <div className={styles.tech}>
-                            <span>React, Mongodb, NestJs, Tailwind</span>
+                            <ul>
+                                <li>Create and delete tasks</li>
+                                <li>Easily move task with grap and drop functionality</li>
+                                <li>Save data on localstorage, no need of database</li>
+                            </ul>
                         </div>
                         <div>
                             <motion.img
