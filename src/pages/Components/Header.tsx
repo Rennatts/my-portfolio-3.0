@@ -9,11 +9,12 @@ export default function Header() {
     return (
         <>
             <Head>
+            </Head>
                 <header className={styles.header}>
                     <div className={styles.logo_box}>
                         <Link
                             legacyBehavior
-                            href="#about"
+                            href="#"
                             >
                             <a>Renata Machado</a>
                         </Link>
@@ -71,7 +72,6 @@ export default function Header() {
                         </ul>
                     </nav>
                 </header>
-            </Head>
         </>
     )
 }

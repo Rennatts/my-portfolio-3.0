@@ -28,8 +28,6 @@ export default function Contact({ }: IIntroProps) {
         copyToClipboard('16.renata@gmail.com');
         setEmailCopyText('Value copied');
     };
-
-    console.log("emailCopyText", emailCopyText)
     
 
     return (
