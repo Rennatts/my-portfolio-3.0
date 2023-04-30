@@ -111,7 +111,7 @@ export default function Projects({
                                 width="560"
                                 height="315"
                                 src={`https://www.youtube.com/embed/${FreelancerVideoId}`}
-                                title="YouTube video player"
+                                title="freelancer directory project using react"
                                 allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
                                 allowFullScreen
                                 style={{ cursor: "pointer" }} 
@@ -141,7 +141,7 @@ export default function Projects({
                                 width="560"
                                 height="315"
                                 src={`https://www.youtube.com/embed/${KanbanVideoId}`}
-                                title="YouTube video player"
+                                title="Kanban project using react"
                                 allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
                                 allowFullScreen
                                 style={{ cursor: "pointer" }} 
@@ -189,7 +189,7 @@ export default function Projects({
                                 width="560"
                                 height="315"
                                 src={`https://www.youtube.com/embed/${SocialMediaId}`}
-                                title="YouTube video player"
+                                title="Social media project using react"
                                 allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
                                 allowFullScreen
                                 style={{ cursor: "pointer" }} 
