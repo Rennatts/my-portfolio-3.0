@@ -10,19 +10,22 @@
   align-items: center;
   padding-left: 7%;
   padding-right: 7%;
-  z-index: 100;
   background-color: transparent;
   position: sticky;
   box-sizing: border-box;
   top: 0;
 
 
-  .logo_box{
+  .logo_box {
     font-family: 'Black Ops One', cursive;
     font-family: 'Blinker', sans-serif;
     font-family: 'Quicksand', sans-serif;
     font-size: var(--font-size-large);
     font-weight: 500;
+    a {
+      text-decoration: none;
+      color: white;
+    }
   }
 
 
@@ -41,13 +44,13 @@
         margin: 0 33px;
         cursor: pointer !important;          
 
-        a{
+        a {
           color: white;
           text-decoration: none;
           padding: 10px;
           border-radius: 20px;
 
-          &:hover{
+          &:hover {
             opacity: 0.7;
           }
           

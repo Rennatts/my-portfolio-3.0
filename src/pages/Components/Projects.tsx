@@ -120,18 +120,6 @@ export default function Projects({
                     </div>
                 </motion.div>
 
-                <motion.div ref={planet03Ref} whileHover={{ scale: 1.2, rotate: 90 }}>
-                    <motion.img
-                        src="/planet_03.png" 
-                        alt="planet_03"
-                        className={styles.planet_03}
-                        initial={{ opacity: 0, y: -300 }}
-                        animate={controlPlanet03}
-                        transition={{ duration: 2.2 }}
-                        style={{marginTop: "10%", marginLeft:"800px"}}
-                    />
-                </motion.div>
-
                 <motion.div
                     className={styles.project_02}
                 >
@@ -160,6 +148,18 @@ export default function Projects({
                             ></iframe>
                         </div>
                     </div>
+                </motion.div>
+
+                <motion.div ref={planet03Ref} whileHover={{ scale: 1.2, rotate: 90 }}>
+                    <motion.img
+                        src="/planet_03.png" 
+                        alt="planet_03"
+                        className={styles.planet_03}
+                        initial={{ opacity: 0, y: -300 }}
+                        animate={controlPlanet03}
+                        transition={{ duration: 2.2 }}
+                        style={{marginTop: "10%", marginLeft:"800px"}}
+                    />
                 </motion.div>
 
                 <motion.div

@@ -268,17 +268,17 @@ export default function Home() {
             </div>
           </InView>
         </div>
-          <Projects 
-            planet01Ref={planet01Ref} 
-            planet02Ref={planet02Ref} 
-            planet03Ref={planet03Ref} 
-            planet04Ref={planet04Ref}
-            inView3={inView3}
-            inView4={inView4}
-            inView5={inView5}
-            inView6={inView6}
-          ></Projects>
-          <Education></Education>
+        <Projects 
+          planet01Ref={planet01Ref} 
+          planet02Ref={planet02Ref} 
+          planet03Ref={planet03Ref} 
+          planet04Ref={planet04Ref}
+          inView3={inView3}
+          inView4={inView4}
+          inView5={inView5}
+          inView6={inView6}
+        ></Projects>
+        <Education></Education>
         <Contact></Contact>
     </div>
   )

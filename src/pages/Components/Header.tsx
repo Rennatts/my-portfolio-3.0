@@ -11,7 +11,12 @@ export default function Header() {
             <Head>
                 <header className={styles.header}>
                     <div className={styles.logo_box}>
-                        <p>Renata Machado</p>
+                        <Link
+                            legacyBehavior
+                            href="#about"
+                            >
+                            <a>Renata Machado</a>
+                        </Link>
                     </div>
                     <nav className={styles.nav}>
                         <ul className={styles.nav_list}>
