@@ -38,7 +38,7 @@
     .about_me{
         margin-top: 500px;
         height: 200vh;
-        font-size: 25px;
+        font-size: var(--font-size-large);
         display: flex;
         justify-content: center;
         align-items: center;

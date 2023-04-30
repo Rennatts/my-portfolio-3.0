@@ -7,7 +7,7 @@
     justify-content: center;
     flex-direction: column;
     overflow: "hidden";
-    height: 120vh;
+    height: 150vh;
 
     background-image: url('./../images/universe_02.jpeg');
     background-size: cover;
@@ -17,10 +17,11 @@
     transform-style: preserve-3d;
     perspective: 1000px;
 
-    h1 {
+    h2 {
         margin-top: 15%;
-        font-size: 30px;
         color: white;
+        font-size: var(--font-size-large);
+        letter-spacing: 0.4em;
     }
 
     .description {

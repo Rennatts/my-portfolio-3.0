@@ -31,7 +31,7 @@ export default function Experience({ experience01Ref, experienceRef2, inView, in
     return (
         <>
             <section id="experience" className={styles.experience}>
-                <h2>Experience</h2>
+                <h1>Experience</h1>
                 <div className={styles.experiences_list}>
                 <motion.div
                     ref={experience01Ref}
@@ -40,23 +40,23 @@ export default function Experience({ experience01Ref, experienceRef2, inView, in
                     transition={{ duration: 1 }}
                 >
                     <div className={styles.experience_01}>
-                    <div className={styles.header}>
-                        <h3>Banqi</h3>
-                        <span>From 04/2022 to current</span>
-                    </div>
-                    <div className={styles.image_box}>
-                        <Image src="/banqi.png" alt="banqi" width={300} height={300}></Image>
-                    </div>
-                    <ul>
-                        <li>React Native and NestJS</li>
-                        <li>Contributed to the process of improving error messages, reducing contact rate and costs</li>
-                        <li>Large-scale project, with micro-services architecture, clean architecture, Docker, AWS ...</li>
-                        <li>Aligned business goals with product managers and UI team</li>
-                        <li>Technical documentation</li>
-                        <li>Unit tests and BDD. Participated in code reviews, technical refinements, and breaking down stories into small tasks</li>
-                        <li>Involved in upstream processes for story prioritization based on data</li>
-                        <li>Agile methodology and continuous integration</li>
-                    </ul> 
+                        <div className={styles.header}>
+                            <h2>Banqi</h2>
+                            <span>From 04/2022 to current</span>
+                        </div>
+                        <div className={styles.image_box}>
+                            <Image src="/banqi.png" alt="banqi" width={300} height={300}></Image>
+                        </div>
+                        <ul>
+                            <li>React Native and NestJS</li>
+                            <li>Contributed to the process of improving error messages, reducing contact rate and costs</li>
+                            <li>Large-scale project, with micro-services architecture, clean architecture, Docker, AWS ...</li>
+                            <li>Aligned business goals with product managers and UI team</li>
+                            <li>Technical documentation</li>
+                            <li>Unit tests and BDD. Participated in code reviews, technical refinements, and breaking down stories into small tasks</li>
+                            <li>Involved in upstream processes for story prioritization based on data</li>
+                            <li>Agile methodology and continuous integration</li>
+                        </ul> 
                     </div>
                 </motion.div>
 
@@ -68,7 +68,7 @@ export default function Experience({ experience01Ref, experienceRef2, inView, in
                 >
                     <div className={styles.experience_02}>
                     <div className={styles.header}>
-                        <h3>ViewB</h3>
+                        <h2>ViewB</h2>
                         <span>From 08/2021 to 03/2022</span>
                     </div>
                     <ul>

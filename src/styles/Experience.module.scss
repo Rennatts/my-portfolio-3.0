@@ -9,12 +9,12 @@
     flex-direction: column;
     overflow: "hidden";
     height: 350vh;
+    color: white;
 
   
-    h2 {
+    h1 {
       letter-spacing: 0.4em;
-      font-size: 30px;
-      color: white;
+      font-size: var(--font-size-large);
     }
   
   
@@ -81,6 +81,11 @@
         align-items: center;
         flex-direction: column;
         color: white;
+
+        span{
+          margin-top: 2%;
+        }
+        
       }
   
       .image_box{
@@ -97,14 +102,8 @@
       ul li{
         margin-top: 2%;
       }
-    
-      ul li::before {
-        content: attr(data-icon);
-        font-size: 1.25em;
-        margin-right: 1%;
-      }
+
     }
   
-    
 }
   

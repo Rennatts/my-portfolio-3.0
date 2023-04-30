@@ -12,7 +12,6 @@
   padding-right: 7%;
   z-index: 100;
   background-color: transparent;
-  color: white;
   position: sticky;
   box-sizing: border-box;
   top: 0;
@@ -22,7 +21,7 @@
     font-family: 'Black Ops One', cursive;
     font-family: 'Blinker', sans-serif;
     font-family: 'Quicksand', sans-serif;
-    font-size: 30px;
+    font-size: var(--font-size-large);
     font-weight: 500;
   }
 
@@ -36,7 +35,7 @@
       display: flex;
       justify-content: space-evenly;
       list-style: none;
-      font-size: 18px;
+      font-size: var(--font-size-medium);
 
       .nav_item {
         margin: 0 33px;
@@ -49,7 +48,7 @@
           border-radius: 20px;
 
           &:hover{
-            color: #aafaf3;
+            opacity: 0.7;
           }
           
         }

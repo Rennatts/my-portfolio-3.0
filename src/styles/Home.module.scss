@@ -75,7 +75,7 @@
   .about_me{
       margin-top: 500px;
       height: 200vh;
-      font-size: 25px;
+      font-size: var(--font-size-large);
       display: flex;
       justify-content: center;
       align-items: center;
@@ -105,7 +105,7 @@
   text-align: center;
   white-space: nowrap;
   overflow: hidden;
-  font-size: 40px;
+  font-size: var(--font-size-large);
   font-family: monospace;
   border-right: 3px solid #fff;
   animation: typing 3s steps(30, end), blink-caret .5s step-end infinite;
@@ -138,7 +138,7 @@
 
   h2 {
     letter-spacing: 0.4em;
-    font-size: 30px;
+    font-size: var(--font-size-large);
     color: white;
   }
 

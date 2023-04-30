@@ -16,9 +16,10 @@
     background-attachment: fixed;
     
     h2{
-        margin-top: 5%;
+        margin-top: 8%;
+        font-size: var(--font-size-large);
+        letter-spacing: 0.4em;
         color: white;
-        font-size: 35px;
     }
 
     
@@ -82,10 +83,10 @@
             justify-content: center;
             flex-direction: column;
             margin-bottom: 10%;
-            font-size: 20px;
+            font-size: var(--font-size-medium);
 
             h3 {
-                font-size: 33px;
+                font-size: var(--font-size-large);
                 margin-bottom: 2%;;
             }
         }
@@ -106,7 +107,7 @@
 
                 ul li {
                     margin-bottom: 20px;
-                    font-size: 18px;
+                    font-size: var(--font-size-medium);
 
                 }
             }
@@ -144,7 +145,7 @@
             font-size: 20px;
 
             h3 {
-                font-size: 33px;
+                font-size: var(--font-size-large);
                 margin-bottom: 2%;;
             }
         }
@@ -158,11 +159,11 @@
 
             .tech{
                 margin-right: 5%;
-                font-size: 20px;
+                font-size: var(--font-size-medium);
 
                 ul li {
                     margin-bottom: 20px;
-                    font-size: 18px;
+                    font-size: var(--font-size-medium);
                 }
             }
 
@@ -196,10 +197,10 @@
             justify-content: center;
             flex-direction: column;
             margin-bottom: 10%;
-            font-size: 20px;
+            font-size: var(--font-size-medium);
 
             h3 {
-                font-size: 33px;
+                font-size: var(--font-size-large);
                 margin-bottom: 2%;;
             }
         }
@@ -213,11 +214,11 @@
 
             .tech{
                 margin-right: 5%;
-                font-size: 20px;
+                font-size: var(--font-size-medium);
 
                 ul li {
                     margin-bottom: 20px;
-                    font-size: 18px;
+                    font-size: var(--font-size-medium);
                 }
             }
         }
@@ -230,7 +231,7 @@
     }
 
     .turn_space_exploration {
-        font-size: 2rem;
+        font-size: var(--font-size-small);
         font-weight: bold;
         text-align: center;
         letter-spacing: 0.2em;
