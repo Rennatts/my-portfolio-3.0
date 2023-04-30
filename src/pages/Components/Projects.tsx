@@ -30,13 +30,9 @@ export default function Projects({
     const controlPlanet03 = useAnimation();
     const controlPlanet04 = useAnimation();
 
-    const [imageSize, setImageSize] = useState({ width: 350, height: 200 });
-
-    const handleButtonClick = () => {
-        console.log("hereeee")
-        setImageSize({ width: 700, height: 400 }); 
-    };
-
+    const SocialMediaId = 'NdrD06KLvww';
+    const FreelancerVideoId = 'aNWeAtu9JzQ';
+    const KanbanVideoId = '1-B1lVZsguA';
 
     useEffect(() => {
         if (inView3) {
@@ -79,8 +75,95 @@ export default function Projects({
                             Exploring my Universe <br/> One Project at a time
                     </motion.p>
                 </div>
+
+                <motion.div ref={planet02Ref}>
+                    <motion.img
+                        src="/planet_04.png" 
+                        alt="planet_02"
+                        className={styles.planet_02}
+                        initial={{ opacity: 0, x: -400 }}
+                        animate={controlPlanet02}
+                        transition={{ duration: 3 }}
+                        style={{marginTop: "50%"}}
+                    />
+                </motion.div>
+
                 <motion.div
                     className={styles.project_01}
+                >
+                    <div className={styles.header}>
+                        <h3>Freelancer Directory</h3>
+                        <span>Technologies used: </span>
+                        <span>React, Mongodb, NestJs, Tailwind</span>
+                    </div>
+                    <div className={styles.description}>
+                        <div className={styles.tech}>
+                            <ul>
+                                <li>Browse and search freelancers by service type and location</li>
+                                <li>Give a review for freelancers with a comment and rating star</li>
+                                <li>View freelancers profiles with their bio, ratings, and reviews</li>
+                                <li>Register and login as a freelancer or regular user</li>
+                                <li>Edit profile and manage offered services</li>
+                            </ul>
+                        </div>
+                        <div>
+                            <iframe
+                                width="560"
+                                height="315"
+                                src={`https://www.youtube.com/embed/${FreelancerVideoId}`}
+                                title="YouTube video player"
+                                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                                allowFullScreen
+                                style={{ cursor: "pointer" }} 
+                            ></iframe>
+                        </div>
+                    </div>
+                </motion.div>
+
+                <motion.div ref={planet03Ref} whileHover={{ scale: 1.2, rotate: 90 }}>
+                    <motion.img
+                        src="/planet_03.png" 
+                        alt="planet_03"
+                        className={styles.planet_03}
+                        initial={{ opacity: 0, y: -300 }}
+                        animate={controlPlanet03}
+                        transition={{ duration: 2.2 }}
+                        style={{marginTop: "10%", marginLeft:"800px"}}
+                    />
+                </motion.div>
+
+                <motion.div
+                    className={styles.project_02}
+                >
+                    <div className={styles.header}>
+                        <h3>Kanban</h3>
+                        <span>Technologies used: </span>
+                        <span>React, Typescript, Chakra UI</span>
+                    </div>
+                    <div className={styles.description}>
+                        <div className={styles.tech}>
+                            <ul>
+                                <li>Create and delete tasks</li>
+                                <li>Easily move task with grap and drop functionality</li>
+                                <li>Save data on localstorage, no need of database</li>
+                            </ul>
+                        </div>
+                        <div>
+                            <iframe
+                                width="560"
+                                height="315"
+                                src={`https://www.youtube.com/embed/${KanbanVideoId}`}
+                                title="YouTube video player"
+                                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                                allowFullScreen
+                                style={{ cursor: "pointer" }} 
+                            ></iframe>
+                        </div>
+                    </div>
+                </motion.div>
+
+                <motion.div
+                    className={styles.project_03}
                 >
                     <div className={styles.header}>
                         <h3>Social Media</h3>
@@ -102,90 +185,15 @@ export default function Projects({
                             </ul>
                         </div>
                         <div className={styles.image_box}>
-                            <button className={styles.enlarge_button} style={{ cursor: "pointer" }} onClick={handleButtonClick}>Enlarge Image</button>
-                            <motion.img
-                                src="/social_media.gif" 
-                                alt="social media"
-                                width={imageSize.width}
-                                height={imageSize.height}
-                            ></motion.img>
-                        </div>
-                    </div>
-                </motion.div>
-                <motion.div ref={planet02Ref}>
-                    <motion.img
-                        src="/planet_04.png" 
-                        alt="planet_02"
-                        className={styles.planet_02}
-                        initial={{ opacity: 0, x: -400 }}
-                        animate={controlPlanet02}
-                        transition={{ duration: 3 }}
-                        style={{marginTop: "50%"}}
-                    />
-                </motion.div>
-
-                <motion.div
-                    className={styles.project_02}
-                >
-                    <div className={styles.header}>
-                        <h3>Freelancer Directory</h3>
-                        <span>Technologies used: </span>
-                        <span>React, Mongodb, NestJs, Tailwind</span>
-                    </div>
-                    <div className={styles.description}>
-                        <div className={styles.tech}>
-                            <ul>
-                                <li>Browse and search freelancers by service type and location</li>
-                                <li>Give a review for freelancers with a comment and rating star</li>
-                                <li>View freelancers profiles with their bio, ratings, and reviews</li>
-                                <li>Register and login as a freelancer or regular user</li>
-                                <li>Edit profile and manage offered services</li>
-                            </ul>
-                        </div>
-                        <div>
-                            <motion.img
-                                src="/freelancer.gif" 
-                                alt="freelancer directory"
-                            ></motion.img>
-                        </div>
-                    </div>
-                </motion.div>
-
-                <motion.div ref={planet03Ref} whileHover={{ scale: 1.2, rotate: 90 }}>
-                    <motion.img
-                        src="/planet_03.png" 
-                        alt="planet_03"
-                        className={styles.planet_03}
-                        initial={{ opacity: 0, y: -300 }}
-                        animate={controlPlanet03}
-                        transition={{ duration: 2.2 }}
-                        style={{marginTop: "10%", marginLeft:"800px"}}
-                    />
-                </motion.div>
-
-                <motion.div
-                    className={styles.project_03}
-                >
-                    <div className={styles.header}>
-                        <h3>Kanban</h3>
-                        <span>Technologies used: </span>
-                        <span>React, Mongodb, NestJs, Tailwind</span>
-                    </div>
-                    <div className={styles.description}>
-                        <div className={styles.tech}>
-                            <ul>
-                                <li>Create and delete tasks</li>
-                                <li>Easily move task with grap and drop functionality</li>
-                                <li>Save data on localstorage, no need of database</li>
-                            </ul>
-                        </div>
-                        <div>
-                            <motion.img
-                                src="/kanban.gif" 
-                                alt="kanban"
-                                height={350}
-                                width={650}
-                            ></motion.img>
+                            <iframe
+                                width="560"
+                                height="315"
+                                src={`https://www.youtube.com/embed/${SocialMediaId}`}
+                                title="YouTube video player"
+                                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                                allowFullScreen
+                                style={{ cursor: "pointer" }} 
+                            ></iframe>
                         </div>
                     </div>
                 </motion.div>
