@@ -241,3 +241,48 @@
         
     }
 }
+
+
+
+@media (max-width: 575px){
+    .projects {
+        width: 100%;
+
+        h2 {
+            margin-top: 150px;
+        }
+
+        .planet_01{
+            width: 100px;
+            height: 100px;
+            z-index: 1;
+            margin-top: 2%;
+            margin-right: 100px;
+        }
+
+        .planet_02{
+            width: 200px;
+            height: 200px;
+            z-index: 1;
+            margin-top: 10%;
+            margin-right: 500px;
+        }
+
+        .planet_03{
+            width: 300px;
+            height: 300px;
+            z-index: 1;
+            margin-top: 10%;
+            margin-right: 560px;
+        }
+
+        .planet_04{
+            width: 350px;
+            height: 350px;
+            z-index: 1;
+            margin-top: 10%;
+            margin-right: 560px;
+        }
+    }
+
+}

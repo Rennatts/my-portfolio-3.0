@@ -1,14 +1,20 @@
+import React, { useState } from 'react';
 import Head from 'next/head'
 import { Inter } from 'next/font/google'
 import styles from '@/styles/Header.module.scss'
 import Link from 'next/link'
+import { FaBars } from 'react-icons/fa';
 
 const inter = Inter({ subsets: ['latin'] })
 
 export default function Header() {
+    const [openNavList, setOpenNavList] = useState(false);
+
+
     return (
         <>
             <Head>
+                <meta name="viewport" content="width=device-width, initial-scale=1.0" />
             </Head>
                 <header className={styles.header}>
                     <div className={styles.logo_box}>
@@ -20,7 +26,10 @@ export default function Header() {
                         </Link>
                     </div>
                     <nav className={styles.nav}>
-                        <ul className={styles.nav_list}>
+                        <span className={`${openNavList ? styles.faBars_open : styles.faBars}`} onClick={() => setOpenNavList(!openNavList)}>
+                            <FaBars/>
+                        </span>
+                        <ul className={`${styles.nav_list_full} ${openNavList ? styles.nav_list : styles.nav_list_hidden}`}>
                             <li className={styles.nav_item}>
                                 <Link
                                     legacyBehavior

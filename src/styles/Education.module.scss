@@ -75,13 +75,24 @@
             }
         }
 
-        // .education_01:hover,
-        // .education_02:hover {
-        //     color: #FFFFFF; 
-        //     background-color: #0f100f; 
-        //     transform: scale(1.1) translate3d(0px, 0px, -250px); 
-        //     box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2); 
-        // }
     }
+}
+
+
+@media (max-width: 575px) {
+    .education {
+        width: 100%;
+        height: 140vh;
+
+        h2{
+            margin-bottom: 100px;
+        }
+
+        .description{
+            display: flex;
+            flex-direction: column;
+        }
+    }
+
 }
 

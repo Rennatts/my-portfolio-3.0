@@ -93,12 +93,13 @@ export default function Home() {
                       initial={{ opacity: 0 }}
                       animate={{ opacity: 1 }}
                       transition={{ duration: 0.2 }}
+                      className={`${styles.intro_box}`}
                       style={{ 
                         display: "flex", 
                         justifyContent: "center", 
                         flexDirection: "row",
                         alignItems: "center", 
-                        width: "45vw", 
+                        width: "75vw", 
                         height: "100%", 
                         marginTop: "25%"
                       }}
@@ -106,7 +107,7 @@ export default function Home() {
                       <motion.p
                       whileHover={{ scale: 1.1 }}
                       whileTap={{ scale: 0.2 }}
-                      style={{ width: "75%", fontSize: "30px"}}
+                      className={`${styles.name}`}
                       animate={{
                         x: ["0%", "40%"],
                       }}
@@ -122,10 +123,11 @@ export default function Home() {
                             ref={imageRef}
                             src="/astronaut.png"
                             alt="My Image"
+                            className={`${styles.astronaut_img}`}
                             whileHover={{ scale: 1.1 }}
                             whileTap={{ scale: 0.2 }}
                             style={{
-                                width: "35%",
+                                width: "25%",
                                 position: "relative",
                                 top: `${yPosition * 1}px`,
                                 zIndex: -100,
@@ -162,6 +164,7 @@ export default function Home() {
                   animate={{ opacity: 1, y: 0 }}
                   transition={{ duration: 1, delay: 1.8 }}
                   style={{marginRight: "10px"}}
+                  className={`${styles.full_stack}`}
                   >
                       Full
                   </motion.p>
@@ -170,6 +173,7 @@ export default function Home() {
                   animate={{ opacity: 1, y: 0 }}
                   transition={{ duration: 1, delay: 2.0 }}
                   style={{marginRight: "10px"}}
+                  className={`${styles.full_stack}`}
                   >
                       Stack 
                   </motion.p>
@@ -177,6 +181,7 @@ export default function Home() {
                   initial={{ opacity: 0, y: 60 }}
                   animate={{ opacity: 1, y: 0 }}
                   transition={{ duration: 1, delay: 2.2 }}
+                  className={`${styles.full_stack}`}
                   >
                       Developer
                   </motion.p>
@@ -216,10 +221,10 @@ export default function Home() {
                       alt="rocket"
                       width={250}
                       height={224}
-                      initial={{ opacity: 0, y: 400 }}
+                      initial={{ opacity: 0, y: 300 }}
                       animate={{
                         opacity: isRocketVisible ? [0, 1, 1] : 0,
-                        y: isRocketVisible ? [400, -250] : 400,
+                        y: isRocketVisible ? [300, -250] : 300,
                       }}
                       transition={{
                         duration: 4,
@@ -265,7 +270,7 @@ export default function Home() {
               threshold={0.1}
             >
               <div className={styles.black_hole} ref={setBlackHoleRef}>
-                <Image  src="/black_hole.png" alt="black_hole" width={500} height={300}></Image>
+                <Image  className={styles.black_hole_img} src="/black_hole.png" alt="black_hole" width={500} height={300}></Image>
               </div>
             </InView>
           </div>

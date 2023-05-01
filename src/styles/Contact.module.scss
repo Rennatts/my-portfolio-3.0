@@ -69,3 +69,41 @@
         }
     }
 }
+
+
+@media (max-width: 575px){
+
+    .contact {
+        width: 100%;;
+
+        .header {
+            margin-top: 12%;
+
+            h2{
+                color: black;
+            }
+        }
+
+        .icons_container{
+            width: 100%;
+            display: flex;
+            justify-items: center;
+            align-items: center;
+
+            p {
+                margin-left: 40px;
+            }
+
+            p:last-child {
+                margin-top: 60px;
+    
+                span {
+                    font-weight: 500;
+                    font-size: var(--font-size-small);
+                    margin-top: 10px;
+                }
+            }
+        }
+    }
+
+}

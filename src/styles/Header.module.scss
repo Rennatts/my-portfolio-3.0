@@ -22,6 +22,7 @@
     font-family: 'Quicksand', sans-serif;
     font-size: var(--font-size-large);
     font-weight: 500;
+
     a {
       text-decoration: none;
       color: white;
@@ -34,7 +35,11 @@
     justify-content: center;
     align-items: center;
 
-    .nav_list {
+    .nav_list_hidden {
+      display: none;
+    }
+
+    .nav_list_full {
       display: flex;
       justify-content: space-evenly;
       list-style: none;
@@ -58,4 +63,67 @@
       }
     }
   }
+}
+
+
+@media (max-width: 575px) {
+  .header {
+    width: 100vw;
+    padding-left: 2%;
+    padding-right: 2%;
+
+    .logo_box {
+      font-size: var(--font-size-medium);
+      font-weight: 500;
+      
+      a {
+        text-decoration: none;
+        color: white;
+      }
+    }
+
+    .nav {
+
+      .faBars{
+        margin-right: 10px;
+        color: white;
+        position: relative;
+        left: 8px;
+        cursor: pointer;
+      }
+
+      .faBars_open{
+        margin-right: 10px;
+        color: white;
+        position: relative;
+        left: 30px;
+        cursor: pointer;
+      }
+
+      .nav_list_hidden {
+        display: none;
+      }
+  
+      .nav_list {
+        font-size: var(--font-size-small);
+        display: flex;
+        justify-content: center;
+        align-items: flex-start;
+        flex-direction: column;
+        height: 100px;
+        margin-top: 200px;
+
+        .nav_item {    
+          width: 70%;
+          margin-top: 15px;
+  
+          a {
+            border-radius: 20px;
+          }
+        }
+      }
+    }
+
+  }
+
 }
