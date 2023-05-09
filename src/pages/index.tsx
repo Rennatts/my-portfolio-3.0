@@ -94,15 +94,15 @@ export default function Home() {
                       animate={{ opacity: 1 }}
                       transition={{ duration: 0.2 }}
                       className={`${styles.intro_box}`}
-                      style={{ 
-                        display: "flex", 
-                        justifyContent: "center", 
-                        flexDirection: "row",
-                        alignItems: "center", 
-                        width: "75vw", 
-                        height: "100%", 
-                        marginTop: "25%"
-                      }}
+                      // style={{ 
+                      //   display: "flex", 
+                      //   justifyContent: "center", 
+                      //   flexDirection: "row",
+                      //   alignItems: "center", 
+                      //   width: "75vw", 
+                      //   height: "100%", 
+                      //   marginTop: "25%"
+                      // }}
                   >
                       <motion.p
                       whileHover={{ scale: 1.1 }}

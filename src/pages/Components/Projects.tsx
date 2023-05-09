@@ -108,8 +108,6 @@ export default function Projects({
                         </div>
                         <div>
                             <iframe
-                                width="560"
-                                height="315"
                                 src={`https://www.youtube.com/embed/${FreelancerVideoId}`}
                                 title="freelancer directory project using react"
                                 allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
@@ -138,8 +136,8 @@ export default function Projects({
                         </div>
                         <div>
                             <iframe
-                                width="560"
-                                height="315"
+                                // width="560"
+                                // height="315"
                                 src={`https://www.youtube.com/embed/${KanbanVideoId}`}
                                 title="Kanban project using react"
                                 allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
@@ -186,8 +184,6 @@ export default function Projects({
                         </div>
                         <div className={styles.image_box}>
                             <iframe
-                                width="560"
-                                height="315"
                                 src={`https://www.youtube.com/embed/${SocialMediaId}`}
                                 title="Social media project using react"
                                 allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"

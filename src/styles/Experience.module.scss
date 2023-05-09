@@ -120,3 +120,53 @@
   }
 
 }
+
+@media (max-width: 767px) {
+  .experience{
+    height: 400vh;
+    margin-top: 1000px;
+    width: 100%;
+
+    h1{
+      margin-bottom: 100px;
+    }
+  }
+
+}
+
+@media (max-width: 991px) {
+  .experience {
+    height: 400vh;
+    margin-top: 600px;
+    width: 100%;
+
+    h1 {
+      margin-bottom: 100px;
+    }
+  }
+}
+
+@media (max-width: 1199px) {
+  .experience {
+    height: 500vh;
+    margin-top: 700px;
+    width: 100%;
+
+    h1 {
+      margin-bottom: 100px;
+    }
+  }
+}
+
+
+@media (min-width: 1200px) {
+  .experience {
+    height: 300vh;
+    margin-top: 700px;
+    width: 100%;
+
+    h1 {
+      margin-bottom: 100px;
+    }
+  }
+}

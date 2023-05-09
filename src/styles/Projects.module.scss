@@ -15,8 +15,6 @@
     background-position: center center;
     background-attachment: fixed;
 
-
-  
     
     h2{
         margin-top: 8%;
@@ -286,3 +284,272 @@
     }
 
 }
+
+
+@media (max-width: 767px){
+    .projects {
+        width: 100%;
+
+        h2 {
+            margin-top: 200px;
+        }
+
+        .project_01,
+        .project_02,
+        .project_03 {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            width: 70%;
+
+            .description {
+
+                iframe {
+                    width: 460px;
+                    height: 315px;
+                    margin-top: 50px;
+                }
+            }
+
+        }
+
+        .planet_01{
+            width: 250px;
+            height: 250px;
+            z-index: 1;
+            margin-top: 2%;
+            margin-right: 250px;
+        }
+
+        .planet_02{
+            width: 200px;
+            height: 200px;
+            z-index: 1;
+            margin-top: 10%;
+            margin-right: 500px;
+        }
+
+        .planet_03{
+            width: 300px;
+            height: 300px;
+            z-index: 1;
+            margin-top: 10%;
+            margin-right: 560px;
+        }
+
+        .planet_04{
+            width: 350px;
+            height: 350px;
+            z-index: 1;
+            margin-top: 10%;
+            margin-right: 560px;
+        }
+    }
+
+}
+
+
+
+
+@media (max-width: 991px){
+    .projects {
+        width: 100%;
+
+        h2 {
+            margin-top: 150px;
+        }
+
+        .project_01,
+        .project_02,
+        .project_03 {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            width: 70%;
+
+            .description {
+
+                iframe {
+                    width: 460px;
+                    height: 315px;
+                    margin-top: 50px;
+                }
+            }
+
+        }
+
+        .planet_01{
+            width: 250px;
+            height: 250px;
+            z-index: 1;
+            margin-top: 2%;
+            margin-right: 250px;
+        }
+
+        .planet_02{
+            width: 300px;
+            height: 300px;
+            z-index: 1;
+            margin-top: 10%;
+            margin-right: 500px;
+        }
+
+        .planet_03{
+            width: 300px;
+            height: 300px;
+            z-index: 1;
+            margin-top: 10%;
+            margin-right: 560px;
+        }
+
+        .planet_04{
+            width: 350px;
+            height: 350px;
+            z-index: 1;
+            margin-top: 10%;
+            margin-right: 560px;
+        }
+    }
+
+}
+
+
+
+@media (min-width: 1200px){
+    .projects {
+        width: 100%;
+
+        h2 {
+            margin-top: 150px;
+        }
+
+        .project_01,
+        .project_02,
+        .project_03 {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            width: 60%;
+
+            .description {
+                font-size: var(--font-size-large);
+
+                iframe {
+                    width: 760px;
+                    height: 380px;
+                    margin-top: 50px;
+                }
+            }
+
+        }
+
+        .planet_01{
+            width: 250px;
+            height: 250px;
+            z-index: 1;
+            margin-top: 2%;
+            margin-right: 250px;
+        }
+
+        .planet_02{
+            width: 300px;
+            height: 300px;
+            z-index: 1;
+            margin-top: 10%;
+            margin-right: 500px;
+        }
+
+        .planet_03{
+            width: 300px;
+            height: 300px;
+            z-index: 1;
+            margin-top: 10%;
+            margin-right: 560px;
+        }
+
+        .planet_04{
+            width: 350px;
+            height: 350px;
+            z-index: 1;
+            margin-top: 10%;
+            margin-right: 560px;
+        }
+    }
+
+}
+
+
+
+@media (max-width: 1199px){
+    .projects {
+        width: 100%;
+
+        h2 {
+            margin-top: 150px;
+        }
+
+        .project_01,
+        .project_02,
+        .project_03 {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            width: 70%;
+
+            .description {
+
+                .tech{
+                    margin-right: 5%;
+    
+                    ul li {
+                        margin-bottom: 20px;
+                        font-size: var(--font-size-large);
+                    }
+                }
+
+                iframe {
+                    width: 660px;
+                    height: 350px;
+                    margin-top: 50px;
+                }
+            }
+
+        }
+
+        .planet_01{
+            width: 250px;
+            height: 250px;
+            z-index: 1;
+            margin-top: 2%;
+            margin-right: 250px;
+        }
+
+        .planet_02{
+            width: 300px;
+            height: 300px;
+            z-index: 1;
+            margin-top: 10%;
+            margin-right: 500px;
+        }
+
+        .planet_03{
+            width: 300px;
+            height: 300px;
+            z-index: 1;
+            margin-top: 10%;
+            margin-right: 560px;
+        }
+
+        .planet_04{
+            width: 350px;
+            height: 350px;
+            z-index: 1;
+            margin-top: 10%;
+            margin-right: 560px;
+        }
+    }
+
+}
+
+
+
