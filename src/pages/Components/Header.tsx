@@ -9,12 +9,29 @@ const inter = Inter({ subsets: ['latin'] })
 
 export default function Header() {
     const [openNavList, setOpenNavList] = useState(false);
+    
+    const structuredData = {
+        "@context": "https://schema.org",
+        "@type": "Person",
+        "name": "Renata Machado de Andrade",
+        "jobTitle": "Software Engineer",
+        "url": "https://www.renata-machado.com",
+        "author": {
+            "@type": "Person",
+            "name": "Renata Machado de Andrade"
+        },
+    }
 
 
     return (
         <>
             <Head>
-                <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+                <title>Renata software engineer</title>
+                <meta name="description" content="software engineer developer resume portfolio job search" />
+                <meta name="keywords" content="software engineer developer react native next nestjs node typescript technology web mobile" />
+                <script type="application/ld+json">
+                {JSON.stringify(structuredData)}
+                </script>
             </Head>
                 <header className={styles.header}>
                     <div className={styles.logo_box}>

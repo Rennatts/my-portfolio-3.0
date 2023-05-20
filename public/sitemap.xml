@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+    <url>
+        <loc>https://renata-machado.com/</loc>
+        <lastmod>2023-05-20T00:00:00+00:00</lastmod>
+        <priority>1.00</priority>
+    </url>
+    <url>
+        <loc>https://renata-machado.com/about</loc>
+        <lastmod>2023-05-20T00:00:00+00:00</lastmod>
+        <priority>0.80</priority>
+    </url>
+        <url>
+        <loc>https://renata-machado.com/experience</loc>
+        <lastmod>2023-05-20T00:00:00+00:00</lastmod>
+        <priority>0.80</priority>
+    </url>
+        <url>
+        <loc>https://renata-machado.com/skills</loc>
+        <lastmod>2023-05-20T00:00:00+00:00</lastmod>
+        <priority>0.80</priority>
+    </url>
+        <url>
+        <loc>https://renata-machado.com/projects</loc>
+        <lastmod>2023-05-20T00:00:00+00:00</lastmod>
+        <priority>0.80</priority>
+    </url>
+        <url>
+        <loc>https://renata-machado.com/contact</loc>
+        <lastmod>2023-05-20T00:00:00+00:00</lastmod>
+        <priority>0.80</priority>
+    </url>
+</urlset>
