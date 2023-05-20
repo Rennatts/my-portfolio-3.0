@@ -42,6 +42,7 @@ export default function Experience({ experience01Ref, experienceRef2, inView, in
                     <div className={styles.experience_01}>
                         <div className={styles.header}>
                             <h2>Banqi</h2>
+                            <h4>Full stack developer</h4>
                             <span>From 04/2022 to current</span>
                         </div>
                         <div className={styles.image_box}>
@@ -49,8 +50,9 @@ export default function Experience({ experience01Ref, experienceRef2, inView, in
                         </div>
                         <ul>
                             <li>React Native and NestJS</li>
-                            <li>Contributed to the process of improving error messages, reducing contact rate and costs</li>
-                            <li>Large-scale project, with micro-services architecture, clean architecture, Docker, AWS ...</li>
+                            <li>Led a collaborative project with the UX/UI team to enhance our app's payment flow, while also restructuring error messages to streamline the process and minimize customer support costs</li>
+                            <li>Developed functionalities that enable users to set distinct transaction limits for daytime and nighttime periods and implementing a secure contact list for trusted contacts</li>
+                            <li>Large-scale project, with micro-services architecture, clean architecture, Docker, AWS, Firebase</li>
                             <li>Aligned business goals with product managers and UI team</li>
                             <li>Technical documentation</li>
                             <li>Unit tests and BDD. Participated in code reviews, technical refinements, and breaking down stories into small tasks</li>
@@ -69,6 +71,7 @@ export default function Experience({ experience01Ref, experienceRef2, inView, in
                     <div className={styles.experience_02}>
                     <div className={styles.header}>
                         <h2>ViewB</h2>
+                        <h4>Front-end developer</h4>
                         <span>From 08/2021 to 03/2022</span>
                     </div>
                     <ul>

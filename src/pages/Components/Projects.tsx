@@ -148,7 +148,7 @@ export default function Projects({
                     </div>
                 </motion.div>
 
-                <motion.div ref={planet03Ref} whileHover={{ scale: 1.2, rotate: 90 }}>
+                <motion.div ref={planet03Ref} whileHover={{ scale: 1 }}>
                     <motion.img
                         src="/planet_03.png" 
                         alt="planet_03"
@@ -156,7 +156,6 @@ export default function Projects({
                         initial={{ opacity: 0, y: -300 }}
                         animate={controlPlanet03}
                         transition={{ duration: 2.2 }}
-                        style={{marginTop: "10%", marginLeft:"800px"}}
                     />
                 </motion.div>
 
