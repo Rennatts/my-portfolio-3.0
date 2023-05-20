@@ -7,7 +7,7 @@
     justify-content: column;
     flex-direction: column;
     overflow: "hidden";
-    height: 100vh;
+    height: 150vh;
     z-index: -100;
     color: white;
 
@@ -20,18 +20,22 @@
     transform-style: preserve-3d;
     perspective: 1000px;
 
-    .header{
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        margin-top: 3%;
+    .download_resume {
+        margin: 200px 0 70px 0;
 
-        h2{
-            font-size: var(--font-size-large);
-            font-weight: 500;
-            letter-spacing: 0.2em;
+        button {
+            border: none;
+            padding: 30px;
+            font-size: 20px;
+            cursor: pointer;
+            border-radius: 20px;
+
+            &:hover{
+                opacity: 0.7;
+            }
         }
     }
+
 
 
     .icon {

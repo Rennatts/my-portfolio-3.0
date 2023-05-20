@@ -1,6 +1,7 @@
 import React, { useCallback, useState } from 'react';
 import styles from '@/styles/Contact.module.scss'
 import { AiOutlineGithub, AiFillLinkedin, AiFillTwitterCircle, AiOutlineMail } from "react-icons/ai";
+import { saveAs } from 'file-saver';
 
 interface IIntroProps {
 }
@@ -28,14 +29,28 @@ export default function Contact({ }: IIntroProps) {
         copyToClipboard('16.renata@gmail.com');
         setEmailCopyText('Value copied');
     };
+
+    const fileUrl = "https://renata-resume.s3.amazonaws.com/CV-Renata-Machado.pdf";
+
+    const downloadResume = async () => {
+        try {
+            const res = await fetch(fileUrl);
+            const blob = await res.blob();
+
+            saveAs(blob, 'renata-machado-resume.pdf');
+        } catch (e) {
+            console.log(e);
+        }
+    };
     
 
     return (
         <>
             <section id="contact" className={styles.contact}>
-                <div className={styles.header}>
-                    <h2>Contact</h2>
+                <div className={styles.download_resume}>
+                    <button onClick={downloadResume}>Download Renata's Resume :)</button>
                 </div>
+
                 <div className={styles.icons_container}>
                     <p 
                         onClick={() => openUrl('https://github.com/Rennatts')}
