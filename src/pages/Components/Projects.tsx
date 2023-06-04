@@ -139,61 +139,6 @@ export default function Projects({
                     className={styles.project_02}
                 >
                     <div className={styles.header}>
-                        <h3>Kanban</h3>
-                        <span>Technologies used: </span>
-                        <span>React, Typescript, Chakra UI</span>
-                    </div>
-                    <div className={styles.description}>
-                        <div className={styles.tech}>
-                            <ul>
-                                <li>Create and delete tasks</li>
-                                <li>Easily move task with grap and drop functionality</li>
-                                <li>Save data on localstorage, no need of database</li>
-                            </ul>
-                        </div>
-                        <div className={styles.responsive_design}>
-                            <h5 className={styles.title}>Responsive Design</h5>
-                            <Image 
-                                src="/kanban_computer.png" 
-                                alt="computer kanban"
-                                width={800}  
-                                height={500} 
-                            />
-                            <Image 
-                                src="/mobile_kanban.png" 
-                                alt="mobile kanban"
-                                width={800}  
-                                height={500} 
-                            />
-                        </div>
-                        <div>
-                            <h5 className={styles.title}>Check out the Video!!</h5>
-                            <iframe
-                                src={`https://www.youtube.com/embed/${KanbanVideoId}`}
-                                title="Kanban project using react"
-                                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-                                allowFullScreen
-                                style={{ cursor: "pointer" }} 
-                            ></iframe>
-                        </div>
-                    </div>
-                </motion.div>
-
-                <motion.div ref={planet03Ref} whileHover={{ scale: 1 }}>
-                    <motion.img
-                        src="/planet_03.png" 
-                        alt="planet_03"
-                        className={styles.planet_03}
-                        initial={{ opacity: 0, y: -300 }}
-                        animate={controlPlanet03}
-                        transition={{ duration: 2.2 }}
-                    />
-                </motion.div>
-
-                <motion.div
-                    className={styles.project_03}
-                >
-                    <div className={styles.header}>
                         <h3>Social Media</h3>
                         <span>Technologies used: </span>
                         <span>React, Redux, MongoDb, AWS, Node, Express, css</span>
@@ -231,6 +176,61 @@ export default function Projects({
                             <iframe
                                 src={`https://www.youtube.com/embed/${SocialMediaId}`}
                                 title="Social media project using react"
+                                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                                allowFullScreen
+                                style={{ cursor: "pointer" }} 
+                            ></iframe>
+                        </div>
+                    </div>
+                </motion.div>
+
+                <motion.div ref={planet03Ref} whileHover={{ scale: 1 }}>
+                    <motion.img
+                        src="/planet_03.png" 
+                        alt="planet_03"
+                        className={styles.planet_03}
+                        initial={{ opacity: 0, y: -300 }}
+                        animate={controlPlanet03}
+                        transition={{ duration: 2.2 }}
+                    />
+                </motion.div>
+
+                <motion.div
+                    className={styles.project_03}
+                >
+                    <div className={styles.header}>
+                        <h3>Kanban</h3>
+                        <span>Technologies used: </span>
+                        <span>React, Typescript, Chakra UI</span>
+                    </div>
+                    <div className={styles.description}>
+                        <div className={styles.tech}>
+                            <ul>
+                                <li>Create and delete tasks</li>
+                                <li>Easily move task with grap and drop functionality</li>
+                                <li>Save data on localstorage, no need of database</li>
+                            </ul>
+                        </div>
+                        <div className={styles.responsive_design}>
+                            <h5 className={styles.title}>Responsive Design</h5>
+                            <Image 
+                                src="/kanban_computer.png" 
+                                alt="computer kanban"
+                                width={800}  
+                                height={500} 
+                            />
+                            <Image 
+                                src="/mobile_kanban.png" 
+                                alt="mobile kanban"
+                                width={800}  
+                                height={500} 
+                            />
+                        </div>
+                        <div>
+                            <h5 className={styles.title}>Check out the Video!!</h5>
+                            <iframe
+                                src={`https://www.youtube.com/embed/${KanbanVideoId}`}
+                                title="Kanban project using react"
                                 allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
                                 allowFullScreen
                                 style={{ cursor: "pointer" }} 
