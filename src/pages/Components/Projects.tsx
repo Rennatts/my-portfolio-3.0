@@ -1,6 +1,7 @@
 import styles from '@/styles/Projects.module.scss'
 import { motion, useAnimation} from 'framer-motion';
 import { useEffect } from 'react';
+import Image from 'next/image'
 import { useState } from 'react';
 
 
@@ -106,7 +107,23 @@ export default function Projects({
                                 <li>Edit profile and manage offered services</li>
                             </ul>
                         </div>
+                        <div className={styles.responsive_design}>
+                            <h5 className={styles.title}>Responsive Design</h5>
+                            <Image 
+                                src="/computer_freelancer_.png" 
+                                alt="computer freelancer"
+                                width={800}  
+                                height={500} 
+                            />
+                            <Image 
+                                src="/mobile_app_freelancer.png" 
+                                alt="mobile freelancer"
+                                width={800}  
+                                height={500} 
+                            />
+                        </div>
                         <div>
+                            <h5 className={styles.title}>Check out the Video!!</h5>
                             <iframe
                                 src={`https://www.youtube.com/embed/${FreelancerVideoId}`}
                                 title="freelancer directory project using react"
@@ -134,10 +151,24 @@ export default function Projects({
                                 <li>Save data on localstorage, no need of database</li>
                             </ul>
                         </div>
+                        <div className={styles.responsive_design}>
+                            <h5 className={styles.title}>Responsive Design</h5>
+                            <Image 
+                                src="/kanban_computer.png" 
+                                alt="computer kanban"
+                                width={800}  
+                                height={500} 
+                            />
+                            <Image 
+                                src="/mobile_kanban.png" 
+                                alt="mobile kanban"
+                                width={800}  
+                                height={500} 
+                            />
+                        </div>
                         <div>
+                            <h5 className={styles.title}>Check out the Video!!</h5>
                             <iframe
-                                // width="560"
-                                // height="315"
                                 src={`https://www.youtube.com/embed/${KanbanVideoId}`}
                                 title="Kanban project using react"
                                 allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
@@ -181,7 +212,22 @@ export default function Projects({
                                 <li>Search posts</li>
                             </ul>
                         </div>
-                        <div className={styles.image_box}>
+                        <div className={styles.design}>
+                            <Image 
+                                src="/social_media_computer.png" 
+                                alt="computer social media"
+                                width={800}  
+                                height={500} 
+                            />
+                            <Image 
+                                src="/social_media_computer_login.png" 
+                                alt="social media login"
+                                width={800}  
+                                height={500} 
+                            />
+                        </div>
+                        <div>
+                            <h5 className={styles.title}>Check out the Video!!</h5>
                             <iframe
                                 src={`https://www.youtube.com/embed/${SocialMediaId}`}
                                 title="Social media project using react"

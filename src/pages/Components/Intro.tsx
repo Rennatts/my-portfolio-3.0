@@ -23,12 +23,12 @@ export default function Intro({ yPosition }: IIntroProps) {
                     animate={{ opacity: 1 }}
                     transition={{ duration: 0.2 }}
                     style={{ 
-                    display: "flex", 
-                    justifyContent: "center", 
-                    flexDirection: "row",
-                    alignItems: "center", 
-                    width: "200%", 
-                    height: "100%", 
+                        display: "flex", 
+                        justifyContent: "center", 
+                        flexDirection: "row",
+                        alignItems: "center", 
+                        width: "200%", 
+                        height: "100%", 
                     }}
                 >
                     <motion.p
@@ -36,12 +36,12 @@ export default function Intro({ yPosition }: IIntroProps) {
                     whileTap={{ scale: 0.2 }}
                     style={{ width: "75%", fontSize: "30px"}}
                     animate={{
-                    x: ["0%", "40%"],
+                        x: ["0%", "40%"],
                     }}
                     transition={{
-                    duration: 1.5,
-                    ease: "linear",
-                    loop: Infinity,
+                        duration: 1.5,
+                        ease: "linear",
+                        loop: Infinity,
                     }}
                     >
                     Im RENATA MACHADO
