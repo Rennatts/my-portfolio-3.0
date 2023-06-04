@@ -403,10 +403,9 @@
     transform-style: preserve-3d;
     perspective: 100px;
     animation: animate 10s linear infinite;
-    height: 10000px;  
+    height: 19000px;  
     animation-direction: alternate;
     animation-iteration-count: infinite;
-    margin-top: -90px;
     width: 575px;
   }
 
@@ -481,10 +480,13 @@
   .black_hole {
     position: relative;
     top: 580px;
-    left: 45%;
+    left: 20%;
+    background-color: red;
+    width: 300px;
+    height: 150px;
 
     .black_hole_img{
-      width: 250px;
+      width: 300px;
       height: 150px;
     }
   }

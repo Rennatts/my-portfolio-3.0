@@ -63,7 +63,6 @@ export default function Projects({
                         initial={{ opacity: 0, y: -100 }}
                         animate={controlPlanet01}
                         transition={{ duration: 1, delay: 2 }}
-                        style={{marginTop: "2%", marginRight:"800px"}}
                     />
                 </motion.div>
                 <div className={styles.planet_box}>
@@ -85,7 +84,6 @@ export default function Projects({
                         initial={{ opacity: 0, x: -400 }}
                         animate={controlPlanet02}
                         transition={{ duration: 3 }}
-                        style={{marginTop: "50%"}}
                     />
                 </motion.div>
 
@@ -247,7 +245,6 @@ export default function Projects({
                         initial={{ opacity: 0, y: -520 }}
                         animate={controlPlanet04}
                         transition={{ duration: 2 }}
-                        style={{marginTop: "10%", marginRight:"100px"}}
                     />
                 </motion.div>
             </section>
