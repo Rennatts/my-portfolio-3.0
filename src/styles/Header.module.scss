@@ -15,7 +15,6 @@
   top: 0;
   z-index: 1000;
 
-
   .logo_box {
     font-family: 'Black Ops One', cursive;
     font-family: 'Blinker', sans-serif;
@@ -35,9 +34,6 @@
     justify-content: center;
     align-items: center;
 
-    .nav_list_hidden {
-      display: none;
-    }
 
     .nav_list_full {
       display: flex;
@@ -73,7 +69,9 @@
     padding-right: 2%;
 
     .logo_box {
-      font-size: var(--font-size-medium);
+      margin-top: 150px;
+      margin-left: 50px;
+      font-size: 50px;
       font-weight: 500;
       
       a {
@@ -83,21 +81,24 @@
     }
 
     .nav {
-
-      .faBars{
-        margin-right: 10px;
+      .faBars {
+        margin-top: 180px;
+        margin-left: 730px;
         color: white;
         position: relative;
         left: 8px;
         cursor: pointer;
+        font-size: 70px;
       }
 
-      .faBars_open{
-        margin-right: 10px;
+      .faBars_open {
+        margin-top: 180px;
+        margin-left: 360px;
         color: white;
         position: relative;
         left: 30px;
         cursor: pointer;
+        font-size: 70px;
       }
 
       .nav_list_hidden {
@@ -111,19 +112,30 @@
         align-items: flex-start;
         flex-direction: column;
         height: 100px;
-        margin-top: 200px;
+        margin-top: 640px;
+        width: 500px;
+        margin-left: 20px;
 
         .nav_item {    
-          width: 70%;
-          margin-top: 15px;
+          width: 80%;
+          margin-top: 45px;
   
           a {
             border-radius: 20px;
+            font-size: 50px;
           }
         }
       }
     }
 
+  }
+
+}
+
+
+@media (min-width: 1200px)  {
+  .faBars {
+    color: transparent !important;
   }
 
 }

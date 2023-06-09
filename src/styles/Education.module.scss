@@ -7,7 +7,7 @@
     justify-content: center;
     flex-direction: column;
     overflow: "hidden";
-    height: 120vh;
+    height: 1000px;
 
     background-image: url('./../images/universe_02.jpeg');
     background-size: cover;
@@ -18,9 +18,9 @@
     perspective: 1000px;
 
     h2 {
-        margin-top: 15%;
+        margin-top: 1%;
         color: white;
-        font-size: var(--font-size-large);
+        font-size: 60px;
         letter-spacing: 0.4em;
     }
 
@@ -36,7 +36,7 @@
             padding: 8%;
             border-radius: 30px;
             box-shadow: 15px 15px 40px rgba(0, 0, 0, 0.2);
-            background: linear-gradient(135deg, rgba(255, 255, 255, 0.1) 0%, rgba(255, 255, 255, 0.1) 100%);
+            background: linear-gradient(135deg, rgba(255, 255, 255, 0.1) 0%, rgba(255, 255, 255, 0.4) 100%);
             overflow: hidden;
             border: 1px solid rgba(255, 255, 255, 0.2);
             z-index: 1;
@@ -61,17 +61,19 @@
                 margin-bottom: 18%;
                 font-weight: 700;
 
-                h1{
+                h1 {
                     margin-bottom: 10px;
+                    font-size: 40px;
                 }
 
                 p {
-                    font-size: var(--font-size-medium);
+                    font-size: 30px;
                 }
             }
 
             p {
-                font-size: 18px;
+                font-size: 28px;
+                font-weight: 500;
             }
         }
 
@@ -82,15 +84,37 @@
 @media (max-width: 575px) {
     .education {
         width: 100%;
-        height: 140vh;
+        height: 190vh;
 
-        h2{
+        h2 {
             margin-bottom: 100px;
+            font-size: 60px;
         }
 
-        .description{
+
+        .description {
             display: flex;
             flex-direction: column;
+    
+            .education_01,
+            .education_02 {
+                .header {
+                    h1 {
+                        margin-bottom: 10px;
+                        font-size: 50px;
+                    }
+    
+                    p {
+                        font-size: 50px;
+                    }
+                }
+    
+                p {
+                    font-size: 38px;
+                    font-weight: 500;
+                }
+            }
+    
         }
     }
 

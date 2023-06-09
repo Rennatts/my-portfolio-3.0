@@ -3,7 +3,7 @@ import Image from 'next/image'
 import styles from '@/styles/Home.module.scss'
 import Header from './Components/Header'
 import { useEffect, useRef, useState } from 'react'
-import { useAnimation } from 'framer-motion';
+import { useAnimation, useMotionValue } from 'framer-motion';
 import { useInView } from 'react-intersection-observer';
 import Experience from './Components/Experience';
 import Skills from './Components/Skills';
@@ -39,6 +39,30 @@ export default function Home() {
   };
 
   const [astronautOpacity, setAstronautOpacity] = useState(1);
+
+  const [windowWidth, setWindowWidth] = useState<number | null>(null);
+
+
+  useEffect(() => {
+    if (typeof window !== 'undefined') {
+      // Set initial window width
+      setWindowWidth(window.innerWidth);
+      
+      const handleResize = () => {
+        setWindowWidth(window.innerWidth);
+      }
+  
+      window.addEventListener('resize', handleResize);
+  
+      // Cleanup function: remove the event listener when the component unmounts
+      return () => {
+        window.removeEventListener('resize', handleResize);
+      }
+    }
+  }, []); // Empty array means this effect runs once on mount and cleanup on unmount
+  
+  
+
 
 
   useEffect(() => {
@@ -80,6 +104,16 @@ export default function Home() {
   }, [controls2, inView2]);
 
 
+  const position = useMotionValue("relative");
+
+  let imageStyle;
+  let nameStyle;
+
+  console.log("windowWidth", windowWidth)
+
+  
+
+
 
   
   return (
@@ -88,63 +122,59 @@ export default function Home() {
       <div className={styles.background_image_container}>
           <div className={styles.topics_container}>
             <section id="about" className={styles.about}>
-              <div className={styles.intro}>
-                  <motion.div
-                      initial={{ opacity: 0 }}
-                      animate={{ opacity: 1 }}
-                      transition={{ duration: 0.2 }}
-                      className={`${styles.intro_box}`}
-                      // style={{ 
-                      //   display: "flex", 
-                      //   justifyContent: "center", 
-                      //   flexDirection: "row",
-                      //   alignItems: "center", 
-                      //   width: "75vw", 
-                      //   height: "100%", 
-                      //   marginTop: "25%"
-                      // }}
-                  >
-                      <motion.p
+              <motion.div
+                initial={{ opacity: 0 }}
+                animate={{ opacity: 1 }}
+                transition={{ duration: 0.2 }}
+                className={`${styles.intro_box}`}
+                // style={{ 
+                //   display: "flex", 
+                //   justifyContent: "center", 
+                //   flexDirection: "row",
+                //   alignItems: "center", 
+                //   width: "75vw", 
+                //   height: "100%", 
+                //   marginTop: "25%"
+                // }}
+              >
+                <motion.p
+                  whileHover={{ scale: 1.1 }}
+                  whileTap={{ scale: 0.2 }}
+                  className={`${styles.name}`}
+                  // style={nameStyle}
+                  animate={{
+                    x: ["0%", "40%"],
+                  }}
+                  transition={{
+                    duration: 1.5,
+                    ease: "linear",
+                    loop: Infinity,
+                  }}
+                  > 
+                  Im RENATA MACHADO
+                    </motion.p>
+                    <motion.img
+                      ref={imageRef}
+                      src="/astronaut.png"
+                      alt="My Image"
+                      className={`${styles.astronaut_img}`}
                       whileHover={{ scale: 1.1 }}
                       whileTap={{ scale: 0.2 }}
-                      className={`${styles.name}`}
+                      style={{
+                          top: `${yPosition * 1}px`,
+                          opacity: astronautOpacity,
+                      }}
                       animate={{
-                        x: ["0%", "40%"],
+                          x: ["0%", "100%"],
                       }}
                       transition={{
-                        duration: 1.5,
-                        ease: "linear",
-                        loop: Infinity,
+                          duration: 1.5,
+                          ease: "linear",
+                          loop: Infinity,
                       }}
-                      >
-                      Im RENATA MACHADO
-                      </motion.p>
-                          <motion.img
-                            ref={imageRef}
-                            src="/astronaut.png"
-                            alt="My Image"
-                            className={`${styles.astronaut_img}`}
-                            whileHover={{ scale: 1.1 }}
-                            whileTap={{ scale: 0.2 }}
-                            style={{
-                                width: "25%",
-                                position: "relative",
-                                top: `${yPosition * 1}px`,
-                                zIndex: -100,
-                                opacity: astronautOpacity,
-                            }}
-                            animate={{
-                                x: ["0%", "100%"],
-                            }}
-                            transition={{
-                                duration: 1.5,
-                                ease: "linear",
-                                loop: Infinity,
-                            }}
-                            height={250}
-                          />
-                  </motion.div>
-              </div>
+                      height={250}
+                    />
+              </motion.div>
               <div className={styles.description}>
                   <motion.div
                   initial={{ opacity: 0 }}
@@ -163,7 +193,7 @@ export default function Home() {
                   initial={{ opacity: 0, y: 60 }}
                   animate={{ opacity: 1, y: 0 }}
                   transition={{ duration: 1, delay: 1.8 }}
-                  style={{marginRight: "10px"}}
+                  style={{marginRight: "13px"}}
                   className={`${styles.full_stack}`}
                   >
                       Full
@@ -172,7 +202,7 @@ export default function Home() {
                   initial={{ opacity: 0, y: 60 }}
                   animate={{ opacity: 1, y: 0 }}
                   transition={{ duration: 1, delay: 2.0 }}
-                  style={{marginRight: "10px"}}
+                  style={{marginRight: "13px"}}
                   className={`${styles.full_stack}`}
                   >
                       Stack 
@@ -224,7 +254,7 @@ export default function Home() {
                       initial={{ opacity: 0, y: 300 }}
                       animate={{
                         opacity: isRocketVisible ? [0, 1, 1] : 0,
-                        y: isRocketVisible ? [300, -250] : 300,
+                        y: isRocketVisible ? [600, -250] : 600,
                       }}
                       transition={{
                         duration: 4,
