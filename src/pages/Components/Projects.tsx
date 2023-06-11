@@ -76,7 +76,7 @@ export default function Projects({
                     </motion.p>
                 </div>
 
-                <motion.div ref={planet02Ref}>
+                {/* <motion.div ref={planet02Ref}>
                     <motion.img
                         src="/planet_04.png" 
                         alt="planet_02"
@@ -85,7 +85,7 @@ export default function Projects({
                         animate={controlPlanet02}
                         transition={{ duration: 3 }}
                     />
-                </motion.div>
+                </motion.div> */}
 
                 <motion.div
                     className={styles.project_01}
@@ -93,7 +93,7 @@ export default function Projects({
                     <div className={styles.header}>
                         <h3>Freelancer Directory</h3>
                         <span>Technologies used: </span>
-                        <span>React, Mongodb, NestJs, Tailwind</span>
+                        <h5>React, Typescript, MongoDB, NestJs, Tailwind, Docker</h5>
                     </div>
                     <div className={styles.description}>
                         <div className={styles.tech}>
@@ -133,13 +133,24 @@ export default function Projects({
                     </div>
                 </motion.div>
 
+                <motion.div ref={planet02Ref}>
+                    <motion.img
+                        src="/planet_04.png" 
+                        alt="planet_02"
+                        className={styles.planet_02}
+                        initial={{ opacity: 0, x: -400 }}
+                        animate={controlPlanet02}
+                        transition={{ duration: 3 }}
+                    />
+                </motion.div>
+
                 <motion.div
                     className={styles.project_02}
                 >
                     <div className={styles.header}>
                         <h3>Social Media</h3>
                         <span>Technologies used: </span>
-                        <span>React, Redux, MongoDb, AWS, Node, Express, css</span>
+                        <span>React, Javascript, Redux, MongoDb, AWS, Node, Express, css</span>
                     </div>
                     <div className={styles.description}>
                         <div className={styles.tech}>

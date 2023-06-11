@@ -6,9 +6,9 @@
   position: relative;
   z-index: -100;
   transform-style: preserve-3d;
-  perspective: 1000px;
+  perspective: 2000px;
   animation: animate 10s linear infinite;
-  height: 13000px;  
+  height: 15000px;  
   animation-direction: alternate;
   animation-iteration-count: infinite;
   margin-top: -90px;
@@ -400,6 +400,44 @@
 }
 
 
+@media (max-width: 360px) {
+  .background_image_container{
+    background-image: url('./../images/viktor-forgacs-Bvo2-SNi0rw-unsplash.jpg');
+    background-size: cover;
+    background-position: center center;
+    background-attachment: fixed;
+    position: relative;
+    z-index: -100;
+    transform-style: preserve-3d;
+    perspective: 100px;
+    animation: animate 10s linear infinite;
+    animation-direction: alternate;
+    animation-iteration-count: infinite;
+    min-width: 360px; 
+  }
+
+}
+
+@media (max-width: 390px) {
+  .background_image_container{
+    background-image: url('./../images/viktor-forgacs-Bvo2-SNi0rw-unsplash.jpg');
+    background-size: cover;
+    background-position: center center;
+    background-attachment: fixed;
+    position: relative;
+    z-index: -100;
+    transform-style: preserve-3d;
+    perspective: 100px;
+    animation: animate 10s linear infinite;
+    height: 30000px;  
+    animation-direction: alternate;
+    animation-iteration-count: infinite;
+    min-width: 390px; 
+  }
+
+}
+
+
 @media (max-width: 575px) {
   /* CSS rules for extra-small screens (phones) */
 
@@ -413,9 +451,10 @@
     transform-style: preserve-3d;
     perspective: 100px;
     animation: animate 10s linear infinite;
+    height: 10000px;  
     animation-direction: alternate;
     animation-iteration-count: infinite;
-    width: 575px;
+    min-width: 575px; 
   }
 
 
@@ -513,14 +552,11 @@
     z-index: -100;
     transform-style: preserve-3d;
     perspective: 100px;
-    animation: animate 10s linear infinite;
-    height: 10000px;  
+    animation: animate 10s linear infinite; 
     animation-direction: alternate;
     animation-iteration-count: infinite;
-    margin-top: -90px;
     width: 767px;
   }
-
 
   .about {
     width: 100%;
@@ -722,7 +758,7 @@
     transform-style: preserve-3d;
     perspective: 100px;
     animation: animate 10s linear infinite;
-    height: 10000px;  
+    height: 40000px;  
     animation-direction: alternate;
     animation-iteration-count: infinite;
     margin-top: -90px;
@@ -825,7 +861,7 @@
     transform-style: preserve-3d;
     perspective: 100px;
     animation: animate 10s linear infinite;
-    height: 10000px;  
+    height: 20000px;  
     animation-direction: alternate;
     animation-iteration-count: infinite;
     margin-top: -90px;

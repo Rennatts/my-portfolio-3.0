@@ -14,10 +14,10 @@ export default function Skills({  }: IIntroProps) {
     return (
         <>
             <section id="skills" className={styles.skills}>
-                <h2>Skills</h2>
+                <h1>Skills</h1>
                 <div>
                     <div className={styles.header}>
-                    <h2>Front-end</h2>
+                        <h2>Front-end</h2>
                     </div>
                     <div className={styles.icons}>
                         <div className={styles.glass_image}>
