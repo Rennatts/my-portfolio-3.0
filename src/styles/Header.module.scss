@@ -133,19 +133,22 @@
     }
 
   }
-
 }
 
 
 @media (max-width: 575px) {
   .header {
-    width: 100vw;
+    display: flex;
+    justify-content: space-between;
+    flex-direction: row;
+    align-items: center;
+    width: 100%;
     padding-left: 2%;
     padding-right: 2%;
 
     .logo_box {
-      margin-top: 150px;
-      margin-left: 50px;
+      margin-top: 60px;
+      margin-left: 30px;
       font-size: 50px;
       font-weight: 500;
       
@@ -156,24 +159,25 @@
     }
 
     .nav {
+      position: absolute;
+
       .faBars {
-        margin-top: 180px;
-        margin-left: 730px;
-        color: white;
-        position: relative;
-        left: 8px;
+        position: absolute;
+        top: 20px;
+        left: 760px;
         cursor: pointer;
-        font-size: 70px;
+        font-size: 40px;
+        color: white;
       }
 
       .faBars_open {
-        margin-top: 180px;
-        margin-left: 360px;
-        color: white;
         position: relative;
+        margin-top: 90px;
+        margin-left: 480px;
+        color: white;
         left: 30px;
         cursor: pointer;
-        font-size: 70px;
+        font-size: 40px;
       }
 
       .nav_list_hidden {
@@ -181,23 +185,22 @@
       }
   
       .nav_list {
-        font-size: var(--font-size-small);
         display: flex;
         justify-content: center;
         align-items: flex-start;
         flex-direction: column;
         height: 100px;
-        margin-top: 640px;
-        width: 500px;
-        margin-left: 20px;
+        margin-top: 450px;
+        width: 100%;
+        margin-left: 30px;
 
         .nav_item {    
-          width: 80%;
-          margin-top: 45px;
+          width: 100%;
+          margin-top: 25px;
   
           a {
             border-radius: 20px;
-            font-size: 50px;
+            font-size: 40px;
           }
         }
       }
@@ -206,6 +209,7 @@
   }
 
 }
+
 
 
 @media (min-width: 1200px)  {
