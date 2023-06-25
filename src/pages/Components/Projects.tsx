@@ -105,7 +105,7 @@ export default function Projects({
                                 <li>Edit profile and manage offered services</li>
                             </ul>
                         </div>
-                        <div className={styles.responsive_design}>
+                        <div className={styles.design}>
                             <h5 className={styles.title}>Responsive Design</h5>
                             <Image 
                                 src="/computer_freelancer_.png" 
@@ -222,7 +222,7 @@ export default function Projects({
                                 <li>Save data on localstorage, no need of database</li>
                             </ul>
                         </div>
-                        <div className={styles.responsive_design}>
+                        <div className={styles.design}>
                             <h5 className={styles.title}>Responsive Design</h5>
                             <Image 
                                 src="/kanban_computer.png" 
