@@ -151,7 +151,7 @@ export default function Projects({
                     <div className={styles.header}>
                         <h3>Social Media</h3>
                         <span>Technologies used: </span>
-                        <span>React, Javascript, Redux, MongoDb, AWS, Node, Express, css</span>
+                        <h5>React, Javascript, Redux, MongoDb, AWS, Node, Express, css</h5>
                     </div>
                     <div className={styles.description}>
                         <div className={styles.tech}>
@@ -212,7 +212,7 @@ export default function Projects({
                     <div className={styles.header}>
                         <h3>Kanban</h3>
                         <span>Technologies used: </span>
-                        <span>React, Typescript, Chakra UI</span>
+                        <h5>React, Typescript, Chakra UI</h5>
                     </div>
                     <div className={styles.description}>
                         <div className={styles.tech}>

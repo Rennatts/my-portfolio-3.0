@@ -116,7 +116,7 @@
 }
 
 
-@media (max-width: 360px){
+@media (max-width: 400px){
   .experience {
     display: flex;
     align-items: center;
@@ -132,74 +132,119 @@
 
     .experiences_list {
       margin-top: 150px;
+      display: flex;
+      justify-content: space-between;
+      align-content: center;
+      flex-direction: column;
+      width: 70%;
 
-      .experience_01{
-        padding-left: 10%;;
+      .experience_01,
+      .experience_02{
+        padding-left: 10%;
+
+        .header {
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          flex-direction: column;
+          color: white;
+  
+          h2 {
+            font-size: 50px;
+          }
+  
+          span {
+            margin-top: 4%;
+          }
+  
+          h4 {
+            margin-top: 4%;
+            font-size: 35px;
+          }
+
+          span { 
+            font-size: 22px;
+          }
+          
+        }
+
+        ul{
+          margin-top: 10%;
+        }
+        
+        ul li{
+          margin-top: 10%;
+          font-size: 30px;
+        }
       }
     }
   }
 }
   
 
-// @media (max-width: 575px) {
-//   .experience{
-//     height: 600px;
+@media (max-width: 390px){
+  .experience {
+    display: flex;
+    align-items: center;
+    justify-content: column;
+    flex-direction: column;
+    height: 2700px;
+    margin-top: 400px;
+    width: 100%;
 
-//     h1 {
-//       margin-top: 1800px;
-//       margin-bottom: 10px;
-//       font-size: 60px;
-//     }
-//   }
+    h1 {
+      font-size: 60px;
+    }
 
-// }
+    .experiences_list {
+      margin-top: 150px;
+      display: flex;
+      justify-content: space-between;
+      align-content: center;
+      flex-direction: column;
+      width: 70%;
 
-// @media (max-width: 767px) {
-//   .experience{
-//     height: 400vh;
-//     margin-top: 1000px;
-//     width: 100%;
+      .experience_01,
+      .experience_02{
+        padding-left: 10%;
 
-//     h1{
-//       margin-bottom: 100px;
-//     }
-//   }
+        .header {
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          flex-direction: column;
+          color: white;
+  
+          h2 {
+            font-size: 50px;
+          }
+  
+          span {
+            margin-top: 4%;
+          }
+  
+          h4 {
+            margin-top: 4%;
+            font-size: 35px;
+          }
 
-// }
+          span { 
+            font-size: 22px;
+          }
+          
+        }
 
-// @media (max-width: 991px) {
-//   .experience {
-//     height: 400vh;
-//     margin-top: 600px;
-//     width: 100%;
+        ul{
+          margin-top: 10%;
+        }
+        
+        ul li{
+          margin-top: 10%;
+          font-size: 30px;
+        }
 
-//     h1 {
-//       margin-bottom: 100px;
-//     }
-//   }
-// }
-
-// @media (max-width: 1199px) {
-//   .experience {
-//     height: 500vh;
-//     margin-top: 700px;
-//     width: 100%;
-
-//     h1 {
-//       margin-bottom: 100px;
-//     }
-//   }
-// }
-
-
-// @media (min-width: 1200px) {
-//   .experience {
-//     height: 300vh;
-//     margin-top: 700px;
-//     width: 100%;
-
-//     h1 {
-//       margin-bottom: 100px;
-//     }
-//   }
-// }
+      }
+    }
+  }
+}
+  
