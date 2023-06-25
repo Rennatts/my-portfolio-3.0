@@ -9,7 +9,7 @@ export default function Education({ }: IIntroProps) {
     return (
         <>
             <section id="education" className={styles.education}>
-                <h2>Education</h2>
+                <h1>Education</h1>
                 <div className={styles.description}>
                     <div className={styles.education_01}>
                         <div className={styles.header}>

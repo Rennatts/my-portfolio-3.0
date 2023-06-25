@@ -79,94 +79,146 @@
 }
 
 
-@media (max-width: 575px) {
+@media (max-width: 360px) {
     .education {
-        width: 100vw;
-        height: 1000px;
-        perspective: 500px;
-        position: relative;
+        width: 100%;
         display: flex;
         align-items: center;
         justify-content: center;
         flex-direction: column;
-        overflow: "hidden";
-        background-image: url('./../images/universe_02.jpeg');
-        background-size: cover;
-        background-position: center center;
-        background-attachment: fixed;
-        position: relative;
-        transform-style: preserve-3d;
+        height: 1800px;
 
-        h2 {
+        h1 {
             font-size: 60px;
+            color: white;
+            margin-bottom: 80px;
         }
-
 
         .description {
             display: flex;
             flex-direction: column;
-    
+
+            .header{
+                h1 {
+                    font-size: 40px;
+                }
+
+                p{
+                    font-size: 40px;
+                }
+            }
+
             .education_01,
             .education_02 {
-                height:  45%;
-                margin-top: 2%;
-                
-                .header {
+                margin-top: 150px;
+
+                p{
+                    font-size: 35px;
+                }
+
+                .header{
                     h1 {
-                        margin-bottom: 10px;
-                        font-size: 50px;
+                        font-size: 45px;
                     }
     
                     p {
-                        font-size: 50px;
+                        font-size: 40px;
                     }
                 }
-    
-                p {
-                    font-size: 38px;
-                    font-weight: 500;
-                }
             }
+        }
+    }
+
+}
+
+// @media (max-width: 575px) {
+//     .education {
+//         width: 100vw;
+//         height: 1000px;
+//         perspective: 500px;
+//         position: relative;
+//         display: flex;
+//         align-items: center;
+//         justify-content: center;
+//         flex-direction: column;
+//         overflow: "hidden";
+//         background-image: url('./../images/universe_02.jpeg');
+//         background-size: cover;
+//         background-position: center center;
+//         background-attachment: fixed;
+//         position: relative;
+//         transform-style: preserve-3d;
+
+//         h2 {
+//             font-size: 60px;
+//         }
+
+
+//         .description {
+//             display: flex;
+//             flex-direction: column;
     
-        }
-    }
+//             .education_01,
+//             .education_02 {
+//                 height:  45%;
+//                 margin-top: 2%;
+                
+//                 .header {
+//                     h1 {
+//                         margin-bottom: 10px;
+//                         font-size: 50px;
+//                     }
+    
+//                     p {
+//                         font-size: 50px;
+//                     }
+//                 }
+    
+//                 p {
+//                     font-size: 38px;
+//                     font-weight: 500;
+//                 }
+//             }
+    
+//         }
+//     }
 
-}
+// }
 
-@media (max-width: 767px) {
-    .education {
-        width: 100%;
-        height: 400px;
+// @media (max-width: 767px) {
+//     .education {
+//         width: 100%;
+//         height: 400px;
 
-        h2 {
-            margin-bottom: 120px;
-        }
+//         h2 {
+//             margin-bottom: 120px;
+//         }
 
-        .description {
-            display: flex;
-            flex-direction: column;
-        }
-    }
+//         .description {
+//             display: flex;
+//             flex-direction: column;
+//         }
+//     }
 
-}
+// }
 
 
-@media (max-width: 991px) {
-    .education {
-        width: 100%;
-        height: 200vh;
+// @media (max-width: 991px) {
+//     .education {
+//         width: 100%;
+//         height: 200vh;
 
-        h2 {
-            margin-bottom: 200px;
-        }
+//         h2 {
+//             margin-bottom: 200px;
+//         }
 
-        .description {
-            display: flex;
-            flex-direction: column;
-        }
-    }
+//         .description {
+//             display: flex;
+//             flex-direction: column;
+//         }
+//     }
 
-}
+// }
 
 
 

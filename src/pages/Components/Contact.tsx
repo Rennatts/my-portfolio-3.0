@@ -55,22 +55,22 @@ export default function Contact({ }: IIntroProps) {
                     <p 
                         onClick={() => openUrl('https://github.com/Rennatts')}
                         className={styles.icon}
-                        ><AiOutlineGithub size="1x"></AiOutlineGithub>
+                        ><AiOutlineGithub size="2x"></AiOutlineGithub>
                     </p>
                     <p
                         onClick={() => openUrl('https://www.linkedin.com/in/renata-machado11/')}
-                        className={styles.icon}><AiFillLinkedin size="1x"></AiFillLinkedin>
+                        className={styles.icon}><AiFillLinkedin size="2x"></AiFillLinkedin>
                     </p>
                     <p 
                         onClick={() => openUrl('https://twitter.com/rennatts')}
-                        className={styles.icon}><AiFillTwitterCircle size="1x"></AiFillTwitterCircle>
+                        className={styles.icon}><AiFillTwitterCircle size="2x"></AiFillTwitterCircle>
                     </p>
                     <p 
                         onClick={() => handleEmailClick()}
                         className={styles.icon}>
-                            <AiOutlineMail className={styles.icon} size="1x"></AiOutlineMail>
-                            <span>{emailCopyText}</span>
+                            <AiOutlineMail size="2x"></AiOutlineMail>
                     </p>
+                    <span>{emailCopyText}</span>
                 </div>
             </section>
         </>

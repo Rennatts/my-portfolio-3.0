@@ -22,6 +22,7 @@ export default function Intro({ yPosition }: IIntroProps) {
                     initial={{ opacity: 0 }}
                     animate={{ opacity: 1 }}
                     transition={{ duration: 0.2 }}
+                    className={styles.intro_box}
                     style={{ 
                         display: "flex", 
                         justifyContent: "center", 
@@ -49,14 +50,13 @@ export default function Intro({ yPosition }: IIntroProps) {
                     <motion.img
                     ref={imageRef}
                     src="/astronaut.png"
-                    alt="My Image"
+                    alt="My Image"                  
+                    className={styles.astronaut_img}
                     whileHover={{ scale: 1.1 }}
                     whileTap={{ scale: 0.2 }}
                     style={{
-                        width: "35%",
                         position: "relative",
                         top: `${yPosition * 1}px`,
-                        zIndex: -100,
                     }}
                     animate={{
                         x: ["0%", "100%"],
@@ -69,45 +69,45 @@ export default function Intro({ yPosition }: IIntroProps) {
                     height={250}
                     />
                 </motion.div>
-            </div>
-            <div className={styles.description}>
-                <motion.div
-                initial={{ opacity: 0 }}
-                animate={{ opacity: 1 }}
-                transition={{ duration: 1 }}
-                style={{ 
-                    display: "flex", 
-                    justifyContent: "center", 
-                    alignItems: "center", 
-                    width: "200%", 
-                    height: "100%", 
-                    fontSize: "25px",
-                }}
-                >
-                <motion.p
-                initial={{ opacity: 0, y: 60 }}
-                animate={{ opacity: 1, y: 0 }}
-                transition={{ duration: 1, delay: 1.8 }}
-                style={{marginRight: "10px"}}
-                >
-                    Full
-                </motion.p>
-                <motion.p
-                initial={{ opacity: 0, y: 60 }}
-                animate={{ opacity: 1, y: 0 }}
-                transition={{ duration: 1, delay: 2.0 }}
-                style={{marginRight: "10px"}}
-                >
-                    Stack 
-                </motion.p>
-                <motion.p
-                initial={{ opacity: 0, y: 60 }}
-                animate={{ opacity: 1, y: 0 }}
-                transition={{ duration: 1, delay: 2.2 }}
-                >
-                    Developer
-                </motion.p>
-                </motion.div>
+                <div className={styles.description}>
+                    <motion.div
+                        initial={{ opacity: 0 }}
+                        animate={{ opacity: 1 }}
+                        transition={{ duration: 1 }}
+                        style={{ 
+                            display: "flex", 
+                            justifyContent: "center", 
+                            alignItems: "center", 
+                            width: "200%", 
+                            height: "100%", 
+                            fontSize: "25px",
+                        }}
+                    >
+                    <motion.p
+                        initial={{ opacity: 0, y: 60 }}
+                        animate={{ opacity: 1, y: 0 }}
+                        transition={{ duration: 1, delay: 1.8 }}
+                        style={{marginRight: "10px"}}
+                    >
+                        Full
+                    </motion.p>
+                    <motion.p
+                        initial={{ opacity: 0, y: 60 }}
+                        animate={{ opacity: 1, y: 0 }}
+                        transition={{ duration: 1, delay: 2.0 }}
+                        style={{marginRight: "10px"}}
+                    >
+                        Stack 
+                    </motion.p>
+                    <motion.p
+                        initial={{ opacity: 0, y: 60 }}
+                        animate={{ opacity: 1, y: 0 }}
+                        transition={{ duration: 1, delay: 2.2 }}
+                    >
+                        Developer
+                    </motion.p>
+                    </motion.div>
+                </div>
             </div>
             <div className={styles.comet_box}>
                 <motion.img

@@ -150,46 +150,45 @@ export default function Home() {
                     ease: "linear",
                     loop: Infinity,
                   }}
-                  > 
-                  Im RENATA MACHADO
-                    </motion.p>
-                    <motion.img
-                      ref={imageRef}
-                      src="/astronaut.png"
-                      alt="My Image"
-                      className={`${styles.astronaut_img}`}
-                      whileHover={{ scale: 1.1 }}
-                      whileTap={{ scale: 0.2 }}
-                      style={{
-                          top: `${yPosition * 1}px`,
-                          opacity: astronautOpacity,
-                      }}
-                      animate={{
-                          x: ["0%", "100%"],
-                      }}
-                      transition={{
-                          duration: 1.5,
-                          ease: "linear",
-                          loop: Infinity,
-                      }}
-                      height={250}
-                    />
-              </motion.div>
-              <div className={styles.description}>
-                  <motion.div
-                  initial={{ opacity: 0 }}
-                  animate={{ opacity: 1 }}
-                  transition={{ duration: 1 }}
-                  style={{ 
-                      display: "flex", 
-                      justifyContent: "center", 
-                      alignItems: "center", 
-                      width: "200%", 
-                      height: "100%", 
-                      fontSize: "25px",
+                  > Im RENATA MACHADO
+                </motion.p>
+                <motion.img
+                  ref={imageRef}
+                  src="/astronaut.png"
+                  alt="My Image"
+                  className={`${styles.astronaut_img}`}
+                  whileHover={{ scale: 1.1 }}
+                  whileTap={{ scale: 0.2 }}
+                  style={{
+                      top: `${yPosition * 1}px`,
+                      opacity: astronautOpacity,
                   }}
-                  >
-                  <motion.p
+                  animate={{
+                      x: ["0%", "100%"],
+                  }}
+                  transition={{
+                      duration: 1.5,
+                      ease: "linear",
+                      loop: Infinity,
+                  }}
+                  height={250}
+                />
+            </motion.div>
+            <div className={styles.description}>
+              <motion.div
+                initial={{ opacity: 0 }}
+                animate={{ opacity: 1 }}
+                transition={{ duration: 1 }}
+                style={{ 
+                    display: "flex", 
+                    justifyContent: "center", 
+                    alignItems: "center", 
+                    width: "200%", 
+                    height: "100%", 
+                    fontSize: "25px",
+                }}
+              >
+                <motion.p
                   initial={{ opacity: 0, y: 60 }}
                   animate={{ opacity: 1, y: 0 }}
                   transition={{ duration: 1, delay: 1.8 }}
@@ -197,71 +196,70 @@ export default function Home() {
                   className={`${styles.full_stack}`}
                   >
                       Full
-                  </motion.p>
-                  <motion.p
+                </motion.p>
+                <motion.p
                   initial={{ opacity: 0, y: 60 }}
                   animate={{ opacity: 1, y: 0 }}
                   transition={{ duration: 1, delay: 2.0 }}
                   style={{marginRight: "13px"}}
                   className={`${styles.full_stack}`}
-                  >
-                      Stack 
-                  </motion.p>
-                  <motion.p
+                >
+                  Stack 
+                </motion.p>
+                <motion.p
                   initial={{ opacity: 0, y: 60 }}
                   animate={{ opacity: 1, y: 0 }}
                   transition={{ duration: 1, delay: 2.2 }}
                   className={`${styles.full_stack}`}
-                  >
-                      Developer
-                  </motion.p>
-                  </motion.div>
-              </div>
-              <div className={styles.comet_box}>
-                  <motion.img
-                  src="/comet-01.png"
-                  alt="comet"
-                  className={styles.comet}
-                  initial={{ opacity: 0, x: -400, y: -400 }}
-                  animate={{
-                      opacity: [0, 1, 1, 0],
-                      x: [-400, 400],
-                      y: [-400, 400],
-                  }}
-                  transition={{
-                      duration: 4,
-                      delay: 0.8,
-                      times: [0, 0.5, 0.9, 1], 
-                  }}
-                  width={250}
-                  height={224}
-                  />
-              </div>
-              
-              <motion.div
-                  className={styles.about_me}
-                  ref={aboutMeRef}
-                  >
-                  <InView
+                >
+                  Developer
+                </motion.p>
+              </motion.div>
+            </div>
+            <div className={styles.comet_box}>
+              <motion.img
+                src="/comet-01.png"
+                alt="comet"
+                className={styles.comet}
+                initial={{ opacity: 0, x: -400, y: -400 }}
+                animate={{
+                    opacity: [0, 1, 1, 0],
+                    x: [-400, 400],
+                    y: [-400, 400],
+                }}
+                transition={{
+                    duration: 4,
+                    delay: 0.8,
+                    times: [0, 0.5, 0.9, 1], 
+                }}
+                width={250}
+                height={224}
+              />
+            </div>
+            <motion.div
+              className={styles.about_me}
+              ref={aboutMeRef}
+              >
+                <InView
                   as="div"
                   onChange={(inView) => setIsRocketVisible(inView)}
                   >
                   <motion.img
-                      src="/rocket.png"
-                      alt="rocket"
-                      width={250}
-                      height={224}
-                      initial={{ opacity: 0, y: 300 }}
-                      animate={{
-                        opacity: isRocketVisible ? [0, 1, 1] : 0,
-                        y: isRocketVisible ? [600, -250] : 600,
-                      }}
-                      transition={{
-                        duration: 4,
-                        delay: 0.5,
-                        times: [0, 0.5, 1],
-                        ease: 'easeInOut',
-                      }}
+                    src="/rocket.png"
+                    alt="rocket"
+                    width={250}
+                    height={224}
+                    initial={{ opacity: 0, y: 300 }}
+                    animate={{
+                      opacity: isRocketVisible ? [0, 1, 1] : 0,
+                      y: isRocketVisible ? [600, -250] : 600,
+                    }}
+                    transition={{
+                      duration: 4,
+                      delay: 0.5,
+                      times: [0, 0.5, 1],
+                      ease: 'easeInOut',
+                    }}
                   />
                   </InView>
                   <motion.div
@@ -300,7 +298,7 @@ export default function Home() {
               threshold={0.1}
             >
               <div className={styles.black_hole} ref={setBlackHoleRef}>
-                <Image  className={styles.black_hole_img} src="/black_hole.png" alt="black_hole" width={500} height={300}></Image>
+                <Image  className={styles.black_hole_img} src="/black_hole.png" alt="black_hole" width={200} height={300}></Image>
               </div>
             </InView>
           </div>
@@ -314,7 +312,7 @@ export default function Home() {
             inView5={inView5}
             inView6={inView6}
           ></Projects>
-          <Education></Education>
+          <Education></Education> 
           <Contact></Contact>
       </div>
     </>

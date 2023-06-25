@@ -54,7 +54,7 @@ export default function Projects({
     return (
         <>
             <section id="projects" className={styles.projects}>
-                <h2>Side Projects</h2>
+                <h1>Side Projects</h1>
                 <motion.div ref={planet01Ref}>
                     <motion.img
                         src="/planet_01.png" 
@@ -120,9 +120,10 @@ export default function Projects({
                                 height={500} 
                             />
                         </div>
-                        <div>
+                        <div className={styles.video_container}>
                             <h5 className={styles.title}>Check out the Video!!</h5>
                             <iframe
+                                className={styles.video}
                                 src={`https://www.youtube.com/embed/${FreelancerVideoId}`}
                                 title="freelancer directory project using react"
                                 allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
@@ -180,9 +181,10 @@ export default function Projects({
                                 height={500} 
                             />
                         </div>
-                        <div>
+                        <div className={styles.video_container}>
                             <h5 className={styles.title}>Check out the Video!!</h5>
                             <iframe
+                                className={styles.video}
                                 src={`https://www.youtube.com/embed/${SocialMediaId}`}
                                 title="Social media project using react"
                                 allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
@@ -235,9 +237,10 @@ export default function Projects({
                                 height={500} 
                             />
                         </div>
-                        <div>
+                        <div className={styles.video_container}>
                             <h5 className={styles.title}>Check out the Video!!</h5>
                             <iframe
+                                className={styles.video}
                                 src={`https://www.youtube.com/embed/${KanbanVideoId}`}
                                 title="Kanban project using react"
                                 allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
