@@ -141,7 +141,6 @@ export default function Home() {
                   whileHover={{ scale: 1.1 }}
                   whileTap={{ scale: 0.2 }}
                   className={`${styles.name}`}
-                  // style={nameStyle}
                   animate={{
                     x: ["0%", "40%"],
                   }}
@@ -263,25 +262,25 @@ export default function Home() {
                   />
                   </InView>
                   <motion.div
-                  className={styles.intro}
-                  initial={{ opacity: 0 }}
-                  animate={{
-                      opacity: [0, 1],
-                  }}
-                  transition={{
-                      duration: 1,
-                      delay: 1.2,
-                  }}
+                    className={styles.intro}
+                    initial={{ opacity: 0 }}
+                    animate={{
+                        opacity: [0, 1],
+                    }}
+                    transition={{
+                        duration: 1,
+                        delay: 1.2,
+                    }}
                   >
-                  <p>
-                      Fueled by a fascination with the universe.
-                  </p>
-                  <p>
-                      I find joy in building innovative tech solutions
-                  </p>
-                  <p>
-                      that prioritize user experience.
-                  </p>
+                    <p>
+                        Fueled by a fascination with the universe.
+                    </p>
+                    <p>
+                        I find joy in building innovative tech solutions
+                    </p>
+                    <p>
+                        that prioritize user experience.
+                    </p>
                   </motion.div>
               </motion.div>
             </section>

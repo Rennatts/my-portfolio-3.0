@@ -209,3 +209,48 @@
   }
 }
 
+
+
+@media (min-width: 575px) and (max-width: 900px) {
+  .skills {
+    width: 1200px;
+    height: 1260px;
+    transform: translateZ(-100px);
+    perspective: 1000px;
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: column;
+    flex-direction: column;
+    overflow: "hidden";
+    cursor: pointer;
+    z-index: -100;
+    margin-top: 1800px;
+    height: 2500px;
+
+    h1 {
+      font-size: 40px;
+    }
+
+    .header {
+      margin-top: 20%;
+
+    }
+
+    .icons {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      flex-direction: row;
+      width: 600px;
+      margin-top: 10%;
+
+      .glass_image {
+        margin-top: 8%;
+        margin-right: 50px;
+      }
+    
+    }
+  }
+}
+

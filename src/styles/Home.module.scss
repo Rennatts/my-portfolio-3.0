@@ -59,8 +59,9 @@
         width: 300px;
       }
     
-      @media (max-width: 991px) {
-        width: 100px;
+      @media (max-width: 900px) {
+        width: 220px;
+        margin-left: 150px;
       }
     
       @media (max-width: 575px) {
@@ -564,6 +565,101 @@
           letter-spacing: 0.2em;
           color: rgb(255, 255, 255);
           width: 60%;
+        }
+      }
+
+    }
+  }
+
+  .black_hole {
+    position: relative;
+    top: 80px;
+    left: 50%;
+    width: 100px;
+    height: 50px;
+
+    .black_hole_img{
+      width: 380px;
+      height: 200px;
+    }
+  }
+}
+
+@media (min-width: 575px) and (max-width: 900px) {
+  .background_image_container {
+    background-image: url('./../images/viktor-forgacs-Bvo2-SNi0rw-unsplash.jpg');
+    background-size: cover;
+    background-position: center center;
+    background-attachment: fixed;
+    position: relative;
+    z-index: -100;
+    transform-style: preserve-3d;
+    perspective: 2000px;
+    animation: animate 10s linear infinite;
+    height: 12200px;  
+    animation-direction: alternate;
+    animation-iteration-count: infinite;
+    margin-top: -90px;
+    width: 1200px;
+    min-width: 100vw;
+  }
+
+  .topics_container {
+    width: 900px;
+
+    .about {
+      width: 1200px;
+      height: 3500px;
+  
+      .intro_box {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin-top: 500px;
+        width: 100vw;
+        height: 20vh;
+        margin-right: 200px;
+
+        .name {
+          font-size: 70px;
+          text-align: center;
+        }
+      }
+
+      .description {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        color: white;
+        margin-top: 60px;
+        margin-left: -100px;
+    
+        .full_stack {
+          font-size: 40px;
+          letter-spacing: 8px;
+        }
+      }
+
+      .about_me {
+        margin-top: 1100px;
+        height: 700vh;
+        font-size: 35px;
+        display: flex;
+        justify-content: center;
+        align-content: center;
+        flex-direction: column;
+        width: 60%;
+  
+        .intro {
+          display: flex;
+          justify-content: center;
+          align-content: center;
+          flex-direction: column;
+          text-align: center;
+          line-height: 66px;
+          letter-spacing: 0.2em;
+          color: rgb(255, 255, 255);
+          width: 80%;
         }
       }
 
