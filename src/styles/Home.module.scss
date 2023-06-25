@@ -50,13 +50,17 @@
     justify-content: center;
     color: rgb(255, 252, 252);
     height: 200px;
+    text-align: center;
 
     .astronaut_img {
       position: relative;
       z-index: -100;
+      width: 300px;
 
-      @media (max-width: 1199px) {
+      @media (min-width: 901px) {
         width: 300px;
+        height: 300px;
+
       }
     
       @media (max-width: 900px) {
@@ -89,8 +93,6 @@
     align-items: center;
     justify-content: center;
     color: white;
-    margin-top: -100px;
-    margin-left: 90px;
 
     .full_stack {
       font-size: 25px;
@@ -128,17 +130,6 @@
   }
 }
 
-
-
-@keyframes typing {
-  from { width: 0 }
-  to { width: 100% }
-}
-
-@keyframes blink-caret {
-  from, to { border-color: transparent }
-  50% { border-color: #fff }
-}
 
 
 .experience{
@@ -668,13 +659,284 @@
 
   .black_hole {
     position: relative;
-    top: 80px;
-    left: 50%;
+    top: 50px;
+    left: 80%;
     width: 100px;
     height: 50px;
 
     .black_hole_img{
-      width: 380px;
+      width: 450px;
+      height: 200px;
+    }
+  }
+}
+
+
+
+@media (min-width: 901px) {
+  .background_image_container {
+    background-image: url('./../images/viktor-forgacs-Bvo2-SNi0rw-unsplash.jpg');
+    background-size: cover;
+    background-position: center center;
+    background-attachment: fixed;
+    position: relative;
+    z-index: -100;
+    transform-style: preserve-3d;
+    perspective: 2000px;
+    animation: animate 10s linear infinite;
+    height: 12200px;  
+    animation-direction: alternate;
+    animation-iteration-count: infinite;
+    margin-top: -90px;
+    width: 1300px;
+    min-width: 100vw;
+  }
+
+  .topics_container {
+    width: 900px;
+
+    .about {
+      width: 100vw;
+      height: 3500px;
+  
+      .intro_box {
+        margin-top: 450px;
+        width: 70vw;
+        height: 20vh;
+        margin-right: 400px;
+        text-align: center;
+
+        .name {
+          font-size: 70px;
+        }
+      }
+
+      .description {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        color: white;
+        margin-top: 20px;
+        margin-left: 30px;
+    
+        .full_stack {
+          font-size: 40px;
+          letter-spacing: 8px;
+        }
+      }
+
+      .about_me {
+        margin-top: 1100px;
+        height: 700vh;
+        font-size: 35px;
+        display: flex;
+        justify-content: center;
+        align-content: center;
+        flex-direction: column;
+  
+        .intro {
+          display: flex;
+          justify-content: center;
+          align-content: center;
+          flex-direction: column;
+          text-align: center;
+          line-height: 66px;
+          letter-spacing: 0.2em;
+          color: rgb(255, 255, 255);
+          width: 60%;
+        }
+      }
+
+    }
+  }
+
+  .black_hole {
+    position: relative;
+    top: 190px;
+    left: 1030px;
+
+    .black_hole_img{
+      width: 510px;
+      height: 200px;
+    }
+  }
+}
+
+
+@media (min-width: 1200px) {
+  .background_image_container {
+    background-image: url('./../images/viktor-forgacs-Bvo2-SNi0rw-unsplash.jpg');
+    background-size: cover;
+    background-position: center center;
+    background-attachment: fixed;
+    position: relative;
+    z-index: -100;
+    transform-style: preserve-3d;
+    perspective: 2000px;
+    animation: animate 10s linear infinite;
+    height: 12200px;  
+    animation-direction: alternate;
+    animation-iteration-count: infinite;
+    margin-top: -90px;
+    width: 100vw;
+    min-width: 100vw;
+  }
+
+  .topics_container {
+    width: 100vw;
+
+    .about {
+      width: 100vw;
+      height: 3500px;
+  
+      .intro_box {
+        margin-top: 450px;
+        width: 70vw;
+        height: 20vh;
+        margin-right: 400px;
+        text-align: center;
+
+        .name {
+          font-size: 70px;
+        }
+      }
+
+      .description {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        color: white;
+        margin-top: 60px;
+        margin-left: -90px;
+    
+        .full_stack {
+          font-size: 40px;
+          letter-spacing: 8px;
+        }
+      }
+
+      .about_me {
+        margin-top: 1100px;
+        height: 700vh;
+        font-size: 35px;
+        display: flex;
+        justify-content: center;
+        align-content: center;
+        flex-direction: column;
+  
+        .intro {
+          display: flex;
+          justify-content: center;
+          align-content: center;
+          flex-direction: column;
+          text-align: center;
+          line-height: 66px;
+          letter-spacing: 0.2em;
+          color: rgb(255, 255, 255);
+          width: 60%;
+        }
+      }
+
+    }
+  }
+
+  .black_hole {
+    position: relative;
+    top: 190px;
+    left: 860px;
+
+    .black_hole_img{
+      width: 510px;
+      height: 200px;
+    }
+  }
+}
+
+
+@media (min-width: 1450px) and (max-width: 2000px)   {
+  .background_image_container {
+    background-image: url('./../images/viktor-forgacs-Bvo2-SNi0rw-unsplash.jpg');
+    background-size: cover;
+    background-position: center center;
+    background-attachment: fixed;
+    position: relative;
+    z-index: -100;
+    transform-style: preserve-3d;
+    perspective: 2000px;
+    animation: animate 10s linear infinite;
+    height: 12200px;  
+    animation-direction: alternate;
+    animation-iteration-count: infinite;
+    margin-top: -90px;
+    width: 100vw;
+    min-width: 100vw;
+  }
+
+  .topics_container {
+    width: 100vw;
+
+    .about {
+      width: 100vw;
+      height: 3500px;
+  
+      .intro_box {
+        margin-top: 450px;
+        width: 70vw;
+        height: 20vh;
+        margin-right: 400px;
+        text-align: center;
+
+        .name {
+          font-size: 70px;
+        }
+      }
+
+      .description {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        color: white;
+        margin-top: 60px;
+        margin-left: 50px;
+    
+        .full_stack {
+          font-size: 40px;
+          letter-spacing: 8px;
+        }
+      }
+
+      .about_me {
+        margin-top: 1100px;
+        height: 700vh;
+        font-size: 35px;
+        display: flex;
+        justify-content: center;
+        align-content: center;
+        flex-direction: column;
+  
+        .intro {
+          display: flex;
+          justify-content: center;
+          align-content: center;
+          flex-direction: column;
+          text-align: center;
+          line-height: 66px;
+          letter-spacing: 0.2em;
+          color: rgb(255, 255, 255);
+          width: 60%;
+        }
+      }
+
+    }
+  }
+
+  .black_hole {
+    position: relative;
+    top: 190px;
+    left: 1260px;
+
+    .black_hole_img{
+      width: 510px;
       height: 200px;
     }
   }
