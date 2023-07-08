@@ -186,9 +186,61 @@
 }
 
 
+@media (min-width: 902px) and (max-width: 1449px){
+        .education {
+            width: 1200px;
+            min-width: 100vw;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            flex-direction: column;
+            height: 1800px;
+
+            h1 {
+                font-size: 60px;
+                color: white;
+                margin-bottom: 80px;
+            }
+
+            .description {
+                display: flex;
+                flex-direction: column;
+
+                .header{
+                    h1 {
+                        font-size: 40px;
+                    }
+
+                    p{
+                        font-size: 40px;
+                    }
+                }
+
+                .education_01,
+                .education_02 {
+                    margin-top: 150px;
+
+                    p{
+                        font-size: 35px;
+                    }
+
+                    .header{
+                        h1 {
+                            font-size: 45px;
+                        }
+        
+                        p {
+                            font-size: 40px;
+                        }
+                    }
+                }
+            }
+    }
+}
+
 @media (min-width: 575px) and (max-width: 900px)  {
     .education {
-        width: 100%;
+        width: 1200px;
         display: flex;
         align-items: center;
         justify-content: center;

@@ -111,37 +111,53 @@ export default function Home() {
 
   console.log("windowWidth", windowWidth)
 
-  
 
-
-
-  
   return (
     <>
-      <Header></Header>
+      <Header />
       <div className={styles.background_image_container}>
-          <div className={styles.topics_container}>
-            <section id="about" className={styles.about}>
+        <div className={styles.topics_container}>
+          <section id="about" className={styles.about}>
+            <div className={styles.intro_container}>
               <motion.div
                 initial={{ opacity: 0 }}
                 animate={{ opacity: 1 }}
                 transition={{ duration: 0.2 }}
                 className={`${styles.intro_box}`}
               >
-                <motion.p
-                  whileHover={{ scale: 1.1 }}
-                  whileTap={{ scale: 0.2 }}
-                  className={`${styles.name}`}
-                  animate={{
-                    x: ["0%", "40%"],
-                  }}
-                  transition={{
-                    duration: 1.5,
-                    ease: "linear",
-                    loop: Infinity,
-                  }}
-                  > Hi! I'm RENATA MACHADO
-                </motion.p>
+                <div className={`${styles.intro_text}`}>
+                  <motion.p
+                    whileHover={{ scale: 1.1 }}
+                    whileTap={{ scale: 0.2 }}
+                    className={`${styles.name}`}
+                    animate={{
+                      x: ["0%", "40%"],
+                    }}
+                    transition={{
+                      duration: 1.5,
+                      ease: "linear",
+                      loop: Infinity,
+                    }}
+                  > 
+                    Hi! I'm 
+                  </motion.p>
+                  <motion.p
+                    whileHover={{ scale: 1.1 }}
+                    whileTap={{ scale: 0.2 }}
+                    className={`${styles.name}`}
+                    animate={{
+                      x: ["0%", "40%"],
+                    }}
+                    transition={{
+                      duration: 1.5,
+                      ease: "linear",
+                      loop: Infinity,
+                    }}
+                  > 
+                    RENATA MACHADO
+                  </motion.p>
+
+                </div>
                 <motion.img
                   ref={imageRef}
                   src="/astronaut.png"
@@ -150,33 +166,25 @@ export default function Home() {
                   whileHover={{ scale: 1.1 }}
                   whileTap={{ scale: 0.2 }}
                   style={{
-                      top: `${yPosition * 1}px`,
-                      opacity: astronautOpacity,
+                    top: `${yPosition * 1}px`,
+                    opacity: astronautOpacity,
                   }}
                   animate={{
-                      x: ["0%", "100%"],
+                    x: ["0%", "100%"],
                   }}
                   transition={{
-                      duration: 1.5,
-                      ease: "linear",
-                      loop: Infinity,
+                    duration: 1.5,
+                    ease: "linear",
+                    loop: Infinity,
                   }}
                   height={250}
                 />
-            </motion.div>
-            <div className={styles.description}>
+              </motion.div>
               <motion.div
                 initial={{ opacity: 0 }}
                 animate={{ opacity: 1 }}
                 transition={{ duration: 1 }}
-                style={{ 
-                    display: "flex", 
-                    justifyContent: "center", 
-                    alignItems: "center", 
-                    width: "200%", 
-                    height: "100%", 
-                    fontSize: "25px",
-                }}
+                className={styles.description}
               >
                 <motion.p
                   initial={{ opacity: 0, y: 60 }}
@@ -184,8 +192,8 @@ export default function Home() {
                   transition={{ duration: 1, delay: 1.8 }}
                   style={{marginRight: "13px"}}
                   className={`${styles.full_stack}`}
-                  >
-                    A Full
+                >
+                  Full
                 </motion.p>
                 <motion.p
                   initial={{ opacity: 0, y: 60 }}
@@ -213,85 +221,100 @@ export default function Home() {
                 className={styles.comet}
                 initial={{ opacity: 0, x: -400, y: -400 }}
                 animate={{
-                    opacity: [0, 1, 1, 0],
-                    x: [-400, 400],
-                    y: [-400, 400],
+                  opacity: [0, 1, 1, 0],
+                  x: [-400, 400],
+                  y: [-400, 400],
                 }}
                 transition={{
-                    duration: 4,
-                    delay: 0.8,
-                    times: [0, 0.5, 0.9, 1], 
+                  duration: 4,
+                  delay: 0.8,
+                  times: [0, 0.5, 0.9, 1], 
                 }}
                 width={250}
                 height={224}
               />
             </div>
             <motion.div
+              initial={{ opacity: 0 }}
+              animate={{ opacity: 1 }}
+              transition={{ duration: 1 }}
+              className={`${styles.intro_welcome}`}
+            >
+              <motion.p
+                initial={{ opacity: 0, y: 60 }}
+                animate={{ opacity: 1, y: 0 }}
+                transition={{ duration: 1, delay: 1.8 }}
+                style={{marginRight: "13px"}}
+                className={`${styles.intro_welcome_text}`}
+              >
+                Enjoy this cosmic journey through my portfolio!
+              </motion.p>
+            </motion.div>
+            <motion.div
               className={styles.about_me}
               ref={aboutMeRef}
-              >
-                <InView
-                  as="div"
-                  onChange={(inView) => setIsRocketVisible(inView)}
-                  >
-                  <motion.img
-                    src="/rocket.png"
-                    alt="rocket"
-                    width={250}
-                    height={224}
-                    initial={{ opacity: 0, y: 300 }}
-                    animate={{
-                      opacity: isRocketVisible ? [0, 1, 1] : 0,
-                      y: isRocketVisible ? [600, -250] : 600,
-                    }}
-                    transition={{
-                      duration: 4,
-                      delay: 0.5,
-                      times: [0, 0.5, 1],
-                      ease: 'easeInOut',
-                    }}
-                  />
-                  </InView>
-                  <motion.div
-                    className={styles.intro}
-                    initial={{ opacity: 0 }}
-                    animate={{
-                        opacity: [0, 1],
-                    }}
-                    transition={{
-                        duration: 1,
-                        delay: 1.2,
-                    }}
-                  >
-                    <p>
-                        Fueled by a fascination with the universe.
-                    </p>
-                    <p>
-                        I find joy in building innovative tech solutions
-                    </p>
-                    <p>
-                        that prioritize user experience.
-                    </p>
-                  </motion.div>
-              </motion.div>
-            </section>
-            <Experience 
-              experience01Ref={experience01Ref} 
-              experienceRef2={experienceRef2} 
-              inView={inView} 
-              inView2={inView2}
-            ></Experience>
-            <Skills></Skills>
-            <InView
-              as="div"
-              onChange={(inView) => !inView && setHasPassedBlackHole(true)} 
-              threshold={0.1}
             >
-              <div className={styles.black_hole} ref={setBlackHoleRef}>
-                <Image  className={styles.black_hole_img} src="/black_hole.png" alt="black_hole" width={200} height={300}></Image>
-              </div>
-            </InView>
-          </div>
+              <InView
+                as="div"
+                onChange={(inView) => setIsRocketVisible(inView)}
+              >
+                <motion.img
+                  src="/rocket.png"
+                  alt="rocket"
+                  width={250}
+                  height={224}
+                  initial={{ opacity: 0, y: 300 }}
+                  animate={{
+                    opacity: isRocketVisible ? [0, 1, 1] : 0,
+                    y: isRocketVisible ? [600, -250] : 600,
+                  }}
+                  transition={{
+                    duration: 4,
+                    delay: 0.5,
+                    times: [0, 0.5, 1],
+                    ease: 'easeInOut',
+                  }}
+                />
+              </InView>
+              <motion.div
+                className={styles.intro}
+                initial={{ opacity: 0 }}
+                animate={{
+                    opacity: [0, 1],
+                }}
+                transition={{
+                    duration: 1,
+                    delay: 1.2,
+                }}
+              >
+                <p>
+                    Fueled by a fascination with the universe.
+                </p>
+                <p>
+                    I find joy in building innovative tech solutions
+                </p>
+                <p>
+                    that prioritize user experience.
+                </p>
+              </motion.div>
+            </motion.div>
+          </section>
+          <Experience 
+            experience01Ref={experience01Ref} 
+            experienceRef2={experienceRef2} 
+            inView={inView} 
+            inView2={inView2}
+          />
+          <Skills />
+          <InView
+            as="div"
+            onChange={(inView) => !inView && setHasPassedBlackHole(true)} 
+            threshold={0.1}
+          >
+            <div className={styles.black_hole} ref={setBlackHoleRef}>
+              <Image  className={styles.black_hole_img} src="/black_hole.png" alt="black_hole" width={200} height={300} />
+            </div>
+          </InView>
           <Projects 
             planet01Ref={planet01Ref} 
             planet02Ref={planet02Ref} 
@@ -301,10 +324,13 @@ export default function Home() {
             inView4={inView4}
             inView5={inView5}
             inView6={inView6}
-          ></Projects>
-          <Education></Education> 
-          <Contact></Contact>
+          />
+          <Education /> 
+          <Contact />
+        </div>
       </div>
     </>
   )
+  
+
 }

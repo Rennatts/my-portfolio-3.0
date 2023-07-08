@@ -135,8 +135,8 @@ export default function Intro({ yPosition }: IIntroProps) {
                 ref={aboutMeRef}
                 >
                 <InView
-                as="div"
-                onChange={(inView) => setIsRocketVisible(inView)}
+                    as="div"
+                    onChange={(inView) => setIsRocketVisible(inView)}
                 >
                 <motion.img
                     src="/rocket.png"
@@ -179,7 +179,6 @@ export default function Intro({ yPosition }: IIntroProps) {
                 </motion.div>
             </motion.div>
             </section>
-
         </>
     )
 }
