@@ -140,7 +140,7 @@ export default function Home() {
                     ease: "linear",
                     loop: Infinity,
                   }}
-                  > Im RENATA MACHADO
+                  > Hi! I'm RENATA MACHADO
                 </motion.p>
                 <motion.img
                   ref={imageRef}
@@ -185,7 +185,7 @@ export default function Home() {
                   style={{marginRight: "13px"}}
                   className={`${styles.full_stack}`}
                   >
-                      Full
+                    A Full
                 </motion.p>
                 <motion.p
                   initial={{ opacity: 0, y: 60 }}
