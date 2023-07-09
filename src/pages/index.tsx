@@ -109,9 +109,6 @@ export default function Home() {
   let imageStyle;
   let nameStyle;
 
-  console.log("windowWidth", windowWidth)
-
-
   return (
     <>
       <Header />

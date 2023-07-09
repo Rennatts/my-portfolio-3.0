@@ -80,8 +80,9 @@
         flex-direction: column;
         color: white;
         margin-top: 20%;
-        width: 60%;
+        width: 0%;
         cursor: pointer;
+        height: 2222px;
 
         .header {
             display: flex;
@@ -169,7 +170,8 @@
         flex-direction: column;
         color: white;
         margin-top: 20%;
-        width: 60%;
+        width: 0%;
+        cursor: pointer;
 
         .header {
             display: flex;
@@ -178,6 +180,7 @@
             flex-direction: column;
             margin-bottom: 10%;
             font-size: 20px;
+            padding-top: 280px;
 
 
             h3 {
@@ -225,14 +228,19 @@
                 }
             }
 
-            .title {
-                color: white;
-                display: flex;
-                align-content: center;
-                justify-content: center; 
-                margin-top: 10%;
-            }
+            
+            .video_container {
+                margin-bottom: 20px;
 
+                .title {
+                    color: white;
+                    display: flex;
+                    align-content: center;
+                    justify-content: center; 
+                }
+
+            }
+            
         }
     }
 
@@ -302,7 +310,7 @@
                 flex-direction: column;
 
                 .title {
-                    color: black;
+                    color: white;
                     display: flex;
                     align-content: center;
                     justify-content: center; 
@@ -427,7 +435,7 @@
     .projects {
         width: 100%;
         margin-top: 100px;
-        height: 9000px;
+        height: 10000px;
 
         h1 {
             margin-top: 190px;
@@ -443,12 +451,12 @@
             margin-right: 500px;
         }
 
-        .project_01,
-        .project_02,
-        .project_03 {
+        .project_01 {
             width: 80%;
+            height: 2500px;
 
             .header {
+                margin-top: 50px;
     
                 h3 {
                     font-size: 40px;
@@ -464,7 +472,6 @@
                 }
             }
     
-    
             .description{
                 display: flex;
                 align-items: center;
@@ -475,6 +482,12 @@
                     cursor: pointer;
                 }
 
+                .design {
+                    .title {
+                        font-size: 30px;
+                    }
+                }
+
                 .video_container{
                     width: 100%;
                     height: 100%;
@@ -482,7 +495,139 @@
 
                     .title {
                         margin-bottom: 10%;
-                        font-size: 20px;
+                        font-size: 30px;
+                    }
+
+                    .video{
+                        width: 100%;
+                        height: 100%;
+                    }
+                }
+    
+                .tech {
+                    margin-right: 5%;
+    
+                    ul li {
+                        margin-bottom: 2%;
+                        font-size: 30px;
+                    }
+                }
+    
+    
+            }
+        }
+
+        .project_02 {
+            width: 80%;
+            height: 2500px;
+
+            .header {
+                margin-top: -330px;
+
+                h3 {
+                    font-size: 40px;
+                    margin-bottom: 5%;
+                }
+    
+                span {
+                    font-size: 25px;
+                }
+    
+                h5 {
+                    font-size: 22px;
+                }
+            }
+    
+            .description {
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                flex-direction: column;
+    
+                .image_box{
+                    cursor: pointer;
+                }
+
+                .design {
+                    .title {
+                        font-size: 30px;
+                    }
+                }
+
+                .video_container{
+                    width: 100%;
+                    height: 100%;
+                    padding-bottom: 30%;
+
+                    .title {
+                        margin-bottom: 10%;
+                        font-size: 30px;
+                    }
+
+                    .video{
+                        width: 100%;
+                        height: 100%;
+                    }
+                }
+    
+                .tech {
+                    margin-right: 5%;
+    
+                    ul li {
+                        margin-bottom: 2%;
+                        font-size: 30px;
+                    }
+                }
+    
+    
+            }
+        }
+
+
+        .project_03 {
+            width: 80%;
+            height: 2200px;
+
+            .header {
+
+                h3 {
+                    font-size: 40px;
+                    margin-bottom: 5%;
+                }
+    
+                span {
+                    font-size: 25px;
+                }
+    
+                h5 {
+                    font-size: 22px;
+                }
+            }
+    
+            .description {
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                flex-direction: column;
+    
+                .image_box{
+                    cursor: pointer;
+                }
+
+                .design {
+                    .title {
+                        font-size: 30px;
+                    }
+                }
+
+                .video_container{
+                    width: 100%;
+                    height: 100%;
+                    padding-bottom: 30%;
+
+                    .title {
+                        margin-bottom: 10%;
+                        font-size: 30px;
                     }
 
                     .video{

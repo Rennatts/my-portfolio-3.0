@@ -42,7 +42,7 @@
   overflow: "hidden";
   height: 300vh; 
 
-  .intro_container{
+  .intro_container {
     display: flex;
     align-content: center;
     flex-direction: column;
@@ -133,11 +133,15 @@
     justify-content: center;
     align-content: center;
     height: 20%;
+    color: white;
+    font-size: 50px;
+    width: 40%;
+    text-align: center;
+    margin-top: 30%;
   }
 
-  .about_me{
-    margin-top: 500px;
-    height: 700vh;
+  .about_me {
+    height: 600vh;
     font-size: var(--font-size-large);
     display: flex;
     justify-content: center;
@@ -452,6 +456,10 @@
         justify-content: center;
         height: 30%;
         margin-top: 20%;
+
+        .description {
+          margin-left: 5%;
+        }
     
         .intro_box {
           display: flex;
@@ -473,21 +481,6 @@
               width: 130%;
             }
           }
-
-
-          // .description {
-          //   display: flex;
-          //   align-items: center;
-          //   justify-content: center;
-          //   color: white;
-          //   margin-top: 150px;
-          //   margin-left: 10px;
-        
-          //   .full_stack {
-          //     font-size: 40px;
-          //     letter-spacing: 5px;
-          //   }
-          // }
 
           .about_me {
             margin-top: 1100px;
@@ -513,6 +506,20 @@
 
         }
 
+      }
+
+      .intro_welcome {
+        display: flex;
+        justify-content: center;
+        align-content: center;
+        height: 20%;
+        color: white;
+        font-size: 50px;
+        width: 60%;
+        text-align: center;
+        line-height: 96px;
+        letter-spacing: 0.2em;
+        margin-top: 50%;
       }
 
     }
@@ -620,10 +627,24 @@
         }
       }
 
+      .intro_welcome {
+        display: flex;
+        justify-content: center;
+        align-content: center;
+        height: 20%;
+        color: white;
+        font-size: 50px;
+        width: 60%;
+        text-align: center;
+        line-height: 96px;
+        letter-spacing: 0.2em;
+        margin-top: 60%;
+      }
+
       .about_me {
-        margin-top: 1100px;
+        margin-top: 700px;
         height: 700vh;
-        font-size: 30px;
+        font-size: 40px;
         display: flex;
         justify-content: center;
         align-content: center;
@@ -839,8 +860,20 @@
         }
       }
 
+      .intro_welcome {
+        display: flex;
+        justify-content: center;
+        align-content: center;
+        height: 20%;
+        color: white;
+        font-size: 50px;
+        width: 55%;
+        text-align: center;
+        margin-top: 60%;
+      }
+
       .about_me {
-        margin-top: 1100px;
+        margin-top: 600px;
         height: 700vh;
         font-size: 30px;
         display: flex;
@@ -1085,11 +1118,11 @@
   }
 
   .topics_container {
-    width: 1100px;
-
+    width: 100vw;  
+    
     .about {
       width: 100vw;
-      height: 3500px;
+      height: 3500px;    
 
       .intro_container {
         display: flex;
@@ -1122,18 +1155,6 @@
           height: 400px;
           text-align: center; 
           width: 82%;
-
-          // .description {
-          //   display: flex;
-          //   align-items: center;
-          //   justify-content: center;
-          //   color: white;
-        
-          //   .full_stack {
-          //     font-size: 40px;
-          //     letter-spacing: 5px;
-          //   }
-          // } 
       
           .intro_text {
             display: flex;
@@ -1151,6 +1172,20 @@
         }
       }
 
+      .intro_welcome {
+        display: flex;
+        justify-content: center;
+        align-content: center;
+        height: 20%;
+        color: white;
+        font-size: 40px;
+        width: 50%;
+        text-align: center;
+        margin-top: 40%;
+        line-height: 66px;
+        letter-spacing: 0.2em;
+      }
+
       .about_me {
         margin-top: 1100px;
         height: 700vh;
@@ -1159,7 +1194,6 @@
         justify-content: center;
         align-content: center;
         flex-direction: column;
-        background-color: red;
   
         .intro {
           display: flex;
@@ -1342,13 +1376,14 @@
       }
 
       .about_me {
-        margin-top: 1100px;
+        margin-top: 900px;
         height: 700vh;
         font-size: 30px;
         display: flex;
         justify-content: center;
         align-content: center;
         flex-direction: column;
+        background-color: red;
   
         .intro {
           display: flex;
