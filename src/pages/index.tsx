@@ -109,6 +109,32 @@ export default function Home() {
   let imageStyle;
   let nameStyle;
 
+  const [astronautY, setAstronautY] = useState(0);
+  const [targetY, setTargetY] = useState(0);
+  
+  useEffect(() => {
+    const handleScroll = () => {
+      // Set the target Y position based on scroll position
+      setTargetY(window.pageYOffset);
+    };
+    
+    window.addEventListener("scroll", handleScroll);
+    
+    return () => window.removeEventListener("scroll", handleScroll);
+  }, []);
+  
+  useEffect(() => {
+    const smoothScroll = () => {
+      // Interpolate towards the target Y position
+      setAstronautY(astronautY => astronautY + (targetY - astronautY) * 0.1);
+      requestAnimationFrame(smoothScroll);
+    };
+  
+    // Start the smooth scroll loop
+    smoothScroll();
+  }, [targetY]);
+  
+
   return (
     <>
       <Header />
@@ -163,7 +189,7 @@ export default function Home() {
                   whileHover={{ scale: 1.1 }}
                   whileTap={{ scale: 0.2 }}
                   style={{
-                    top: `${yPosition * 1}px`,
+                    top: `${astronautY}px`,
                     opacity: astronautOpacity,
                   }}
                   animate={{
@@ -244,14 +270,14 @@ export default function Home() {
                   alt="rocket"
                   width={250}
                   height={224}
-                  initial={{ opacity: 0, y: 300 }}
+                  initial={{ opacity: 0, y: 200 }}
                   animate={{
                     opacity: isRocketVisible ? [0, 1, 1] : 0,
-                    y: isRocketVisible ? [600, -250] : 600,
+                    y: isRocketVisible ? [800, -150] : 800,
                   }}
                   transition={{
                     duration: 4,
-                    delay: 0.5,
+                    delay: 1.5,
                     times: [0, 0.5, 1],
                     ease: 'easeInOut',
                   }}

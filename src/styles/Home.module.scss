@@ -130,6 +130,7 @@
 
 
   .about_me {
+    margin-top: 10000px;
     height: 600vh;
     font-size: var(--font-size-large);
     display: flex;
@@ -423,7 +424,7 @@
     transform-style: preserve-3d;
     perspective: 2000px;
     animation: animate 10s linear infinite;
-    height: 12200px;  
+    height: 14200px;  
     animation-direction: alternate;
     animation-iteration-count: infinite;
     margin-top: -90px;
@@ -438,14 +439,12 @@
       width: 100%;
       height: 4000px;
       display: flex;
-      background-color: rgb(17, 247, 232);
 
       .intro_container {
         display: flex;
         align-content: center;
         flex-direction: column;
         justify-content: center;
-        height: 30%;
         margin-top: 20%;
 
         .description {
@@ -459,7 +458,7 @@
           justify-content: center;
           color: rgb(255, 252, 252);
           height: 400px;
-          text-align: center;    
+          text-align: center;   
       
           .intro_text {
             display: flex;
@@ -473,31 +472,32 @@
             }
           }
 
-          .about_me {
-            margin-top: 1100px;
-            height: 700vh;
-            font-size: 30px;
-            display: flex;
-            justify-content: center;
-            align-content: center;
-            flex-direction: column;
-      
-            .intro {
-              display: flex;
-              justify-content: center;
-              align-content: center;
-              flex-direction: column;
-              text-align: center;
-              line-height: 66px;
-              letter-spacing: 0.2em;
-              color: rgb(255, 255, 255);
-              width: 60%;
-              background-color: red;
-            }
-          }
-
         }
 
+      }
+      
+
+
+      .about_me {
+        margin-top: 2200px;
+        height: 1100vh;
+        font-size: 30px;
+        display: flex;
+        justify-content: center;
+        align-content: center;
+        flex-direction: column;
+  
+        .intro {
+          display: flex;
+          justify-content: center;
+          align-content: center;
+          flex-direction: column;
+          text-align: center;
+          line-height: 66px;
+          letter-spacing: 0.2em;
+          color: rgb(255, 255, 255);
+          width: 60%;
+        }
       }
 
     }
@@ -531,7 +531,7 @@
     transform-style: preserve-3d;
     perspective: 2000px;
     animation: animate 10s linear infinite;
-    height: 13200px;  
+    height: 15200px;  
     animation-direction: alternate;
     animation-iteration-count: infinite;
     margin-top: -90px;

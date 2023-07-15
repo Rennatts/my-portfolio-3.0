@@ -46,7 +46,7 @@ export default function Projects({
             controlPlanet03.start({ opacity: 1, y: 300 });
         }
         if (inView6) {
-            controlPlanet04.start({ opacity: 1, y: 10 });
+            controlPlanet04.start({ opacity: 1, x: 0 }); 
         }
     }, [controlPlanet01, controlPlanet02, controlPlanet03, controlPlanet04, inView3, inView4, inView5, inView6]);
     
@@ -75,17 +75,6 @@ export default function Projects({
                             Exploring my Universe <br/> One Project at a time
                     </motion.p>
                 </div>
-
-                {/* <motion.div ref={planet02Ref}>
-                    <motion.img
-                        src="/planet_04.png" 
-                        alt="planet_02"
-                        className={styles.planet_02}
-                        initial={{ opacity: 0, x: -400 }}
-                        animate={controlPlanet02}
-                        transition={{ duration: 3 }}
-                    />
-                </motion.div> */}
 
                 <motion.div
                     className={styles.project_01}
@@ -256,7 +245,7 @@ export default function Projects({
                         src="/planet_02.png" 
                         alt="planet_04"
                         className={styles.planet_04}
-                        initial={{ opacity: 0, y: -520 }}
+                        initial={{ opacity: 1, x: 500 }}
                         animate={controlPlanet04}
                         transition={{ duration: 2 }}
                     />
