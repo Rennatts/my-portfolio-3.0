@@ -232,22 +232,6 @@ export default function Home() {
               />
             </div>
             <motion.div
-              initial={{ opacity: 0 }}
-              animate={{ opacity: 1 }}
-              transition={{ duration: 1 }}
-              className={`${styles.intro_welcome}`}
-            >
-              <motion.p
-                initial={{ opacity: 0, y: 60 }}
-                animate={{ opacity: 1, y: 0 }}
-                transition={{ duration: 1, delay: 1.8 }}
-                style={{marginRight: "13px"}}
-                className={`${styles.intro_welcome_text}`}
-              >
-                Enjoy this cosmic journey through my portfolio!
-              </motion.p>
-            </motion.div>
-            <motion.div
               className={styles.about_me}
               ref={aboutMeRef}
             >
@@ -285,14 +269,15 @@ export default function Home() {
                 }}
               >
                 <p>
-                    Fueled by a fascination with the universe.
-                </p>
-                <p>
                     I find joy in building innovative tech solutions
                 </p>
                 <p>
                     that prioritize user experience.
                 </p>
+                <br/>
+                <br/>
+                <br/>
+                <p>Enjoy this cosmic journey through my portfolio!</p>
               </motion.div>
             </motion.div>
           </section>

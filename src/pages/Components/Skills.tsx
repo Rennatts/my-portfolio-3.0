@@ -83,6 +83,19 @@ export default function Skills({  }: IIntroProps) {
                         </div>
                     </div>
                 </div>
+                <div>
+                    <div className={styles.header}>
+                    <h2>Cloud</h2>
+                    </div>
+                    <div className={styles.icons}>
+                        <div className={styles.glass_image}>
+                            <Image className={styles.logo} src="/aws_logo.png" alt="aws" width={200} height={100}></Image>
+                        </div>
+                        <div className={styles.glass_image}>
+                            <Image src="/firebase_logo_03.png" alt="firebase" width={200} height={100}></Image>
+                        </div>
+                    </div>
+                </div>
             </section>
         </>
     )

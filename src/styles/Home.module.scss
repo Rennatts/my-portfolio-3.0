@@ -1,5 +1,5 @@
 .background_image_container{
-  background-image: url('./../images/viktor-forgacs-Bvo2-SNi0rw-unsplash.jpg');
+  background-image: url('./../images/universe_01.jpg');
   background-size: cover;
   background-position: center center;
   background-attachment: fixed;
@@ -128,17 +128,6 @@
     z-index: 1;
   }
 
-  .intro_welcome {
-    display: flex;
-    justify-content: center;
-    align-content: center;
-    height: 20%;
-    color: white;
-    font-size: 50px;
-    width: 40%;
-    text-align: center;
-    margin-top: 30%;
-  }
 
   .about_me {
     height: 600vh;
@@ -425,7 +414,7 @@
 
 @media (max-width: 400px) {
   .background_image_container {
-    background-image: url('./../images/viktor-forgacs-Bvo2-SNi0rw-unsplash.jpg');
+    background-image: url('./../images/universe_01.jpg');
     background-size: cover;
     background-position: center center;
     background-attachment: fixed;
@@ -447,7 +436,9 @@
 
     .about {
       width: 100%;
-      height: 3500px;
+      height: 4000px;
+      display: flex;
+      background-color: rgb(17, 247, 232);
 
       .intro_container {
         display: flex;
@@ -468,7 +459,7 @@
           justify-content: center;
           color: rgb(255, 252, 252);
           height: 400px;
-          text-align: center;       
+          text-align: center;    
       
           .intro_text {
             display: flex;
@@ -501,25 +492,12 @@
               letter-spacing: 0.2em;
               color: rgb(255, 255, 255);
               width: 60%;
+              background-color: red;
             }
           }
 
         }
 
-      }
-
-      .intro_welcome {
-        display: flex;
-        justify-content: center;
-        align-content: center;
-        height: 20%;
-        color: white;
-        font-size: 50px;
-        width: 60%;
-        text-align: center;
-        line-height: 96px;
-        letter-spacing: 0.2em;
-        margin-top: 50%;
       }
 
     }
@@ -544,7 +522,7 @@
 
 @media (max-width: 575px) {
   .background_image_container {
-    background-image: url('./../images/viktor-forgacs-Bvo2-SNi0rw-unsplash.jpg');
+    background-image: url('./../images/universe_01.jpg');
     background-size: cover;
     background-position: center center;
     background-attachment: fixed;
@@ -553,7 +531,7 @@
     transform-style: preserve-3d;
     perspective: 2000px;
     animation: animate 10s linear infinite;
-    height: 12200px;  
+    height: 13200px;  
     animation-direction: alternate;
     animation-iteration-count: infinite;
     margin-top: -90px;
@@ -569,6 +547,7 @@
       height: 3500px;
 
       .intro_container {
+
         display: flex;
         align-content: center;
         flex-direction: column;
@@ -582,6 +561,7 @@
           justify-content: center;
           color: white;
           margin-top: -40px;
+          margin-left: 5%;
       
           .full_stack {
             font-size: 40px;
@@ -604,6 +584,7 @@
             align-items: center;
             justify-content: center;
             color: white;
+
         
             .full_stack {
               font-size: 40px;
@@ -625,20 +606,6 @@
           }
 
         }
-      }
-
-      .intro_welcome {
-        display: flex;
-        justify-content: center;
-        align-content: center;
-        height: 20%;
-        color: white;
-        font-size: 50px;
-        width: 60%;
-        text-align: center;
-        line-height: 96px;
-        letter-spacing: 0.2em;
-        margin-top: 60%;
       }
 
       .about_me {
@@ -680,103 +647,11 @@
   }
 }
 
-// @media (max-width: 575px) {
-//   .background_image_container {
-//     background-image: url('./../images/viktor-forgacs-Bvo2-SNi0rw-unsplash.jpg');
-//     background-size: cover;
-//     background-position: center center;
-//     background-attachment: fixed;
-//     position: relative;
-//     z-index: -100;
-//     transform-style: preserve-3d;
-//     perspective: 2000px;
-//     animation: animate 10s linear infinite;
-//     height: 12200px;  
-//     animation-direction: alternate;
-//     animation-iteration-count: infinite;
-//     margin-top: -90px;
-//     width: 910px;
-//     min-width: 100vw;
-//   }
-
-//   .topics_container {
-//     width: 900px;
-
-//     .about {
-//       width: 100%;
-//       height: 3500px;
-  
-//       .intro_box {
-//         margin-top: 600px;
-//         width: 70vw;
-//         height: 20vh;
-//         margin-right: 120px;
-
-//         .name {
-//           font-size: 70px;
-//         }
-//       }
-
-//       .description {
-//         display: flex;
-//         align-items: center;
-//         justify-content: center;
-//         color: white;
-//         margin-top: 150px;
-//         margin-left: -30px;
-    
-//         .full_stack {
-//           font-size: 40px;
-//           letter-spacing: 8px;
-//         }
-//       }
-
-//       .about_me {
-//         margin-top: 1100px;
-//         height: 700vh;
-//         font-size: 35px;
-//         display: flex;
-//         justify-content: center;
-//         align-content: center;
-//         flex-direction: column;
-  
-//         .intro {
-//           display: flex;
-//           justify-content: center;
-//           align-content: center;
-//           flex-direction: column;
-//           text-align: center;
-//           line-height: 66px;
-//           letter-spacing: 0.2em;
-//           color: rgb(255, 255, 255);
-//           width: 60%;
-//         }
-//       }
-
-//     }
-//   }
-
-//   .black_hole {
-//     position: relative;
-//     top: 80px;
-//     left: 50%;
-//     width: 100px;
-//     height: 50px;
-
-//     .black_hole_img{
-//       width: 380px;
-//       height: 200px;
-//     }
-//   }
-// }
-
-
-
 
 
 @media (min-width: 575px) and (max-width: 900px) {
   .background_image_container {
-    background-image: url('./../images/viktor-forgacs-Bvo2-SNi0rw-unsplash.jpg');
+    background-image: url('./../images/universe_01.jpg');
     background-size: cover;
     background-position: center center;
     background-attachment: fixed;
@@ -860,18 +735,6 @@
         }
       }
 
-      .intro_welcome {
-        display: flex;
-        justify-content: center;
-        align-content: center;
-        height: 20%;
-        color: white;
-        font-size: 50px;
-        width: 55%;
-        text-align: center;
-        margin-top: 60%;
-      }
-
       .about_me {
         margin-top: 600px;
         height: 700vh;
@@ -912,195 +775,10 @@
 }
 
 
-// @media (min-width: 575px) and (max-width: 900px) {
-//   .background_image_container {
-//     background-image: url('./../images/viktor-forgacs-Bvo2-SNi0rw-unsplash.jpg');
-//     background-size: cover;
-//     background-position: center center;
-//     background-attachment: fixed;
-//     position: relative;
-//     z-index: -100;
-//     transform-style: preserve-3d;
-//     perspective: 2000px;
-//     animation: animate 10s linear infinite;
-//     height: 12200px;  
-//     animation-direction: alternate;
-//     animation-iteration-count: infinite;
-//     margin-top: -90px;
-//     width: 1200px;
-//     min-width: 100vw;
-//   }
-
-//   .topics_container {
-//     width: 900px;
-
-//     .about {
-//       width: 1200px;
-//       height: 3500px;
-  
-//       .intro_box {
-//         display: flex;
-//         justify-content: center;
-//         align-items: center;
-//         margin-top: 500px;
-//         width: 100vw;
-//         height: 20vh;
-//         margin-right: 200px;
-
-//         .name {
-//           font-size: 70px;
-//         }
-//       }
-
-//       .description {
-//         display: flex;
-//         align-items: center;
-//         justify-content: center;
-//         color: white;
-//         margin-top: 60px;
-//         margin-left: -100px;
-    
-//         .full_stack {
-//           font-size: 40px;
-//           letter-spacing: 8px;
-//         }
-//       }
-
-//       .about_me {
-//         margin-top: 1100px;
-//         height: 700vh;
-//         font-size: 35px;
-//         display: flex;
-//         justify-content: center;
-//         align-content: center;
-//         flex-direction: column;
-//         width: 60%;
-  
-//         .intro {
-//           display: flex;
-//           justify-content: center;
-//           align-content: center;
-//           flex-direction: column;
-//           text-align: center;
-//           line-height: 66px;
-//           letter-spacing: 0.2em;
-//           color: rgb(255, 255, 255);
-//           width: 80%;
-//         }
-//       }
-
-//     }
-//   }
-
-//   .black_hole {
-//     position: relative;
-//     top: 50px;
-//     left: 80%;
-//     width: 100px;
-//     height: 50px;
-
-//     .black_hole_img{
-//       width: 450px;
-//       height: 200px;
-//     }
-//   }
-// }
-
-
-
-// @media (min-width: 901px) {
-//   .background_image_container {
-//     background-image: url('./../images/viktor-forgacs-Bvo2-SNi0rw-unsplash.jpg');
-//     background-size: cover;
-//     background-position: center center;
-//     background-attachment: fixed;
-//     position: relative;
-//     z-index: -100;
-//     transform-style: preserve-3d;
-//     perspective: 2000px;
-//     animation: animate 10s linear infinite;
-//     height: 12200px;  
-//     animation-direction: alternate;
-//     animation-iteration-count: infinite;
-//     margin-top: -90px;
-//     width: 1300px;
-//     min-width: 100vw;
-//   }
-
-//   .topics_container {
-//     width: 900px;
-
-//     .about {
-//       width: 100vw;
-//       height: 3500px;
-  
-//       .intro_box {
-//         margin-top: 450px;
-//         width: 70vw;
-//         height: 20vh;
-//         margin-right: 400px;
-
-//         .name {
-//           font-size: 70px;
-//         }
-//       }
-
-//       .description {
-//         display: flex;
-//         align-items: center;
-//         justify-content: center;
-//         color: white;
-//         margin-top: 20px;
-//         margin-left: 30px;
-    
-//         .full_stack {
-//           font-size: 40px;
-//           letter-spacing: 8px;
-//         }
-//       }
-
-//       .about_me {
-//         margin-top: 1100px;
-//         height: 700vh;
-//         font-size: 35px;
-//         display: flex;
-//         justify-content: center;
-//         align-content: center;
-//         flex-direction: column;
-  
-//         .intro {
-//           display: flex;
-//           justify-content: center;
-//           align-content: center;
-//           flex-direction: column;
-//           text-align: center;
-//           line-height: 66px;
-//           letter-spacing: 0.2em;
-//           color: rgb(255, 255, 255);
-//           width: 60%;
-//         }
-//       }
-
-//     }
-//   }
-
-//   .black_hole {
-//     position: relative;
-//     top: 190px;
-//     left: 1030px;
-
-//     .black_hole_img{
-//       width: 510px;
-//       height: 200px;
-//     }
-//   }
-// }
-
-
 
 @media (min-width: 902px) and (max-width: 1449px)  {
   .background_image_container {
-    background-image: url('./../images/viktor-forgacs-Bvo2-SNi0rw-unsplash.jpg');
+    background-image: url('./../images/universe_01.jpg');
     background-size: cover;
     background-position: center center;
     background-attachment: fixed;
@@ -1172,20 +850,6 @@
         }
       }
 
-      .intro_welcome {
-        display: flex;
-        justify-content: center;
-        align-content: center;
-        height: 20%;
-        color: white;
-        font-size: 40px;
-        width: 50%;
-        text-align: center;
-        margin-top: 40%;
-        line-height: 66px;
-        letter-spacing: 0.2em;
-      }
-
       .about_me {
         margin-top: 1100px;
         height: 700vh;
@@ -1227,103 +891,111 @@
 
 
 
-// @media (min-width: 902px) and (max-width: 1449px)   {
-//   .background_image_container {
-//     background-image: url('./../images/viktor-forgacs-Bvo2-SNi0rw-unsplash.jpg');
-//     background-size: cover;
-//     background-position: center center;
-//     background-attachment: fixed;
-//     position: relative;
-//     z-index: -100;
-//     transform-style: preserve-3d;
-//     perspective: 2000px;
-//     animation: animate 10s linear infinite;
-//     animation-direction: alternate;
-//     animation-iteration-count: infinite;
-//     margin-top: -90px;
-//     width: 1449px;
-//     min-width: 100vw;
-//   }
-
-//   .topics_container {
-//     width: 1449px;
-//     min-width: 100vw;
-//     display: flex;
-//     justify-content: center;
-//     align-items: center;
-//     flex-direction: column;
-
-//     .about {
-//       width: 100%;
-  
-//       .intro_box {
-//         margin-top: 400px;
-//         width: 50vw;
-//         height: 20vh;
-//         margin-right: 100px;
-
-//         .name {
-//           font-size: 70px;
-//         }
-//       }
-
-//       .description {
-//         display: flex;
-//         align-items: center;
-//         justify-content: center;
-//         color: white;
-//         margin-right: 10%;
-//         margin-top: 10%;
-    
-//         .full_stack {
-//           font-size: 40px;
-//           letter-spacing: 5px;
-//         }
-//       }
-
-//       .about_me {
-//         margin-top: 1100px;
-//         height: 700vh;
-//         font-size: 30px;
-//         display: flex;
-//         justify-content: center;
-//         align-content: center;
-//         flex-direction: column;
-  
-//         .intro {
-//           display: flex;
-//           justify-content: center;
-//           align-content: center;
-//           flex-direction: column;
-//           text-align: center;
-//           line-height: 66px;
-//           letter-spacing: 0.2em;
-//           color: rgb(255, 255, 255);
-//           width: 60%;
-//         }
-//       }
-
-//     }
-//   }
-
-//   .black_hole {
-//     position: relative;
-//     top: 60px;
-//     left: 180%;
-//     width: 100px;
-//     height: 50px;
-
-//     .black_hole_img{
-//       width: 440px;
-//       height: 200px;
-//     }
-//   }
-// }
 
 
 @media (min-width: 1450px) and (max-width: 2000px)   {
   .background_image_container {
-    background-image: url('./../images/viktor-forgacs-Bvo2-SNi0rw-unsplash.jpg');
+    background-image: url('./../images/universe_01.jpg');
+    background-size: cover;
+    background-position: center center;
+    background-attachment: fixed;
+    position: relative;
+    z-index: -100;
+    transform-style: preserve-3d;
+    perspective: 2000px;
+    animation: animate 10s linear infinite;
+    animation-direction: alternate;
+    animation-iteration-count: infinite;
+    margin-top: -90px;
+    width: 1449px;
+    min-width: 100vw;
+  }
+
+  .topics_container {
+    width: 1449px;
+    min-width: 100vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+
+    .about {
+      width: 100%;
+
+      .intro_container {
+        
+        .intro_box {
+          margin-top: 400px;
+          width: 50vw;
+          height: 20vh;
+          margin-right: 100px;
+  
+          .name {
+            font-size: 70px;
+          }
+
+        }
+        .description {
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          color: white;
+          margin-top: 10%;
+          margin-left: 5%;
+      
+          .full_stack {
+            font-size: 40px;
+            letter-spacing: 5px;
+          }
+        }
+      }
+  
+
+      .about_me {
+        margin-top: 900px;
+        height: 700vh;
+        font-size: 30px;
+        display: flex;
+        justify-content: center;
+        align-content: center;
+        flex-direction: column;
+  
+        .intro {
+          display: flex;
+          justify-content: center;
+          align-content: center;
+          flex-direction: column;
+          text-align: center;
+          line-height: 66px;
+          letter-spacing: 0.2em;
+          color: rgb(255, 255, 255);
+          width: 60%;
+          font-size: 40px;
+        }
+      }
+
+    }
+  }
+
+  .black_hole {
+    position: relative;
+    top: 60px;
+    left: 180%;
+    width: 100px;
+    height: 50px;
+
+    .black_hole_img{
+      width: 440px;
+      height: 200px;
+    }
+  }
+}
+
+
+
+@media (min-width: 2001px) {
+  .background_image_container {
+    background-image: url('./../images/universe_01.jpg');
     background-size: cover;
     background-position: center center;
     background-attachment: fixed;
@@ -1355,6 +1027,7 @@
         width: 50vw;
         height: 20vh;
         margin-right: 100px;
+        background-color: rgb(13, 81, 238);
 
         .name {
           font-size: 70px;
@@ -1383,7 +1056,6 @@
         justify-content: center;
         align-content: center;
         flex-direction: column;
-        background-color: red;
   
         .intro {
           display: flex;
@@ -1414,181 +1086,3 @@
     }
   }
 }
-
-// @media (min-width: 1200px) {
-//   .background_image_container {
-//     background-image: url('./../images/viktor-forgacs-Bvo2-SNi0rw-unsplash.jpg');
-//     background-size: cover;
-//     background-position: center center;
-//     background-attachment: fixed;
-//     position: relative;
-//     z-index: -100;
-//     transform-style: preserve-3d;
-//     perspective: 2000px;
-//     animation: animate 10s linear infinite;
-//     height: 12200px;  
-//     animation-direction: alternate;
-//     animation-iteration-count: infinite;
-//     margin-top: -90px;
-//     width: 100vw;
-//     min-width: 100vw;
-//   }
-
-//   .topics_container {
-//     width: 100vw;
-
-//     .about {
-//       width: 100vw;
-//       height: 3500px;
-  
-//       .intro_box {
-//         margin-top: 450px;
-//         width: 70vw;
-//         height: 20vh;
-//         margin-right: 400px;
-
-//         .name {
-//           font-size: 70px;
-//         }
-//       }
-
-//       .description {
-//         display: flex;
-//         align-items: center;
-//         justify-content: center;
-//         color: white;
-//         margin-top: 60px;
-//         margin-left: -90px;
-    
-//         .full_stack {
-//           font-size: 40px;
-//           letter-spacing: 8px;
-//         }
-//       }
-
-//       .about_me {
-//         margin-top: 1100px;
-//         height: 700vh;
-//         font-size: 35px;
-//         display: flex;
-//         justify-content: center;
-//         align-content: center;
-//         flex-direction: column;
-  
-//         .intro {
-//           display: flex;
-//           justify-content: center;
-//           align-content: center;
-//           flex-direction: column;
-//           text-align: center;
-//           line-height: 66px;
-//           letter-spacing: 0.2em;
-//           color: rgb(255, 255, 255);
-//           width: 60%;
-//         }
-//       }
-
-//     }
-//   }
-
-//   .black_hole {
-//     position: relative;
-//     top: 190px;
-//     left: 860px;
-
-//     .black_hole_img{
-//       width: 510px;
-//       height: 200px;
-//     }
-//   }
-// }
-
-
-// @media (min-width: 1450px) and (max-width: 2000px)   {
-//   .background_image_container {
-//     background-image: url('./../images/viktor-forgacs-Bvo2-SNi0rw-unsplash.jpg');
-//     background-size: cover;
-//     background-position: center center;
-//     background-attachment: fixed;
-//     position: relative;
-//     z-index: -100;
-//     transform-style: preserve-3d;
-//     perspective: 2000px;
-//     animation: animate 10s linear infinite;
-//     height: 12200px;  
-//     animation-direction: alternate;
-//     animation-iteration-count: infinite;
-//     margin-top: -90px;
-//     width: 100vw;
-//     min-width: 100vw;
-//   }
-
-//   .topics_container {
-//     width: 100vw;
-
-//     .about {
-//       width: 100vw;
-//       height: 3500px;
-  
-//       .intro_box {
-//         margin-top: 450px;
-//         width: 70vw;
-//         height: 20vh;
-//         margin-right: 400px;
-//         text-align: center;
-
-//         .name {
-//           font-size: 70px;
-//         }
-//       }
-
-//       .description {
-//         display: flex;
-//         align-items: center;
-//         justify-content: center;
-//         color: white;
-//         margin-top: 60px;
-//         margin-left: 50px;
-    
-//         .full_stack {
-//           font-size: 40px;
-//           letter-spacing: 8px;
-//         }
-//       }
-
-//       .about_me {
-//         margin-top: 1100px;
-//         height: 700vh;
-//         font-size: 35px;
-//         display: flex;
-//         justify-content: center;
-//         align-content: center;
-//         flex-direction: column;
-  
-//         .intro {
-//           display: flex;
-//           justify-content: center;
-//           align-content: center;
-//           flex-direction: column;
-//           text-align: center;
-//           line-height: 66px;
-//           letter-spacing: 0.2em;
-//           color: rgb(255, 255, 255);
-//           width: 60%;
-//         }
-//       }
-
-//     }
-//   }
-
-//   .black_hole {
-//     position: relative;
-//     top: 190px;
-//     left: 1260px;
-
-//     .black_hole_img{
-//       width: 510px;
-//       height: 200px;
-//     }
-//   }
-// }

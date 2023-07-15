@@ -14,7 +14,7 @@
   
     h1 {
       letter-spacing: 0.4em;
-      font-size: var(--font-size-large);
+      font-size: 50px;
     }
   
   
@@ -82,7 +82,7 @@
         color: white;
 
         h2 {
-          font-size: 40px;
+          font-size: 30px;
         }
 
         span {
@@ -128,7 +128,7 @@
     width: 100%;
 
     h1 {
-      font-size: 40px;
+      font-size: 30px;
     }
 
     .experiences_list {
@@ -150,7 +150,7 @@
           flex-direction: column;
           color: white;
   
-          h2 {
+          h1 {
             font-size: 50px;
           }
   
@@ -194,7 +194,7 @@
     width: 100%;
 
     h1 {
-      font-size: 60px;
+      font-size: 50px;
     }
 
     .experiences_list {
@@ -230,7 +230,7 @@
           }
 
           span { 
-            font-size: 22px;
+            font-size: 35px;
           }
           
         }
@@ -241,7 +241,7 @@
         
         ul li{
           margin-top: 10%;
-          font-size: 30px;
+          font-size: 40px;
         }
 
       }
@@ -454,71 +454,6 @@
   
 
 
-// @media (min-width: 901px){
-//   .experience {
-//     display: flex;
-//     align-items: center;
-//     justify-content: column;
-//     flex-direction: column;
-//     height: 4800px;
-//     margin-top: 400px;
-//     width: 100vw;
-
-//     h1 {
-//       font-size: 60px;
-//     }
-
-//     .experiences_list {
-//       margin-top: 150px;
-//       display: flex;
-//       justify-content: space-between;
-//       align-content: center;
-//       flex-direction: column;
-//       width: 70%;
-
-//       .experience_01,
-//       .experience_02{
-//         padding-left: 10%;
-
-//         .header {
-//           display: flex;
-//           justify-content: center;
-//           align-items: center;
-//           flex-direction: column;
-//           color: white;
-  
-//           h2 {
-//             font-size: 50px;
-//           }
-  
-//           span {
-//             margin-top: 4%;
-//           }
-  
-//           h4 {
-//             margin-top: 4%;
-//             font-size: 35px;
-//           }
-
-//           span { 
-//             font-size: 22px;
-//           }
-          
-//         }
-
-//         ul{
-//           margin-top: 10%;
-//         }
-        
-//         ul li{
-//           margin-top: 10%;
-//           font-size: 30px;
-//         }
-
-//       }
-//     }
-//   }
-// }
   
 
 @media (min-width: 902px) and (max-width: 1449px) {
@@ -587,3 +522,5 @@
   }
 
 }
+
+

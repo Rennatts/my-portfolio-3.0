@@ -353,8 +353,12 @@
 
         h1 {
             margin-top: 190px;
-            font-size: 60px;
+            font-size: 65px;
             color: white;
+        }
+
+        .turn_space_exploration {
+            font-size: 35px;
         }
 
         .planet_02{
@@ -378,11 +382,11 @@
                 }
     
                 span {
-                    font-size: 25px;
+                    font-size: 35px;
                 }
     
                 h5 {
-                    font-size: 22px;
+                    font-size: 35px;
                 }
             }
     
@@ -404,7 +408,7 @@
 
                     .title {
                         margin-bottom: 10%;
-                        font-size: 20px;
+                        font-size: 30px;
                     }
 
                     .video{
@@ -418,7 +422,7 @@
     
                     ul li {
                         margin-bottom: 2%;
-                        font-size: 30px;
+                        font-size: 55px;
                     }
                 }
     
@@ -839,7 +843,7 @@
     .projects {
         width: 100vw;
         margin-top: 100px;
-        height: 12000px;
+        height: 11000px;
 
         h1 {
             font-size: 60px;
