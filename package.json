@@ -7,7 +7,6 @@
     "build": "next build",
     "start": "next start",
     "lint": "next lint",
-    "local": "npx next dev -H 192.168.50.73"
   },
   "dependencies": {
     "@types/node": "18.15.11",
