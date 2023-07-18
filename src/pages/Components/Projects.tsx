@@ -3,7 +3,6 @@ import { motion, useAnimation} from 'framer-motion';
 import { useEffect } from 'react';
 import Image from 'next/image'
 import { AiOutlineGithub } from "react-icons/ai";
-import { useState } from 'react';
 
 
 interface IIntroProps {
@@ -102,7 +101,7 @@ export default function Projects({
                         <div onClick={() => openUrl('https://github.com/Rennatts/freelancer-directory')}
                         className={styles.github_icon_box}>
                             <AiOutlineGithub size="1x"></AiOutlineGithub>
-                            <p>Check out the project in the Github</p>
+                            <p>Click here to check out the project on GitHub</p>
                         </div>
                         <div className={styles.design}>
                             <h5 className={styles.title}>Responsive Design</h5>
@@ -169,7 +168,7 @@ export default function Projects({
                         <div onClick={() => openUrl('https://github.com/Rennatts/social-media-web-platform')}
                         className={styles.github_icon_box}>
                             <AiOutlineGithub size="1x"></AiOutlineGithub>
-                            <p>Check out the project in the Github</p>
+                            <p>Click here to check out the project on GitHub</p>
                         </div>
                         <div className={styles.design}>
                             <Image 
@@ -222,14 +221,14 @@ export default function Projects({
                         <div className={styles.tech}>
                             <ul>
                                 <li>Create and delete tasks</li>
-                                <li>Easily move task with grap and drop functionality</li>
+                                <li>Easily move task with drag and drop functionality</li>
                                 <li>Save data on localstorage, no need of database</li>
                             </ul>
                         </div>
                         <div onClick={() => openUrl('https://github.com/Rennatts/kanban')}
                         className={styles.github_icon_box}>
                             <AiOutlineGithub size="1x"></AiOutlineGithub>
-                            <p>Check out the project in the Github</p>
+                            <p>Click here to check out the project on GitHub</p>
                         </div>
                         <div className={styles.design}>
                             <h5 className={styles.title}>Responsive Design</h5>

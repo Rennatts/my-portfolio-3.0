@@ -49,12 +49,14 @@ export default function Experience({ experience01Ref, experience02Ref, isExperie
                                 <Image src="/banqi.png" alt="banqi" width={300} height={300}></Image>
                             </div>
                             <ul>
-                                <li>React Native and NestJS</li>
-                                <li>Led a collaborative project with the UX/UI team to enhance our app's payment flow, while also restructuring error messages to streamline the process and minimize customer support costs</li>
+                                <li>Utilized React Native for front-end development and NestJS for back-end development</li>
+                                <li>Developer responsible for collaborative project with the UX/UI team to enhance our app's payment flow, while also restructuring error messages to streamline the process and minimize customer support costs</li>
                                 <li>Developed functionalities that enable users to set distinct transaction limits for daytime and nighttime periods and implementing a secure contact list for trusted contacts</li>
                                 <li>Large-scale project, with micro-services architecture, clean architecture, Docker, AWS, Firebase</li>
-                                <li>Aligned business goals with product managers and UI team</li>
-                                <li>Technical documentation</li>
+                                <li>Closely collaborated with product managers and the UI team to ensure that business objectives were reflected in our technical strategies and implementations</li>
+                                <li>Implemented analytics events to track user behavior and inform future development priorities</li>
+                                <li>Developer responsible for integration of third-party services into the app to enhance functionality and user experience</li>
+                                <li>Writing of technical documentation</li>
                                 <li>Unit tests and BDD. Participated in code reviews, technical refinements, and breaking down stories into small tasks</li>
                                 <li>Involved in upstream processes for story prioritization based on data</li>
                                 <li>Agile methodology and continuous integration</li>
@@ -75,7 +77,7 @@ export default function Experience({ experience01Ref, experience02Ref, isExperie
                             <span>From 08/2021 to 03/2022</span>
                         </div>
                         <ul>
-                            <li>Angular</li>
+                            <li>Utilized Angular for front-end development</li>
                             <li>Contributed to the process of improving error messages, reducing contact rate and costs</li>
                             <li>Experience in a large-scale project, with micro-services architecture, clean architecture, Docker, AWS, BDD</li>
                             <li>Implemented new features and aligned business goals with product managers and UI team</li>
