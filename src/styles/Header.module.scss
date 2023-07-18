@@ -212,6 +212,24 @@
 
 
 
+@media (min-width: 902px) and (max-width: 1449px) {
+  .header {
+    padding-top: 30px;
+    display: flex;
+    justify-content: space-between;
+    flex-direction: row;
+    align-items: center;
+    width: 100%;
+    padding-left: 2%;
+    padding-right: 2%;
+  }
+
+  .faBars {
+    color: transparent !important;
+  }
+
+}
+
 @media (min-width: 1200px)  {
   .faBars {
     color: transparent !important;

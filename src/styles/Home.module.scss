@@ -90,6 +90,11 @@
         @media (max-width: 400px) {
           width: 190px;
         }
+
+        @media (min-width: 902px) and (max-width: 1449px) {
+          width: 220px;
+
+        }
       }
   
       .name {
@@ -424,7 +429,7 @@
     transform-style: preserve-3d;
     perspective: 2000px;
     animation: animate 10s linear infinite;
-    height: 14200px;  
+    height: 19200px;  
     animation-direction: alternate;
     animation-iteration-count: infinite;
     margin-top: -90px;
@@ -774,7 +779,9 @@
   }
 }
 
-
+@media (min-width: 902px) and (max-width: 1449px) {
+  //to-do
+}
 
 @media (min-width: 902px) and (max-width: 1449px)  {
   .background_image_container {
@@ -787,40 +794,47 @@
     transform-style: preserve-3d;
     perspective: 2000px;
     animation: animate 10s linear infinite;
-    height: 12200px;  
+    height: 12800px;  
     animation-direction: alternate;
     animation-iteration-count: infinite;
     margin-top: -90px;
-    width: 1200px;
-    min-width: 100vw;
+    width: 100%;     
+
   }
 
   .topics_container {
-    width: 100vw;  
-    
+    width: 100%;  
+
     .about {
-      width: 100vw;
-      height: 3500px;    
+      width: 100vw; 
+      min-width: 902px;
+      height: 2500px;
+      display: flex;
+      align-content: center;
+      flex-direction: column;
+      justify-content: center;
 
       .intro_container {
         display: flex;
         align-content: center;
         flex-direction: column;
         justify-content: center;
-        height: 50%;
-        width: 90%;
+        height: 500px;
+        margin-top: 10%;
+        width: 80%;
+
 
         .description {
           display: flex;
-          align-items: center;
+          align-content: center;
           justify-content: center;
           color: white;
-          margin-left: 370px;
-          width: 50%;
+          width: 110%;
       
           .full_stack {
             font-size: 40px;
             letter-spacing: 5px;
+            margin-right: 100px;
           }
         } 
     
@@ -832,7 +846,7 @@
           color: rgb(255, 252, 252);
           height: 400px;
           text-align: center; 
-          width: 82%;
+          width: 90%;
       
           .intro_text {
             display: flex;
@@ -840,9 +854,10 @@
             flex-direction: column;
             justify-content: center;
             color: white;
+            margin-right: 100px;
 
             .name {
-              width: 120%;
+              width: 100%;
               font-size: 60px;
             }
           }
@@ -851,7 +866,7 @@
       }
 
       .about_me {
-        margin-top: 1100px;
+        margin-top: 600px;
         height: 700vh;
         font-size: 30px;
         display: flex;

@@ -5,27 +5,27 @@ import { useEffect } from 'react';
 
 interface IIntroProps {
     experience01Ref?: any;
-    experienceRef2?: any;
-    inView?: any;
-    inView2?: any;
+    experience02Ref?: any;
+    isExperience01InView?: any;
+    isExperience02InView?: any;
 }
 
-export default function Experience({ experience01Ref, experienceRef2, inView, inView2 }: IIntroProps) {
+export default function Experience({ experience01Ref, experience02Ref, isExperience01InView, isExperience02InView }: IIntroProps) {
     const controls = useAnimation();
     const controls2 = useAnimation();
 
     useEffect(() => {
-        if (inView) {
+        if (isExperience01InView) {
             controls.start({ x: 0, opacity: 1 });
         }
     
-    }, [controls, inView]);
+    }, [controls, isExperience01InView]);
     
     useEffect(() => {
-        if (inView2) {
+        if (isExperience02InView) {
             controls2.start({ x: 0, opacity: 1 });
         }
-    }, [controls2, inView2]);
+    }, [controls2, isExperience02InView]);
 
     
     return (
@@ -63,7 +63,7 @@ export default function Experience({ experience01Ref, experienceRef2, inView, in
                     </motion.div>
 
                     <motion.div
-                        ref={experienceRef2}
+                        ref={experience02Ref}
                         initial={{ x: -200, opacity: 0 }}
                         animate={controls}
                         transition={{ duration: 1, delay: 2 }}

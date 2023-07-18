@@ -39,7 +39,6 @@ export default function Contact({ }: IIntroProps) {
 
             saveAs(blob, 'renata-machado-resume.pdf');
         } catch (e) {
-            console.log(e);
         }
     };
     

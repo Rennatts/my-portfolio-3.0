@@ -19,7 +19,7 @@ export default function Education({ }: IIntroProps) {
                         <p>Incheon - South Korea</p>
                         <p>08/2016 to 08/2018</p>
                     </div>
-                    {/* <div className={styles.education_02}>
+                    <div className={styles.education_02}>
                         <div className={styles.header}>
                             <h1>Korea University</h1>
                             <p>Industrial Engineering</p>
@@ -27,8 +27,8 @@ export default function Education({ }: IIntroProps) {
                         </div>
                         <p>Seoul - South Korea</p>
                         <p>09/2013 to 08/2014</p>
-                    </div> */}
-                    <div className={styles.education_02}>
+                    </div>
+                    <div className={styles.education_03}>
                         <div className={styles.header}>
                             <h1>Fatec</h1>
                             <p>Maritime Transportation</p>

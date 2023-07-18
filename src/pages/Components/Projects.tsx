@@ -2,6 +2,7 @@ import styles from '@/styles/Projects.module.scss'
 import { motion, useAnimation} from 'framer-motion';
 import { useEffect } from 'react';
 import Image from 'next/image'
+import { AiOutlineGithub } from "react-icons/ai";
 import { useState } from 'react';
 
 
@@ -49,6 +50,10 @@ export default function Projects({
             controlPlanet04.start({ opacity: 1, x: 0 }); 
         }
     }, [controlPlanet01, controlPlanet02, controlPlanet03, controlPlanet04, inView3, inView4, inView5, inView6]);
+
+    const openUrl = (url: any) => {
+        window.open(url, '_blank');
+    };
     
 
     return (
@@ -93,6 +98,11 @@ export default function Projects({
                                 <li>Register and login as a freelancer or regular user</li>
                                 <li>Edit profile and manage offered services</li>
                             </ul>
+                        </div>
+                        <div onClick={() => openUrl('https://github.com/Rennatts/freelancer-directory')}
+                        className={styles.github_icon_box}>
+                            <AiOutlineGithub size="1x"></AiOutlineGithub>
+                            <p>Check out the project in the Github</p>
                         </div>
                         <div className={styles.design}>
                             <h5 className={styles.title}>Responsive Design</h5>
@@ -156,6 +166,11 @@ export default function Projects({
                                 <li>Search posts</li>
                             </ul>
                         </div>
+                        <div onClick={() => openUrl('https://github.com/Rennatts/social-media-web-platform')}
+                        className={styles.github_icon_box}>
+                            <AiOutlineGithub size="1x"></AiOutlineGithub>
+                            <p>Check out the project in the Github</p>
+                        </div>
                         <div className={styles.design}>
                             <Image 
                                 src="/social_media_computer.png" 
@@ -211,6 +226,11 @@ export default function Projects({
                                 <li>Save data on localstorage, no need of database</li>
                             </ul>
                         </div>
+                        <div onClick={() => openUrl('https://github.com/Rennatts/kanban')}
+                        className={styles.github_icon_box}>
+                            <AiOutlineGithub size="1x"></AiOutlineGithub>
+                            <p>Check out the project in the Github</p>
+                        </div>
                         <div className={styles.design}>
                             <h5 className={styles.title}>Responsive Design</h5>
                             <Image 
@@ -245,7 +265,7 @@ export default function Projects({
                         src="/planet_02.png" 
                         alt="planet_04"
                         className={styles.planet_04}
-                        initial={{ opacity: 1, x: 500 }}
+                        initial={{ opacity: 0, x: 200 }}
                         animate={controlPlanet04}
                         transition={{ duration: 2 }}
                     />

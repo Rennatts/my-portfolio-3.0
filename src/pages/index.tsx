@@ -22,8 +22,11 @@ export default function Home() {
   const [yPosition, setYPosition] = useState(0);
   const controls = useAnimation();
   const controls2 = useAnimation();
-  const [experience01Ref, inView] = useInView({ threshold: 0.5 }); 
-  const [experienceRef2, inView2] = useInView({ threshold: 0.7 });
+  // const [experience01Ref, isExperience01InView01] = useInView({ threshold: 0.5 }); 
+  // const [experience02Ref, isExperience01InView02] = useInView({ threshold: 0.7 });
+  const { ref: experience01Ref, inView: isExperience01InView } = useInView({ triggerOnce: true });
+  const { ref: experience02Ref, inView: isExperience02InView } = useInView({ triggerOnce: true });
+
 
   const [planet01Ref, inView3] = useInView({ threshold: 0.2 }); 
   const [planet02Ref, inView4] = useInView({ threshold: 0.4 }); 
@@ -54,12 +57,11 @@ export default function Home() {
   
       window.addEventListener('resize', handleResize);
   
-      // Cleanup function: remove the event listener when the component unmounts
       return () => {
         window.removeEventListener('resize', handleResize);
       }
     }
-  }, []); // Empty array means this effect runs once on mount and cleanup on unmount
+  }, []); 
   
   
 
@@ -91,23 +93,20 @@ export default function Home() {
 
 
   useEffect(() => {
-    if (inView) {
+    if (isExperience01InView) {
       controls.start({ x: 0, opacity: 1 });
     }
 
-  }, [controls, inView]);
+  }, [controls, isExperience01InView]);
 
   useEffect(() => {
-    if (inView2) {
+    if (isExperience02InView) {
       controls2.start({ x: 0, opacity: 1 });
     }
-  }, [controls2, inView2]);
+  }, [controls2, isExperience02InView]);
 
 
   const position = useMotionValue("relative");
-
-  let imageStyle;
-  let nameStyle;
 
   const [astronautY, setAstronautY] = useState(0);
   const [targetY, setTargetY] = useState(0);
@@ -277,7 +276,7 @@ export default function Home() {
                   }}
                   transition={{
                     duration: 4,
-                    delay: 1.5,
+                    delay: 0.5,
                     times: [0, 0.5, 1],
                     ease: 'easeInOut',
                   }}
@@ -308,10 +307,10 @@ export default function Home() {
             </motion.div>
           </section>
           <Experience 
-            experience01Ref={experience01Ref} 
-            experienceRef2={experienceRef2} 
-            inView={inView} 
-            inView2={inView2}
+            experience01Ref={experience01Ref}
+            experience02Ref={experience02Ref}
+            isExperience01InView={isExperience01InView}
+            isExperience02InView={isExperience02InView}
           />
           <Skills />
           <InView

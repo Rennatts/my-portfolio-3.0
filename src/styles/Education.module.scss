@@ -13,6 +13,9 @@
     background-attachment: fixed;
     position: relative;
     transform-style: preserve-3d;
+    padding-top: 100px;
+    height: 100%;
+    padding-bottom: 20%;
 
     h2 {
         margin-top: 1%;
@@ -29,7 +32,9 @@
         width: 70%;
 
         .education_01,
-        .education_02 {
+        .education_02,
+        .education_03 {
+            background-color: red;
             padding: 8%;
             border-radius: 30px;
             box-shadow: 15px 15px 40px rgba(0, 0, 0, 0.2);
@@ -85,6 +90,8 @@
         align-items: center;
         justify-content: center;
         flex-direction: column;
+        height: 100%;
+
 
         h1 {
             font-size: 60px;
@@ -107,7 +114,8 @@
             }
 
             .education_01,
-            .education_02 {
+            .education_02,
+            .education_03 {
                 margin-top: 150px;
 
                 p{
@@ -138,7 +146,7 @@
         align-items: center;
         justify-content: center;
         flex-direction: column;
-        height: 1800px;
+        height: 100%;
 
         h1 {
             font-size: 60px;
@@ -162,7 +170,8 @@
             }
 
             .education_01,
-            .education_02 {
+            .education_02,
+            .education_03 {
                 margin-top: 150px;
 
                 p{
@@ -187,13 +196,12 @@
 
 @media (min-width: 902px) and (max-width: 1449px){
         .education {
-            width: 1200px;
-            min-width: 100vw;
+            width: 100%;
             display: flex;
             align-items: center;
             justify-content: center;
             flex-direction: column;
-            height: 1800px;
+            height: 100%;
 
             h1 {
                 font-size: 60px;
@@ -217,7 +225,8 @@
                 }
 
                 .education_01,
-                .education_02 {
+                .education_02,
+                .education_03 {
                     margin-top: 150px;
 
                     p{
@@ -245,7 +254,7 @@
         align-items: center;
         justify-content: center;
         flex-direction: column;
-        height: 1800px;
+        height: 100%;
 
         h1 {
             font-size: 60px;
@@ -269,7 +278,8 @@
             }
 
             .education_01,
-            .education_02 {
+            .education_02,
+            .education_03 {
                 margin-top: 150px;
 
                 p{
@@ -299,7 +309,7 @@
         align-items: center;
         justify-content: center;
         flex-direction: column;
-        height: 2000px;
+        height: 100%;
 
         h1 {
             font-size: 60px;
@@ -322,7 +332,8 @@
             }
 
             .education_01,
-            .education_02 {
+            .education_02,
+            .education_03 {
                 margin-top: 150px;
 
                 p{
@@ -352,8 +363,7 @@
         display: flex;
         align-items: center;
         justify-content: center;
-        flex-direction: column;
-        height: 2600px;
+        height: 100%;
 
         h1 {
             font-size: 60px;
@@ -377,7 +387,8 @@
             }
 
             .education_01,
-            .education_02 {
+            .education_02,
+            .education_03 {
                 margin-top: 150px;
 
                 p {
