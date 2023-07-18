@@ -5,6 +5,7 @@ import styles from '@/styles/Header.module.scss'
 import Link from 'next/link'
 import { FaBars } from 'react-icons/fa';
 
+
 const inter = Inter({ subsets: ['latin'] })
 
 export default function Header() {

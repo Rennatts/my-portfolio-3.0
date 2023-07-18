@@ -98,7 +98,7 @@
       }
   
       .name {
-        font-size: 40px;
+        font-size: var(--font-size-500-medium);
         width: 100%;
       }
   
@@ -118,7 +118,7 @@
       height: 10%;
   
       .full_stack {
-        font-size: 25px;
+        font-size: var(--font-size-500-small);
         letter-spacing: 5px;
       }
     }
@@ -261,7 +261,7 @@
   
     ul li::before {
       content: attr(data-icon);
-      font-size: 1.25em;
+      font-size: var(--font-size-500-small);
       margin-right: 1%;
     }
   }
@@ -286,7 +286,7 @@
 
 
   h2{
-    font-size: 30px;
+    font-size: var(--font-size-500-medium);
     letter-spacing: 0.4em;
     color: white;
   }
@@ -486,7 +486,7 @@
       .about_me {
         margin-top: 2200px;
         height: 1100vh;
-        font-size: 30px;
+        font-size: var(--font-size-500-medium);
         display: flex;
         justify-content: center;
         align-content: center;
@@ -569,7 +569,7 @@
           margin-left: 5%;
       
           .full_stack {
-            font-size: 40px;
+            font-size: var(--font-size-500-medium);
             letter-spacing: 5px;
           }
         } 
@@ -592,7 +592,7 @@
 
         
             .full_stack {
-              font-size: 40px;
+              font-size: var(--font-size-500-medium);
               letter-spacing: 5px;
             }
           } 
@@ -606,7 +606,7 @@
 
             .name {
               width: 150%;
-              font-size: 60px;
+              font-size: var(--font-size-500-large);
             }
           }
 
@@ -616,7 +616,7 @@
       .about_me {
         margin-top: 700px;
         height: 700vh;
-        font-size: 40px;
+        font-size: var(--font-size-500-medium);
         display: flex;
         justify-content: center;
         align-content: center;
@@ -697,7 +697,7 @@
           margin-top: -40px;
       
           .full_stack {
-            font-size: 40px;
+            font-size: var(--font-size-500-medium);
             letter-spacing: 5px;
           }
         } 
@@ -719,7 +719,7 @@
             color: white;
         
             .full_stack {
-              font-size: 40px;
+              font-size: var(--font-size-500-medium);
               letter-spacing: 5px;
             }
           } 
@@ -733,7 +733,7 @@
 
             .name {
               width: 120%;
-              font-size: 60px;
+              font-size: var(--font-size-500-large);
             }
           }
 
@@ -743,7 +743,7 @@
       .about_me {
         margin-top: 600px;
         height: 700vh;
-        font-size: 30px;
+        font-size: var(--font-size-500-medium);
         display: flex;
         justify-content: center;
         align-content: center;
@@ -827,7 +827,7 @@
           width: 110%;
       
           .full_stack {
-            font-size: 40px;
+            font-size: var(--font-size-500-medium);
             letter-spacing: 5px;
             margin-right: 100px;
           }
@@ -853,7 +853,7 @@
 
             .name {
               width: 100%;
-              font-size: 60px;
+              font-size: var(--font-size-500-large);
             }
           }
 
@@ -863,7 +863,7 @@
       .about_me {
         margin-top: 600px;
         height: 700vh;
-        font-size: 30px;
+        font-size: var(--font-size-500-medium);
         display: flex;
         justify-content: center;
         align-content: center;
@@ -950,7 +950,7 @@
           width: 110%;
       
           .full_stack {
-            font-size: 40px;
+            font-size: var(--font-size-500-medium);
             letter-spacing: 5px;
             margin-right: 100px;
           }
@@ -976,7 +976,7 @@
 
             .name {
               width: 100%;
-              font-size: 60px;
+              font-size: var(--font-size-500-large);
             }
           }
 
@@ -986,7 +986,7 @@
       .about_me {
         margin-top: 600px;
         height: 700vh;
-        font-size: 30px;
+        font-size: var(--font-size-500-medium);
         display: flex;
         justify-content: center;
         align-content: center;
@@ -1062,7 +1062,7 @@
           margin-right: 100px;
   
           .name {
-            font-size: 70px;
+            font-size: var(--font-size-500-large);
           }
 
         }
@@ -1075,7 +1075,7 @@
           margin-left: 5%;
       
           .full_stack {
-            font-size: 40px;
+            font-size: var(--font-size-500-medium);
             letter-spacing: 5px;
           }
         }
@@ -1085,7 +1085,7 @@
       .about_me {
         margin-top: 900px;
         height: 700vh;
-        font-size: 30px;
+        font-size: var(--font-size-500-medium);
         display: flex;
         justify-content: center;
         align-content: center;
@@ -1101,7 +1101,7 @@
           letter-spacing: 0.2em;
           color: rgb(255, 255, 255);
           width: 60%;
-          font-size: 40px;
+          font-size: var(--font-size-500-medium);
         }
       }
 
@@ -1158,10 +1158,9 @@
         width: 50vw;
         height: 20vh;
         margin-right: 100px;
-        background-color: red;
 
         .name {
-          font-size: 70px;
+          font-size: var(--font-size-500-super-large);
         }
       }
 
@@ -1174,7 +1173,7 @@
         margin-top: 10%;
     
         .full_stack {
-          font-size: 40px;
+          font-size: var(--font-size-500-medium);
           letter-spacing: 5px;
         }
       }
@@ -1182,7 +1181,7 @@
       .about_me {
         margin-top: 900px;
         height: 700vh;
-        font-size: 30px;
+        font-size: var(--font-size-500-medium);
         display: flex;
         justify-content: center;
         align-content: center;
