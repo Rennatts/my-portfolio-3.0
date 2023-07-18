@@ -19,12 +19,12 @@
     font-family: 'Black Ops One', cursive;
     font-family: 'Blinker', sans-serif;
     font-family: 'Quicksand', sans-serif;
-    
+    font-size: var(--font-size-large);
+    font-weight: 500;
+
     a {
       text-decoration: none;
       color: white;
-      font-size: var(--font-size-500-medium);
-      font-weight: 500;
     }
   }
 
@@ -39,7 +39,7 @@
       display: flex;
       justify-content: space-evenly;
       list-style: none;
-      font-size: var(--font-size-500-medium);
+      font-size: var(--font-size-medium);
 
       .nav_item {
         margin: 0 33px;
@@ -70,13 +70,12 @@
     align-items: center;
     width: 100%;
     padding-left: 2%;
-    padding-right: 1%;
-    top: 0;
+    padding-right: 2%;
 
     .logo_box {
       margin-top: 150px;
       margin-left: 50px;
-      font-size: var(--font-size-500-large);
+      font-size: 50px;
       font-weight: 500;
       
       a {
@@ -93,7 +92,7 @@
         top: 0px;
         left: 0px;
         cursor: pointer;
-        font-size: var(--font-size-500-super-large);
+        font-size: 70px;
       }
 
       .faBars_open {
@@ -103,7 +102,7 @@
         color: white;
         left: 30px;
         cursor: pointer;
-        font-size: var(--font-size-500-super-large);
+        font-size: 70px;
       }
 
       .nav_list_hidden {
@@ -111,7 +110,7 @@
       }
   
       .nav_list {
-        font-size: var(--font-size-500-medium);
+        font-size: 30px;
         display: flex;
         justify-content: center;
         align-items: flex-start;
@@ -127,7 +126,7 @@
   
           a {
             border-radius: 20px;
-            font-size: var(--font-size-500-large);
+            font-size: 50px;
           }
         }
       }
@@ -145,12 +144,12 @@
     align-items: center;
     width: 100%;
     padding-left: 2%;
-    top: 0;
+    padding-right: 2%;
 
     .logo_box {
       margin-top: 60px;
       margin-left: 30px;
-      font-size: var(--font-size-500-large);
+      font-size: 50px;
       font-weight: 500;
       
       a {
@@ -167,7 +166,7 @@
         top: 20px;
         left: 960px;
         cursor: pointer;
-        font-size: var(--font-size-500-medium);
+        font-size: 40px;
         color: white;
       }
 
@@ -178,7 +177,7 @@
         color: white;
         left: 30px;
         cursor: pointer;
-        font-size: var(--font-size-500-medium);
+        font-size: 40px;
       }
 
       .nav_list_hidden {
@@ -201,32 +200,12 @@
   
           a {
             border-radius: 20px;
-            font-size: var(--font-size-500-medium);
+            font-size: 40px;
           }
         }
       }
     }
 
-  }
-
-}
-
-
-@media (min-width: 576px) and (max-width: 900px) {
-  .header {
-    padding-top: 30px;
-    display: flex;
-    justify-content: space-between;
-    flex-direction: row;
-    align-items: center;
-    width: 100%;
-    padding-left: 2%;
-    padding-right: 2%;
-    top: 0;
-  }
-
-  .faBars {
-    color: transparent !important;
   }
 
 }
@@ -243,7 +222,6 @@
     width: 100%;
     padding-left: 2%;
     padding-right: 2%;
-    top: 0;
   }
 
   .faBars {
@@ -252,214 +230,7 @@
 
 }
 
-@media (min-width: 1550px) and (max-width: 2000px) {
-  .header {
-    width: 100%;
-    height: 70px;
-    display: flex;
-    justify-content: space-between;
-    flex-direction: row;
-    align-items: center;
-    padding-left: 7%;
-    padding-right: 7%;
-    background-color: transparent;
-    position: fixed;
-    box-sizing: border-box;
-    top: 0;
-    z-index: 1000;
-    margin-top: 1%;
-  
-    .logo_box {
-      font-family: 'Black Ops One', cursive;
-      font-family: 'Blinker', sans-serif;
-      font-family: 'Quicksand', sans-serif;
-      
-      a {
-        text-decoration: none;
-        color: white;
-        font-size: var(--font-size-500-medium);
-        font-weight: 500;
-      }
-    }
-  
-  
-    .nav {
-      display: flex;
-      justify-content: center;
-      align-items: center;
-  
-  
-      .nav_list_full {
-        display: flex;
-        justify-content: space-evenly;
-        list-style: none;
-        font-size: var(--font-size-500-small);
-  
-        .nav_item {
-          margin: 0 33px;
-          cursor: pointer !important;          
-  
-          a {
-            color: white;
-            text-decoration: none;
-            padding: 10px;
-            border-radius: 20px;
-  
-            &:hover {
-              opacity: 0.7;
-            }
-            
-          }
-        }
-      }
-    }
-  }
-  
-
-  .faBars {
-    color: transparent !important;
-  }
-
-}
-
-@media (min-width: 2000px)  {
-  .header {
-    width: 100%;
-    height: 70px;
-    display: flex;
-    justify-content: space-between;
-    flex-direction: row;
-    align-items: center;
-    padding-left: 7%;
-    padding-right: 7%;
-    background-color: transparent;
-    position: fixed;
-    box-sizing: border-box;
-    top: 0;
-    z-index: 1000;
-    top: 0;
-    margin-top: 2%;
-  
-    .logo_box {
-      font-family: 'Black Ops One', cursive;
-      font-family: 'Blinker', sans-serif;
-      font-family: 'Quicksand', sans-serif;
-      
-      a {
-        text-decoration: none;
-        color: white;
-        font-size: var(--font-size-500-large);
-        font-weight: 500;
-      }
-    }
-  
-  
-    .nav {
-      display: flex;
-      justify-content: center;
-      align-items: center;
-  
-  
-      .nav_list_full {
-        display: flex;
-        justify-content: space-evenly;
-        list-style: none;
-        font-size: var(--font-size-500-medium);
-  
-        .nav_item {
-          margin: 0 33px;
-          cursor: pointer !important;          
-  
-          a {
-            color: white;
-            text-decoration: none;
-            padding: 10px;
-            border-radius: 20px;
-  
-            &:hover {
-              opacity: 0.7;
-            }
-            
-          }
-        }
-      }
-    }
-  }
-  
-
-  .faBars {
-    color: transparent !important;
-  }
-
-}
-
-
-
-@media (min-width: 3000px)  {
-  .header {
-    width: 100%;
-    height: 70px;
-    display: flex;
-    justify-content: space-between;
-    flex-direction: row;
-    align-items: center;
-    padding-left: 7%;
-    padding-right: 7%;
-    background-color: transparent;
-    position: fixed;
-    box-sizing: border-box;
-    top: 0;
-    z-index: 1000;
-    top: 0;
-    background-color: red;
-  
-    .logo_box {
-      font-family: 'Black Ops One', cursive;
-      font-family: 'Blinker', sans-serif;
-      font-family: 'Quicksand', sans-serif;
-      
-      a {
-        text-decoration: none;
-        color: white;
-        font-size: var(--font-size-500-medium);
-        font-weight: 500;
-      }
-    }
-  
-  
-    .nav {
-      display: flex;
-      justify-content: center;
-      align-items: center;
-  
-  
-      .nav_list_full {
-        display: flex;
-        justify-content: space-evenly;
-        list-style: none;
-        font-size: var(--font-size-500-medium);
-  
-        .nav_item {
-          margin: 0 33px;
-          cursor: pointer !important;          
-  
-          a {
-            color: white;
-            text-decoration: none;
-            padding: 10px;
-            border-radius: 20px;
-  
-            &:hover {
-              opacity: 0.7;
-            }
-            
-          }
-        }
-      }
-    }
-  }
-  
-
+@media (min-width: 1200px)  {
   .faBars {
     color: transparent !important;
   }

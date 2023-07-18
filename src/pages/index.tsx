@@ -13,6 +13,7 @@ import { InView } from 'react-intersection-observer';
 import Education from './Components/Education'
 import Contact from './Components/Contact'
 
+
 const inter = Inter({ subsets: ['latin'] })
 
 export default function Home() {
