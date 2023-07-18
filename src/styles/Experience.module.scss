@@ -187,70 +187,6 @@
 
 
 
-// @media (max-width: 400px){
-//   .experience {
-//     display: flex;
-//     align-items: center;
-//     justify-content: column;
-//     flex-direction: column;
-//     height: 2700px;
-//     margin-top: 100px;
-//     width: 100%;
-
-//     h1 {
-//       font-size: 40px;
-//     }
-
-//     .experiences_list {
-//       margin-top: 150px;
-//       display: flex;
-//       justify-content: space-between;
-//       align-content: center;
-//       flex-direction: column;
-//       width: 70%;
-
-//       .experience_01,
-//       .experience_02{
-//         padding-left: 10%;
-
-//         .header {
-//           display: flex;
-//           justify-content: center;
-//           align-items: center;
-//           flex-direction: column;
-//           color: white;
-  
-//           h2 {
-//             font-size: 50px;
-//           }
-  
-//           span {
-//             margin-top: 4%;
-//           }
-  
-//           h4 {
-//             margin-top: 4%;
-//             font-size: 35px;
-//           }
-
-//           span { 
-//             font-size: 35px;
-//           }
-          
-//         }
-
-//         ul {
-//           margin-top: 10%;
-//         }
-        
-//         ul li{
-//           margin-top: 10%;
-//           font-size: 36px;
-//         }
-//       }
-//     }
-//   }
-// }
   
 
 @media (max-width: 575px){
@@ -386,10 +322,73 @@
   }
 }
   
+@media (min-width: 901px) and (max-width: 1200px){
+  .experience {
+    display: flex;
+    align-items: center;
+    justify-content: column;
+    flex-direction: column;
+    height: 4800px;
+    width: 100%; 
 
+    h1 {
+      font-size: 60px;
+    }
+
+    .experiences_list {
+      margin-top: 150px;
+      display: flex;
+      justify-content: space-between;
+      align-content: center;
+      flex-direction: column;
+      width: 50%;
+
+      .experience_01,
+      .experience_02{
+        padding-left: 10%;
+
+        .header {
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          flex-direction: column;
+          color: white;
+  
+          h2 {
+            font-size: 50px;
+          }
+  
+          span {
+            margin-top: 4%;
+          }
+  
+          h4 {
+            margin-top: 4%;
+            font-size: 35px;
+          }
+
+          span { 
+            font-size: 22px;
+          }
+          
+        }
+
+        ul{
+          margin-top: 10%;
+        }
+        
+        ul li{
+          margin-top: 10%;
+          font-size: 30px;
+        }
+
+      }
+    }
+  }
+}
   
 
-@media (min-width: 902px) and (max-width: 1449px) {
+@media (min-width: 1201px) and (max-width: 1449px) {
   .experience {
     display: flex;
     align-items: center;

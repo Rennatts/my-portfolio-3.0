@@ -665,7 +665,7 @@
     transform-style: preserve-3d;
     perspective: 2000px;
     animation: animate 10s linear infinite;
-    height: 12200px;  
+    height: 100%;  
     animation-direction: alternate;
     animation-iteration-count: infinite;
     margin-top: -90px;
@@ -674,11 +674,11 @@
   }
 
   .topics_container {
-    width: 1100px;
+    width: 100%;
 
     .about {
       width: 100%;
-      height: 3500px;
+      height: 280vh; 
 
       .intro_container {
         display: flex;
@@ -779,11 +779,129 @@
   }
 }
 
-@media (min-width: 902px) and (max-width: 1449px) {
-  //to-do
+@media (min-width: 901px) and (max-width: 1200px) {
+  .background_image_container {
+    background-image: url('./../images/universe_01.jpg');
+    background-size: cover;
+    background-position: center center;
+    background-attachment: fixed;
+    position: relative;
+    z-index: -100;
+    transform-style: preserve-3d;
+    perspective: 2000px;
+    animation: animate 10s linear infinite;
+    height: 100%;  
+    animation-direction: alternate;
+    animation-iteration-count: infinite;
+    margin-top: -90px;
+    width: 1200px;     
+
+  }
+
+  .topics_container {
+    width: 100%;  
+
+    .about {
+      width: 100%; 
+      height: 2500px;
+      display: flex;
+      align-content: center;
+      flex-direction: column;
+      justify-content: center;
+
+      .intro_container {
+        display: flex;
+        align-content: center;
+        flex-direction: column;
+        justify-content: center;
+        height: 500px;
+        margin-top: 10%;
+        width: 80%;
+
+
+        .description {
+          display: flex;
+          align-content: center;
+          justify-content: center;
+          color: white;
+          width: 110%;
+      
+          .full_stack {
+            font-size: 40px;
+            letter-spacing: 5px;
+            margin-right: 100px;
+          }
+        } 
+    
+        .intro_box {
+          display: flex;
+          align-content: center;
+          flex-direction: row;
+          justify-content: center;
+          color: rgb(255, 252, 252);
+          height: 400px;
+          text-align: center; 
+          width: 90%;
+      
+          .intro_text {
+            display: flex;
+            align-content: center;
+            flex-direction: column;
+            justify-content: center;
+            color: white;
+            margin-right: 100px;
+
+            .name {
+              width: 100%;
+              font-size: 60px;
+            }
+          }
+
+        }
+      }
+
+      .about_me {
+        margin-top: 600px;
+        height: 700vh;
+        font-size: 30px;
+        display: flex;
+        justify-content: center;
+        align-content: center;
+        flex-direction: column;
+  
+        .intro {
+          display: flex;
+          justify-content: center;
+          align-content: center;
+          flex-direction: column;
+          text-align: center;
+          line-height: 66px;
+          letter-spacing: 0.2em;
+          color: rgb(255, 255, 255);
+          width: 65%;
+        }
+      }
+
+    }
+  }
+
+  .black_hole {
+    position: relative;
+    top: 50px;
+    left: 65%;
+    width: 100px;
+    height: 50px;
+
+    .black_hole_img{
+      width: 420px;
+      height: 200px;
+    }
+  }
 }
 
-@media (min-width: 902px) and (max-width: 1449px)  {
+
+
+@media (min-width: 1201px) and (max-width: 1449px)  {
   .background_image_container {
     background-image: url('./../images/universe_01.jpg');
     background-size: cover;
@@ -922,13 +1040,12 @@
     animation-direction: alternate;
     animation-iteration-count: infinite;
     margin-top: -90px;
-    width: 1449px;
-    min-width: 100vw;
+    width: 2000px;
+    min-width: 1449px;
   }
 
   .topics_container {
-    width: 1449px;
-    min-width: 100vw;
+    width: 100%;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -938,7 +1055,6 @@
       width: 100%;
 
       .intro_container {
-        
         .intro_box {
           margin-top: 400px;
           width: 50vw;
@@ -995,12 +1111,12 @@
   .black_hole {
     position: relative;
     top: 60px;
-    left: 180%;
-    width: 100px;
+    left: 200%;
+    width: 150px;
     height: 50px;
 
     .black_hole_img{
-      width: 440px;
+      width: 590px;
       height: 200px;
     }
   }
@@ -1042,7 +1158,7 @@
         width: 50vw;
         height: 20vh;
         margin-right: 100px;
-        background-color: rgb(13, 81, 238);
+        background-color: red;
 
         .name {
           font-size: 70px;
