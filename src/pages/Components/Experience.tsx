@@ -77,14 +77,12 @@ export default function Experience({ experience01Ref, experience02Ref, isExperie
                             <span>From 08/2021 to 03/2022</span>
                         </div>
                         <ul>
-                            <li>Utilized Angular for front-end development</li>
-                            <li>Contributed to the process of improving error messages, reducing contact rate and costs</li>
-                            <li>Experience in a large-scale project, with micro-services architecture, clean architecture, Docker, AWS, BDD</li>
-                            <li>Implemented new features and aligned business goals with product managers and UI team</li>
-                            <li>Implemented push notifications and wrote technical documentation</li>
-                            <li>Fixed bugs, applied unit tests and BDD. Participated in code reviews, technical refinements, and breaking down stories into small batches</li>
-                            <li>Involved in upstream processes for story prioritization based on data</li>
-                            <li>Experience with agile methodology and continuous integration</li>
+                            <li>Engaged in front-end development utilizing Angular, contributing to the creation of a robust OKR platform</li>
+                            <li>Distinguished in the UI/UX space by transforming static numerical indicators of task statuses (e.g., completed, in-progress, to-do, paused) into interactive 3D buttons. This feature enhancement allowed users to filter tasks by status on-demand, greatly enhancing navigation and usability</li>
+                            <li>Participation in technical discussions and task breakdowns to optimize project development</li>
+                            <li>Debugging API errors with effective communication with back-end team</li>
+                            <li>Close collaboration with Product Owner to ensure delivery of high-quality results within established deadlines</li>
+                            <li>Agile methodology (Scrum)</li>
                         </ul>
                         </div>
                     </motion.div>
