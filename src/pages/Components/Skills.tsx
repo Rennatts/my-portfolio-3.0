@@ -76,7 +76,7 @@ export default function Skills({  }: IIntroProps) {
                             <Image className={styles.logo} src="/css.png" alt="css" width={200} height={100}></Image>
                         </div>
                         <div className={styles.glass_image}>
-                            <Image className={styles.logo} src="/material_ui.png" alt="material ui" width={210} height={100}></Image>
+                            <Image className={styles.logo} src="/material_ui.png" alt="material ui" width={200} height={100}></Image>
                         </div>
                         <div className={styles.glass_image}>
                             <Image className={styles.logo} src="/chakra_ui.png" alt="chakra ui" width={260} height={100}></Image>

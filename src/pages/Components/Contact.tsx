@@ -51,25 +51,32 @@ export default function Contact({ }: IIntroProps) {
                 </div>
 
                 <div className={styles.icons_container}>
-                    <p 
-                        onClick={() => openUrl('https://github.com/Rennatts')}
-                        className={styles.icon}
-                        ><AiOutlineGithub size="2x"></AiOutlineGithub>
-                    </p>
-                    <p
-                        onClick={() => openUrl('https://www.linkedin.com/in/renata-machado11/')}
-                        className={styles.icon}><AiFillLinkedin size="2x"></AiFillLinkedin>
-                    </p>
-                    <p 
-                        onClick={() => openUrl('https://twitter.com/rennatts')}
-                        className={styles.icon}><AiFillTwitterCircle size="2x"></AiFillTwitterCircle>
-                    </p>
-                    <p 
-                        onClick={() => handleEmailClick()}
-                        className={styles.icon}>
-                            <AiOutlineMail size="2x"></AiOutlineMail>
-                    </p>
-                    <span>{emailCopyText}</span>
+                    <div className={styles.icon_box}>
+                        <p 
+                            className={styles.icon}
+                            ><AiOutlineGithub size="2x"></AiOutlineGithub>
+                        </p>
+                        <p className={styles.contact_info}>Rennatts</p>
+                    </div>
+                    <div className={styles.icon_box}>
+                        <p
+                            className={styles.icon}><AiFillLinkedin size="2x"></AiFillLinkedin>
+                        </p>
+                        <p className={styles.contact_info}>renata-machado11</p>
+                    </div>
+                    <div className={styles.icon_box}>
+                        <p 
+                            className={styles.icon}><AiFillTwitterCircle size="2x"></AiFillTwitterCircle>
+                        </p>
+                        <p className={styles.contact_info}>rennatts</p>
+                    </div>
+                    <div className={styles.icon_box}>
+                        <p
+                            className={styles.icon}>
+                                <AiOutlineMail size="2x"></AiOutlineMail>
+                        </p>
+                        <p className={styles.contact_info}>16.renata@gmail.com</p>
+                    </div>
                 </div>
             </section>
         </>

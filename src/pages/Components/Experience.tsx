@@ -45,9 +45,6 @@ export default function Experience({ experience01Ref, experience02Ref, isExperie
                                 <h4>Full stack developer</h4>
                                 <span>From 04/2022 to current</span>
                             </div>
-                            <div className={styles.image_box}>
-                                <Image src="/banqi.png" alt="banqi" width={300} height={300}></Image>
-                            </div>
                             <ul>
                                 <li>Utilized React Native for front-end development and NestJS for back-end development</li>
                                 <li>Developer responsible for collaborative project with the UX/UI team to enhance our app{'\''}s payment flow, while also restructuring error messages to streamline the process and minimize customer support costs</li>
