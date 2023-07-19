@@ -161,7 +161,7 @@ export default function Home() {
                       loop: Infinity,
                     }}
                   > 
-                    Hi! I'm 
+                    Hi! I{'\''}m 
                   </motion.p>
                   <motion.p
                     whileHover={{ scale: 1.1 }}

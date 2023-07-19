@@ -47,7 +47,7 @@ export default function Contact({ }: IIntroProps) {
         <>
             <section id="contact" className={styles.contact}>
                 <div className={styles.download_resume}>
-                    <button onClick={downloadResume}>Download Renata's Resume :)</button>
+                    <button onClick={downloadResume}>Download Renata{'\''} Resume :)</button>
                 </div>
 
                 <div className={styles.icons_container}>

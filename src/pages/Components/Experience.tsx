@@ -50,7 +50,7 @@ export default function Experience({ experience01Ref, experience02Ref, isExperie
                             </div>
                             <ul>
                                 <li>Utilized React Native for front-end development and NestJS for back-end development</li>
-                                <li>Developer responsible for collaborative project with the UX/UI team to enhance our app's payment flow, while also restructuring error messages to streamline the process and minimize customer support costs</li>
+                                <li>Developer responsible for collaborative project with the UX/UI team to enhance our app{'\''}s payment flow, while also restructuring error messages to streamline the process and minimize customer support costs</li>
                                 <li>Developed functionalities that enable users to set distinct transaction limits for daytime and nighttime periods and implementing a secure contact list for trusted contacts</li>
                                 <li>Large-scale project, with micro-services architecture, clean architecture, Docker, AWS, Firebase</li>
                                 <li>Closely collaborated with product managers and the UI team to ensure that business objectives were reflected in our technical strategies and implementations</li>
