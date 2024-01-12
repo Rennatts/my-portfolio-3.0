@@ -30,17 +30,29 @@ export default function Contact({ }: IIntroProps) {
         setEmailCopyText('Value copied');
     };
 
-    const fileUrl = "https://renata-resume.s3.amazonaws.com/CV-Renata-Machado.pdf";
+    const fileUrl = "https://renata-resume.s3.amazonaws.com/CV-Renata-Machado-.pdf";
+
+    // const downloadResume = async () => {
+    //     try {
+    //         const res = await fetch(fileUrl);
+    //         const blob = await res.blob();
+
+    //         saveAs(blob, 'renata-machado-resume.pdf');
+    //     } catch (e) {
+    //     }
+    // };
 
     const downloadResume = async () => {
+        console.log("hereeee")
         try {
             const res = await fetch(fileUrl);
             const blob = await res.blob();
 
-            saveAs(blob, 'renata-machado-resume.pdf');
+            saveAs(blob, 'Renata-Machado-Resume.pdf');
         } catch (e) {
         }
     };
+    
     
 
     return (

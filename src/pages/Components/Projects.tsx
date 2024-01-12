@@ -31,9 +31,9 @@ export default function Projects({
     const controlPlanet03 = useAnimation();
     const controlPlanet04 = useAnimation();
 
-    const SocialMediaId = 'NdrD06KLvww';
-    const FreelancerVideoId = 'aNWeAtu9JzQ';
     const KanbanVideoId = '1-B1lVZsguA';
+    const SocialMediaId = 'pNZh3jZ-E-A';
+    const FreelancerVideoId = 'BNtYKKjbSIY';
 
     useEffect(() => {
         if (inView3) {
