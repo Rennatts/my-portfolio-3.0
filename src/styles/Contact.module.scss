@@ -8,17 +8,17 @@
     flex-direction: column;
     overflow: "hidden";
     height: 100vh;
-    z-index: -100;
     color: white;
-
     background-image: url('./../images/universe_03.jpeg');
     background-size: cover;
     background-position: center center;
     background-attachment: fixed;
     position: relative;
-    z-index: -100;
     transform-style: preserve-3d;
     perspective: 1000px;
+    height: auto;
+    padding-top: 15%;
+    padding-bottom: 15%;
 
     .download_resume {
         margin: 200px 0 70px 0;
@@ -40,7 +40,6 @@
         width: 20vw;
         height: 20vh;
         cursor: pointer;
-        z-index: 100;
 
         &::after{
             background-color: aqua;
@@ -80,7 +79,9 @@
     
     @media (min-width: 300px) and (max-width: 400px)  {
         width: 100%;
-        height: 80vh;
+        height: auto;
+        padding-top: 15%;
+        padding-bottom: 15%;
 
         .download_resume {
             margin: 150px 0 0 0;
@@ -128,7 +129,9 @@
 
     @media (min-width: 401px) and (max-width: 575px) {
         width: 100%;
-        height: 900px;
+        height: auto;
+        padding-top: 15%;
+        padding-bottom: 15%;
 
         .download_resume {
             margin: 150px 0 70px 0;
@@ -177,7 +180,9 @@
 
     @media (min-width: 901px) and (max-width: 1200px) {
         width: 100%;
-        height: 60%;
+        height: auto;
+        padding-top: 15%;
+        padding-bottom: 15%;
 
         .download_resume {
             margin: 150px 0 0px 0;
@@ -228,7 +233,9 @@
 
     @media (min-width: 1201px) and (max-width: 1449px){
         width: 1200px;
-        height: 70vh;
+        height: auto;
+        padding-top: 15%;
+        padding-bottom: 15%;
 
         .download_resume {
             margin: 100px 0 0px 0;
@@ -278,7 +285,9 @@
 
     @media (min-width: 575px) and (max-width: 900px) {
         width: 1200px;
-        height: 900px;
+        height: auto;
+        padding-top: 15%;
+        padding-bottom: 15%;
 
         .download_resume {
             margin: 150px 0 70px 0;
@@ -330,7 +339,9 @@
 
     @media (min-width: 1200px) {
         width: 100%;
-        height: 900px;
+        height: auto;
+        padding-top: 10%;
+        padding-bottom: 10%;
 
         .download_resume {
             margin: 150px 0 70px 0;
@@ -383,7 +394,9 @@
 
     @media (min-width: 1450px) and (max-width: 2000px) {
         width: 100%;
-        height: 1100px;
+        height: auto;
+        padding-top: 10%;
+        padding-bottom: 10%;
 
         .download_resume {
             margin: 150px 0 70px 0;
