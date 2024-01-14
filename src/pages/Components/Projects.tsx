@@ -110,12 +110,14 @@ export default function Projects({
                                 alt="computer freelancer"
                                 width={800}  
                                 height={500} 
+                                className={styles.project_image}
                             />
                             <Image 
                                 src="/mobile_app_freelancer.png" 
                                 alt="mobile freelancer"
                                 width={800}  
                                 height={500} 
+                                className={styles.project_image}
                             />
                         </div>
                         <div className={styles.video_container}>
