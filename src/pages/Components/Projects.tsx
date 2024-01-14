@@ -174,14 +174,14 @@ export default function Projects({
                             <Image 
                                 src="/social_media_computer.png" 
                                 alt="computer social media"
-                                width={800}  
-                                height={500} 
+                                width={1000}  
+                                height={800} 
                             />
                             <Image 
                                 src="/social_media_computer_login.png" 
                                 alt="social media login"
-                                width={800}  
-                                height={500} 
+                                width={1000}  
+                                height={800} 
                             />
                         </div>
                         <div className={styles.video_container}>

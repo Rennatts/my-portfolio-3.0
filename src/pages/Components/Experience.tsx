@@ -46,18 +46,17 @@ export default function Experience({ experience01Ref, experience02Ref, isExperie
                                 <span>From 04/2022 to current</span>
                             </div>
                             <ul>
-                                <li>Utilized React Native for front-end development and NestJS for back-end development</li>
-                                <li>Developer responsible for collaborative project with the UX/UI team to enhance our app{'\''}s payment flow, while also restructuring error messages to streamline the process and minimize customer support costs</li>
-                                <li>Developed functionalities that enable users to set distinct transaction limits for daytime and nighttime periods and implementing a secure contact list for trusted contacts</li>
-                                <li>Large-scale project, with micro-services architecture, clean architecture, Docker, AWS, Firebase</li>
-                                <li>Closely collaborated with product managers and the UI team to ensure that business objectives were reflected in our technical strategies and implementations</li>
-                                <li>Implemented analytics events to track user behavior and inform future development priorities</li>
-                                <li>Developer responsible for integration of third-party services into the app to enhance functionality and user experience</li>
-                                <li>Writing of technical documentation</li>
-                                <li>Unit tests and BDD. Participated in code reviews, technical refinements, and breaking down stories into small tasks</li>
-                                <li>Involved in upstream processes for story prioritization based on data</li>
-                                <li>Agile methodology and continuous integration</li>
-                            </ul> 
+                                <li>Front-end development using React Native and back-end development with NestJS</li>
+                                <li>Collaborated with UX/UI teams to improve payment flow in our app, reducing customer support costs by streamlining error messaging.</li>
+                                <li>Engineered user-centric features allowing customizable transaction limits for day/night periods and a secure trusted contact list.</li>
+                                <li>Contributed to a large-scale project involving micro-services architecture, Docker, AWS, Kafka, Firebase, ensuring robust and scalable solutions.</li>
+                                <li>Partnered with product managers and UI designers to align technical strategies with business objectives for optimal outcomes.</li>
+                                <li>Implemented analytics to monitor user behavior, guiding data-driven decisions for future development initiatives.</li>
+                                <li>Integrated third-party services into the app, enhancing functionality and user experience.</li>
+                                <li>Authored comprehensive technical documentation to support ongoing development and maintenance.</li>
+                                <li>Conducted unit tests and behavior-driven development, participating in code reviews and task breakdown for efficient project management.</li>
+                                <li>Employed Agile methodologies and continuous integration practices to maintain a dynamic and responsive development environment.</li>
+                            </ul>
                         </div>
                     </motion.div>
 
@@ -74,9 +73,9 @@ export default function Experience({ experience01Ref, experience02Ref, isExperie
                             <span>From 08/2021 to 03/2022</span>
                         </div>
                         <ul>
-                            <li>Engaged in front-end development utilizing Angular, contributing to the creation of a robust OKR platform</li>
-                            <li>Distinguished in the UI/UX space by transforming static numerical indicators of task statuses (e.g., completed, in-progress, to-do, paused) into interactive 3D buttons. This feature enhancement allowed users to filter tasks by status on-demand, greatly enhancing navigation and usability</li>
-                            <li>Participation in technical discussions and task breakdowns to optimize project development</li>
+                            <li>Front-end development in Angular for a robust OKR platform</li>
+                            <li>Innovation in UI/UX, transforming task status indicators into interactive 3D buttons, improving navigation and usability of the platform.</li>
+                            <li>Active engagement in technical discussions and task breakdown to optimize development.</li>
                             <li>Debugging API errors with effective communication with back-end team</li>
                             <li>Close collaboration with Product Owner to ensure delivery of high-quality results within established deadlines</li>
                             <li>Agile methodology (Scrum)</li>
