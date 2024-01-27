@@ -40,31 +40,7 @@ export default function Home() {
     blackHoleRef.current = node;
   };
 
-  const [astronautOpacity, setAstronautOpacity] = useState(1);
-
-
-  useEffect(() => {
-    const handleScroll = () => {
-      if (imageRef.current && blackHoleRef.current) {
-        const scrollPosition = window.pageYOffset;
-  
-        const blackHolePosition =
-          blackHoleRef.current.getBoundingClientRect().top + scrollPosition;
-        const astronautBottomPosition = imageRef.current.offsetTop + imageRef.current.offsetHeight;
-  
-        if (astronautBottomPosition > blackHolePosition) {
-          setAstronautOpacity(0);
-        } else {
-          setAstronautOpacity(1);
-        }
-      }
-    };
-  
-    window.addEventListener("scroll", handleScroll);
-  
-    return () => window.removeEventListener("scroll", handleScroll);
-  }, []);
-  
+  const { astronautOpacity } = useScrollPosition(imageRef, blackHoleRef);
 
 
   useEffect(() => {
