@@ -13,7 +13,6 @@ import Contact from './Components/Contact';
 
 // Style and hooks imports
 import styles from '@/styles/Home.module.scss';
-import useWindowSize from '@/hooks/useWindowSize';
 import useScrollPosition from '@/hooks/useScrollPosition'; 
 
 
