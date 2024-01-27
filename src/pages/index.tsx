@@ -1,29 +1,27 @@
-import { Inter } from 'next/font/google'
-import Image from 'next/image'
-import styles from '@/styles/Home.module.scss'
-import Header from './Components/Header'
-import { useEffect, useRef, useState } from 'react'
-import { useAnimation, useMotionValue } from 'framer-motion';
-import { useInView } from 'react-intersection-observer';
+import { useEffect, useRef, useState } from 'react';
+import { motion, useAnimation, useMotionValue } from 'framer-motion';
+import { InView, useInView } from 'react-intersection-observer';
+import Image from 'next/image';
+
+// Component imports
+import Header from './Components/Header';
 import Experience from './Components/Experience';
 import Skills from './Components/Skills';
 import Projects from './Components/Projects';
-import { motion } from 'framer-motion';
-import { InView } from 'react-intersection-observer';
-import Education from './Components/Education'
-import Contact from './Components/Contact'
+import Education from './Components/Education';
+import Contact from './Components/Contact';
 
+// Style and hooks imports
+import styles from '@/styles/Home.module.scss';
+import useWindowSize from '@/hooks/useWindowSize';
+import useScrollPosition from '@/hooks/useScrollPosition'; 
 
-const inter = Inter({ subsets: ['latin'] })
 
 export default function Home() {
   const imageRef = useRef<HTMLImageElement>(null);
   const aboutMeRef = useRef<HTMLImageElement>(null);
-  const [yPosition, setYPosition] = useState(0);
   const controls = useAnimation();
   const controls2 = useAnimation();
-  // const [experience01Ref, isExperience01InView01] = useInView({ threshold: 0.5 }); 
-  // const [experience02Ref, isExperience01InView02] = useInView({ threshold: 0.7 });
   const { ref: experience01Ref, inView: isExperience01InView } = useInView({ triggerOnce: true });
   const { ref: experience02Ref, inView: isExperience02InView } = useInView({ triggerOnce: true });
 
@@ -71,7 +69,6 @@ export default function Home() {
     const handleScroll = () => {
       if (imageRef.current && blackHoleRef.current) {
         const scrollPosition = window.pageYOffset;
-        setYPosition(scrollPosition);
   
         const blackHolePosition =
           blackHoleRef.current.getBoundingClientRect().top + scrollPosition;
