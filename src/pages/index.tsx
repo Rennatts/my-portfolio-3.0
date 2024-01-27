@@ -18,6 +18,8 @@ import useScrollPosition from '@/hooks/useScrollPosition';
 
 
 export default function Home() {
+  const [astronautY, setAstronautY] = useState(0);
+  const [targetY, setTargetY] = useState(0);
   const imageRef = useRef<HTMLImageElement>(null);
   const aboutMeRef = useRef<HTMLImageElement>(null);
   const controls = useAnimation();
@@ -33,36 +35,12 @@ export default function Home() {
 
 
   const [isRocketVisible, setIsRocketVisible] = useState(false);
-  const [hasPassedBlackHole, setHasPassedBlackHole] = useState(false);
   const blackHoleRef = useRef<Element | null>(null);
   const setBlackHoleRef = (node: Element | null) => {
     blackHoleRef.current = node;
   };
 
   const [astronautOpacity, setAstronautOpacity] = useState(1);
-
-  const [windowWidth, setWindowWidth] = useState<number | null>(null);
-
-
-  useEffect(() => {
-    if (typeof window !== 'undefined') {
-      // Set initial window width
-      setWindowWidth(window.innerWidth);
-      
-      const handleResize = () => {
-        setWindowWidth(window.innerWidth);
-      }
-  
-      window.addEventListener('resize', handleResize);
-  
-      return () => {
-        window.removeEventListener('resize', handleResize);
-      }
-    }
-  }, []); 
-  
-  
-
 
 
   useEffect(() => {
@@ -102,15 +80,9 @@ export default function Home() {
     }
   }, [controls2, isExperience02InView]);
 
-
-  const position = useMotionValue("relative");
-
-  const [astronautY, setAstronautY] = useState(0);
-  const [targetY, setTargetY] = useState(0);
   
   useEffect(() => {
     const handleScroll = () => {
-      // Set the target Y position based on scroll position
       setTargetY(window.pageYOffset);
     };
     
@@ -121,12 +93,10 @@ export default function Home() {
   
   useEffect(() => {
     const smoothScroll = () => {
-      // Interpolate towards the target Y position
       setAstronautY(astronautY => astronautY + (targetY - astronautY) * 0.1);
       requestAnimationFrame(smoothScroll);
     };
   
-    // Start the smooth scroll loop
     smoothScroll();
   }, [targetY]);
   
@@ -312,7 +282,6 @@ export default function Home() {
           <Skills />
           <InView
             as="div"
-            onChange={(inView) => !inView && setHasPassedBlackHole(true)} 
             threshold={0.1}
           >
             <div className={styles.black_hole} ref={setBlackHoleRef}>
