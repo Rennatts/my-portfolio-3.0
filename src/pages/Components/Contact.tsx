@@ -7,49 +7,23 @@ interface IIntroProps {
 }
 
 export default function Contact({ }: IIntroProps) {
-    const [emailCopyText, setEmailCopyText] = useState<string>('Click me to copy the e-mail');
-
-    const openUrl = (url: any) => {
-        window.open(url, '_blank');
-    };
-
-    const copyToClipboard = useCallback((value: any) => {
-        const el = document.createElement('textarea');
-        el.value = value;
-        el.setAttribute('readonly', '');
-        el.style.position = 'absolute';
-        el.style.left = '-9999px';
-        document.body.appendChild(el);
-        el.select();
-        document.execCommand('copy');
-        document.body.removeChild(el);
-    }, []);
-
-    const handleEmailClick = () => {
-        copyToClipboard('16.renata@gmail.com');
-        setEmailCopyText('Value copied');
-    };
-
-    const fileUrl = "https://renata-resume.s3.amazonaws.com/CV-Renata-Machado-.pdf";
-
-    // const downloadResume = async () => {
-    //     try {
-    //         const res = await fetch(fileUrl);
-    //         const blob = await res.blob();
-
-    //         saveAs(blob, 'renata-machado-resume.pdf');
-    //     } catch (e) {
-    //     }
-    // };
+    const fileUrl = process.env.NEXT_PUBLIC_RESUME_PDF;
 
     const downloadResume = async () => {
-        console.log("hereeee")
+        if (!fileUrl) {
+            console.error('Resume PDF URL is not defined.');
+            return;
+        }
+    
         try {
             const res = await fetch(fileUrl);
+            if (!res.ok) {
+                throw new Error('Failed to fetch the resume.');
+            }
             const blob = await res.blob();
-
             saveAs(blob, 'Renata-Machado-Resume.pdf');
-        } catch (e) {
+        } catch (error) {
+            console.error('An error occurred while downloading the resume:', error);
         }
     };
     
