@@ -41,38 +41,25 @@ export default function Home() {
 
   const { astronautOpacity } = useScrollPosition(imageRef, blackHoleRef);
 
-
   useEffect(() => {
     if (isExperience01InView) {
       controls.start({ x: 0, opacity: 1 });
     }
-
-  }, [controls, isExperience01InView]);
-
-  useEffect(() => {
     if (isExperience02InView) {
       controls2.start({ x: 0, opacity: 1 });
     }
-  }, [controls2, isExperience02InView]);
+  }, [controls, controls2, isExperience01InView, isExperience02InView]);
 
-  
+
   useEffect(() => {
-    const handleScroll = () => {
-      setTargetY(window.pageYOffset);
-    };
-    
+    const handleScroll = () => setTargetY(window.pageYOffset);
     window.addEventListener("scroll", handleScroll);
-    
-    return () => window.removeEventListener("scroll", handleScroll);
-  }, []);
-  
-  useEffect(() => {
     const smoothScroll = () => {
-      setAstronautY(astronautY => astronautY + (targetY - astronautY) * 0.1);
+      setAstronautY((prevY) => prevY + (targetY - prevY) * 0.1);
       requestAnimationFrame(smoothScroll);
     };
-  
     smoothScroll();
+    return () => window.removeEventListener("scroll", handleScroll);
   }, [targetY]);
   
 

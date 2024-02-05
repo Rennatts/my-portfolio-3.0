@@ -2,6 +2,7 @@ import Image from 'next/image'
 import styles from '@/styles/Experience.module.scss'
 import { motion, useAnimation } from 'framer-motion';
 import { useEffect } from 'react';
+import { useAnimateOnView } from '@/hooks/useAnimateOnView';
 
 interface IIntroProps {
     experience01Ref?: any;
@@ -11,21 +12,17 @@ interface IIntroProps {
 }
 
 export default function Experience({ experience01Ref, experience02Ref, isExperience01InView, isExperience02InView }: IIntroProps) {
-    const controls = useAnimation();
-    const controls2 = useAnimation();
+    const controls = useAnimateOnView(isExperience01InView);
+    const controls2 = useAnimateOnView(isExperience02InView);
 
     useEffect(() => {
         if (isExperience01InView) {
-            controls.start({ x: 0, opacity: 1 });
+          controls.start({ x: 0, opacity: 1 });
         }
-    
-    }, [controls, isExperience01InView]);
-    
-    useEffect(() => {
         if (isExperience02InView) {
-            controls2.start({ x: 0, opacity: 1 });
+          controls2.start({ x: 0, opacity: 1 });
         }
-    }, [controls2, isExperience02InView]);
+    }, [controls, controls2, isExperience01InView, isExperience02InView]);
 
     
     return (
